@@ -29,7 +29,7 @@ fn glutDisplayFunc {
 }
 
 GL.glutInit("Test OpenGL application in loli")
-GL.glutInitDisplayMode()
+GL.glutInitDisplayMode(GL.GLUT_RGB | GL.GLUT_SINGLE)
 GL.glutInitWindowSize(200, 200)
 GL.glutInitWindowPosition(100, 100)
 GL.glutCreateWindow("Test")

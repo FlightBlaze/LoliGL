@@ -1,39 +1,4 @@
-#include "loli_opengl.h"
-
-loli_call_entry_func loli_GL_call_table[] = {
-        NULL,
-        loli_GL__glutInit,
-        loli_GL__glutInitDisplayMode,
-        loli_GL__glutInitWindowSize,
-        loli_GL__glutInitWindowPosition,
-        loli_GL__glutCreateWindow,
-        loli_GL__glutMainLoop,
-        loli_GL__glutDisplayFunc,
-
-        // TODO: delete it
-        loli_GL__example,
-
-        loli_GL__end,
-        loli_GL__flush,
-};
-
-const char * loli_GL_info_table[] = {
-        "\0\0"
-        ,"F\0glutInit\0(String)"
-        ,"F\0glutInitDisplayMode"
-        ,"F\0glutInitWindowSize\0(Integer, Integer)"
-        ,"F\0glutInitWindowPosition\0(Integer, Integer)"
-        ,"F\0glutCreateWindow\0(String): Integer"
-        ,"F\0glutMainLoop"
-        ,"F\0glutDisplayFunc"
-
-        // TODO: delete it
-        ,"F\0example"
-
-        ,"F\0end"
-        ,"F\0flush"
-        ,"Z"
-};
+#include "loli_opengl_consts.c"
 
 void loli_GL__glutInit(loli_state * state) {
     char * argv[1];
@@ -45,7 +10,9 @@ void loli_GL__glutInit(loli_state * state) {
 }
 
 void loli_GL__glutInitDisplayMode(loli_state * state) {
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    unsigned int mode = (unsigned int) loli_arg_integer(state, 0);
+
+    glutInitDisplayMode(mode);
 }
 
 void loli_GL__glutInitWindowSize(loli_state * state) {
