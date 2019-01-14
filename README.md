@@ -1,6 +1,6 @@
 # LoliGL
 
-OpenGL & GLUT port for [loli programming language](https://github.com/txlyre/loli)
+> OpenGL & GLUT port for [loli programming language](https://github.com/txlyre/loli)
 
 ### Building
 
@@ -28,11 +28,18 @@ fn glutDisplayFunc {
     sayln("glutDisplayFunc called")
 }
 
+fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
+    if (key == 27.to_byte()): { # exit on `Esc` press
+        sys.exit(0)
+    }
+}
+
 GL.glutInit("Test OpenGL application in loli")
 GL.glutInitDisplayMode(GL.GLUT_RGB | GL.GLUT_SINGLE)
 GL.glutInitWindowSize(200, 200)
 GL.glutInitWindowPosition(100, 100)
 GL.glutCreateWindow("Test")
 GL.glutDisplayFunc()
+GL.glutKeyboardFunc()
 GL.glutMainLoop()
 ```

@@ -49,10 +49,26 @@ static void __fn_glutDisplayFunc() {
     loli_call(_loli_state, 1);
 }
 
+static void __fn_glutKeyboardFunc(unsigned char c, int i1, int i2) {
+    if (_loli_state == 0) return;
+
+    loli_call_prepare(_loli_state, loli_find_function(_loli_state, "glutKeyboardFunc"));
+    loli_push_byte(_loli_state, (uint8_t) c);
+    loli_push_integer(_loli_state, i1);
+    loli_push_integer(_loli_state, i2);
+    loli_call(_loli_state, 3);
+}
+
 void loli_GL__glutDisplayFunc(loli_state * state) {
     _loli_state = state;
 
     glutDisplayFunc(__fn_glutDisplayFunc);
+}
+
+void loli_GL__glutKeyboardFunc(loli_state * state) {
+    _loli_state = state;
+
+    glutKeyboardFunc(__fn_glutKeyboardFunc);
 }
 
 void loli_GL__end(loli_state * state) {

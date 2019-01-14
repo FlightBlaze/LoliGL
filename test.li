@@ -1,7 +1,14 @@
+import sys
 import GL
 
 fn glutDisplayFunc {
     GL.example() # TODO: delete it
+}
+
+fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
+    if (key == 27.to_byte()): { # on `Esc` press ...
+        sys.exit(0)
+    }
 }
 
 GL.glutInit("Test OpenGL application in loli")
@@ -10,4 +17,5 @@ GL.glutInitWindowSize(200, 200)
 GL.glutInitWindowPosition(100, 100)
 GL.glutCreateWindow("Test")
 GL.glutDisplayFunc()
+GL.glutKeyboardFunc()
 GL.glutMainLoop()

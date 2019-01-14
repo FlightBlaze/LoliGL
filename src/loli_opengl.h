@@ -10,6 +10,7 @@ void loli_GL__glutInitWindowPosition(loli_state *);
 void loli_GL__glutCreateWindow(loli_state *);
 void loli_GL__glutMainLoop(loli_state *);
 void loli_GL__glutDisplayFunc(loli_state *);
+void loli_GL__glutKeyboardFunc(loli_state *);
 
 // TODO: delete it
 void loli_GL__example(loli_state *);
@@ -31,6 +32,37 @@ void loli_GL_var_GLUT_MULTISAMPLE(loli_state *);
 void loli_GL_var_GLUT_STEREO(loli_state *);
 void loli_GL_var_GLUT_LUMINANCE(loli_state *);
 
+void loli_GL_var_GLUT_MENU_NOT_IN_USE(loli_state *);
+void loli_GL_var_GLUT_MENU_IN_USE(loli_state *);
+void loli_GL_var_GLUT_NOT_VISIBLE(loli_state *);
+void loli_GL_var_GLUT_VISIBLE(loli_state *);
+void loli_GL_var_GLUT_HIDDEN(loli_state *);
+void loli_GL_var_GLUT_FULLY_RETAINED(loli_state *);
+void loli_GL_var_GLUT_PARTIALLY_RETAINED(loli_state *);
+void loli_GL_var_GLUT_FULLY_COVERED(loli_state *);
+
+void loli_GL_var_GLUT_KEY_F1(loli_state *);
+void loli_GL_var_GLUT_KEY_F2(loli_state *);
+void loli_GL_var_GLUT_KEY_F3(loli_state *);
+void loli_GL_var_GLUT_KEY_F4(loli_state *);
+void loli_GL_var_GLUT_KEY_F5(loli_state *);
+void loli_GL_var_GLUT_KEY_F6(loli_state *);
+void loli_GL_var_GLUT_KEY_F7(loli_state *);
+void loli_GL_var_GLUT_KEY_F8(loli_state *);
+void loli_GL_var_GLUT_KEY_F9(loli_state *);
+void loli_GL_var_GLUT_KEY_F10(loli_state *);
+void loli_GL_var_GLUT_KEY_F11(loli_state *);
+void loli_GL_var_GLUT_KEY_F12(loli_state *);
+void loli_GL_var_GLUT_KEY_LEFT(loli_state *);
+void loli_GL_var_GLUT_KEY_UP(loli_state *);
+void loli_GL_var_GLUT_KEY_RIGHT(loli_state *);
+void loli_GL_var_GLUT_KEY_DOWN(loli_state *);
+void loli_GL_var_GLUT_KEY_PAGE_UP(loli_state *);
+void loli_GL_var_GLUT_KEY_PAGE_DOWN(loli_state *);
+void loli_GL_var_GLUT_KEY_HOME(loli_state *);
+void loli_GL_var_GLUT_KEY_END(loli_state *);
+void loli_GL_var_GLUT_KEY_INSERT(loli_state *);
+
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
         loli_GL__glutInit,
@@ -40,6 +72,7 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL__glutCreateWindow,
         loli_GL__glutMainLoop,
         loli_GL__glutDisplayFunc,
+        loli_GL__glutKeyboardFunc,
 
         // TODO: delete it
         loli_GL__example,
@@ -58,7 +91,38 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GLUT_STENCIL,
         loli_GL_var_GLUT_MULTISAMPLE,
         loli_GL_var_GLUT_STEREO,
-        loli_GL_var_GLUT_LUMINANCE
+        loli_GL_var_GLUT_LUMINANCE,
+
+        loli_GL_var_GLUT_MENU_NOT_IN_USE,
+        loli_GL_var_GLUT_MENU_IN_USE,
+        loli_GL_var_GLUT_NOT_VISIBLE,
+        loli_GL_var_GLUT_VISIBLE,
+        loli_GL_var_GLUT_HIDDEN,
+        loli_GL_var_GLUT_FULLY_RETAINED,
+        loli_GL_var_GLUT_PARTIALLY_RETAINED,
+        loli_GL_var_GLUT_FULLY_COVERED,
+
+        loli_GL_var_GLUT_KEY_F1,
+        loli_GL_var_GLUT_KEY_F2,
+        loli_GL_var_GLUT_KEY_F3,
+        loli_GL_var_GLUT_KEY_F4,
+        loli_GL_var_GLUT_KEY_F5,
+        loli_GL_var_GLUT_KEY_F6,
+        loli_GL_var_GLUT_KEY_F7,
+        loli_GL_var_GLUT_KEY_F8,
+        loli_GL_var_GLUT_KEY_F9,
+        loli_GL_var_GLUT_KEY_F10,
+        loli_GL_var_GLUT_KEY_F11,
+        loli_GL_var_GLUT_KEY_F12,
+        loli_GL_var_GLUT_KEY_LEFT,
+        loli_GL_var_GLUT_KEY_UP,
+        loli_GL_var_GLUT_KEY_RIGHT,
+        loli_GL_var_GLUT_KEY_DOWN,
+        loli_GL_var_GLUT_KEY_PAGE_UP,
+        loli_GL_var_GLUT_KEY_PAGE_DOWN,
+        loli_GL_var_GLUT_KEY_HOME,
+        loli_GL_var_GLUT_KEY_END,
+        loli_GL_var_GLUT_KEY_INSERT,
 };
 
 const char * loli_GL_info_table[] = {
@@ -70,12 +134,14 @@ const char * loli_GL_info_table[] = {
         ,"F\0glutCreateWindow\0(String): Integer"
         ,"F\0glutMainLoop"
         ,"F\0glutDisplayFunc"
+        ,"F\0glutKeyboardFunc"
 
         // TODO: delete it
         ,"F\0example"
 
         ,"F\0end"
         ,"F\0flush"
+
 
         ,"R\0GLUT_RGB\0Integer"
         ,"R\0GLUT_RGBA\0Integer"
@@ -89,5 +155,36 @@ const char * loli_GL_info_table[] = {
         ,"R\0GLUT_MULTISAMPLE\0Integer"
         ,"R\0GLUT_STEREO\0Integer"
         ,"R\0GLUT_LUMINANCE\0Integer"
+
+        ,"R\0GLUT_MENU_NOT_IN_USE\0Integer"
+        ,"R\0GLUT_MENU_IN_USE\0Integer"
+        ,"R\0GLUT_NOT_VISIBLE\0Integer"
+        ,"R\0GLUT_HIDDEN\0Integer"
+        ,"R\0GLUT_FULLY_RETAINED\0Integer"
+        ,"R\0GLUT_PARTIALLY_RETAINED\0Integer"
+        ,"R\0GLUT_PARTIALLY_RETAINED\0Integer"
+        ,"R\0GLUT_FULLY_COVERED\0Integer"
+
+        ,"R\0GLUT_KEY_F1\0Integer"
+        ,"R\0GLUT_KEY_F2\0Integer"
+        ,"R\0GLUT_KEY_F3\0Integer"
+        ,"R\0GLUT_KEY_F4\0Integer"
+        ,"R\0GLUT_KEY_F5\0Integer"
+        ,"R\0GLUT_KEY_F6\0Integer"
+        ,"R\0GLUT_KEY_F7\0Integer"
+        ,"R\0GLUT_KEY_F8\0Integer"
+        ,"R\0GLUT_KEY_F9\0Integer"
+        ,"R\0GLUT_KEY_F10\0Integer"
+        ,"R\0GLUT_KEY_F11\0Integer"
+        ,"R\0GLUT_KEY_F12\0Integer"
+        ,"R\0GLUT_KEY_UP\0Integer"
+        ,"R\0GLUT_KEY_RIGHT\0Integer"
+        ,"R\0GLUT_KEY_DOWN\0Integer"
+        ,"R\0GLUT_KEY_PAGE_UP\0Integer"
+        ,"R\0GLUT_KEY_PAGE_DOWN\0Integer"
+        ,"R\0GLUT_KEY_HOME\0Integer"
+        ,"R\0GLUT_KEY_END\0Integer"
+        ,"R\0GLUT_KEY_INSERT\0Integer"
+
         ,"Z"
 };
