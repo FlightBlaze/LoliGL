@@ -6,7 +6,7 @@ fn glutDisplayFunc {
 }
 
 fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
-    if (key == 27.to_byte()): { # on `Esc` press ...
+    if (key == 27.to_b()): { # on `Esc` press ...
         sys.exit(0)
     }
 }
