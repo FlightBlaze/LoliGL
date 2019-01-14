@@ -1,0 +1,13 @@
+/.idea/**
+
+/bin/**
+/cmake-build-debug/**
+/build/**
+
+# LoliGl testing
+
+/GL.so
+/loli
+
+/GL.dll
+/loli.exe
