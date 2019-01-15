@@ -21,7 +21,7 @@ Then import ``GL`` module from library.
 
 #### Example: Creating window
 
-```
+```rust
 import sys
 import GL
 

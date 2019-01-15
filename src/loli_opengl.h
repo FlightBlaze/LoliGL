@@ -9,88 +9,157 @@
 #endif
 
 // Glut
-void loli_GL__glutInit                     (loli_state *);
-void loli_GL__glutInitDisplayMode          (loli_state *);
-void loli_GL__glutInitWindowSize           (loli_state *);
-void loli_GL__glutInitWindowPosition       (loli_state *);
-void loli_GL__glutInitDisplayString        (loli_state *);
+void loli_GL__glutInit                         (loli_state *);
+void loli_GL__glutInitDisplayMode              (loli_state *);
+void loli_GL__glutInitWindowSize               (loli_state *);
+void loli_GL__glutInitWindowPosition           (loli_state *);
+void loli_GL__glutInitDisplayString            (loli_state *);
 
-void loli_GL__glutCreateWindow             (loli_state *);
-void loli_GL__glutCreateSubWindow          (loli_state *);
-void loli_GL__glutDestroyWindow            (loli_state *);
-void loli_GL__glutSetWindow                (loli_state *);
-void loli_GL__glutGetWindow                (loli_state *);
-void loli_GL__glutSetWindowTitle           (loli_state *);
-void loli_GL__glutSetIconTitle             (loli_state *);
-void loli_GL__glutReshapeWindow            (loli_state *);
-void loli_GL__glutPositionWindow           (loli_state *);
-void loli_GL__glutShowWindow               (loli_state *);
-void loli_GL__glutHideWindow               (loli_state *);
-void loli_GL__glutIconifyWindow            (loli_state *);
-void loli_GL__glutPopWindow                (loli_state *);
-void loli_GL__glutFullScreen               (loli_state *);
+void loli_GL__glutCreateWindow                 (loli_state *);
+void loli_GL__glutCreateSubWindow              (loli_state *);
+void loli_GL__glutDestroyWindow                (loli_state *);
+void loli_GL__glutSetWindow                    (loli_state *);
+void loli_GL__glutGetWindow                    (loli_state *);
+void loli_GL__glutSetWindowTitle               (loli_state *);
+void loli_GL__glutSetIconTitle                 (loli_state *);
+void loli_GL__glutReshapeWindow                (loli_state *);
+void loli_GL__glutPositionWindow               (loli_state *);
+void loli_GL__glutShowWindow                   (loli_state *);
+void loli_GL__glutHideWindow                   (loli_state *);
+void loli_GL__glutIconifyWindow                (loli_state *);
+void loli_GL__glutPopWindow                    (loli_state *);
+void loli_GL__glutFullScreen                   (loli_state *);
 
-void loli_GL__glutPostWindowRedisplay      (loli_state *);
-void loli_GL__glutPostRedisplay            (loli_state *);
-void loli_GL__glutSwapBuffers              (loli_state *);
+void loli_GL__glutPostWindowRedisplay          (loli_state *);
+void loli_GL__glutPostRedisplay                (loli_state *);
+void loli_GL__glutSwapBuffers                  (loli_state *);
 
-void loli_GL__glutWarpPointer              (loli_state *);
-void loli_GL__glutSetCursor                (loli_state *);
+void loli_GL__glutWarpPointer                  (loli_state *);
+void loli_GL__glutSetCursor                    (loli_state *);
 
-void loli_GL__glutMainLoop                 (loli_state *);
-void loli_GL__glutDisplayFunc              (loli_state *);
-void loli_GL__glutKeyboardFunc             (loli_state *);
+void loli_GL__glutMainLoop                     (loli_state *);
+void loli_GL__glutDisplayFunc                  (loli_state *);
+void loli_GL__glutKeyboardFunc                 (loli_state *);
 
 // TODO: delete it
-void loli_GL__example                      (loli_state *);
+void loli_GL__example                          (loli_state *);
 
 // OpenGL
-void loli_GL__glEnd                        (loli_state *);
-void loli_GL__glFlush                      (loli_state *);
+void loli_GL__glEnd                            (loli_state *);
+void loli_GL__glFlush                          (loli_state *);
 
-void loli_GL_var_GLUT_RGB                  (loli_state *);
-void loli_GL_var_GLUT_RGBA                 (loli_state *);
-void loli_GL_var_GLUT_INDEX                (loli_state *);
-void loli_GL_var_GLUT_SINGLE               (loli_state *);
-void loli_GL_var_GLUT_DOUBLE               (loli_state *);
-void loli_GL_var_GLUT_ACCUM                (loli_state *);
-void loli_GL_var_GLUT_ALPHA                (loli_state *);
-void loli_GL_var_GLUT_DEPTH                (loli_state *);
-void loli_GL_var_GLUT_STENCIL              (loli_state *);
-void loli_GL_var_GLUT_MULTISAMPLE          (loli_state *);
-void loli_GL_var_GLUT_STEREO               (loli_state *);
-void loli_GL_var_GLUT_LUMINANCE            (loli_state *);
+void loli_GL_var_GLUT_RGB                      (loli_state *);
+void loli_GL_var_GLUT_RGBA                     (loli_state *);
+void loli_GL_var_GLUT_INDEX                    (loli_state *);
+void loli_GL_var_GLUT_SINGLE                   (loli_state *);
+void loli_GL_var_GLUT_DOUBLE                   (loli_state *);
+void loli_GL_var_GLUT_ACCUM                    (loli_state *);
+void loli_GL_var_GLUT_ALPHA                    (loli_state *);
+void loli_GL_var_GLUT_DEPTH                    (loli_state *);
+void loli_GL_var_GLUT_STENCIL                  (loli_state *);
+void loli_GL_var_GLUT_MULTISAMPLE              (loli_state *);
+void loli_GL_var_GLUT_STEREO                   (loli_state *);
+void loli_GL_var_GLUT_LUMINANCE                (loli_state *);
 
-void loli_GL_var_GLUT_MENU_NOT_IN_USE      (loli_state *);
-void loli_GL_var_GLUT_MENU_IN_USE          (loli_state *);
-void loli_GL_var_GLUT_NOT_VISIBLE          (loli_state *);
-void loli_GL_var_GLUT_VISIBLE              (loli_state *);
-void loli_GL_var_GLUT_HIDDEN               (loli_state *);
-void loli_GL_var_GLUT_FULLY_RETAINED       (loli_state *);
-void loli_GL_var_GLUT_PARTIALLY_RETAINED   (loli_state *);
-void loli_GL_var_GLUT_FULLY_COVERED        (loli_state *);
+void loli_GL_var_GLUT_MENU_NOT_IN_USE          (loli_state *);
+void loli_GL_var_GLUT_MENU_IN_USE              (loli_state *);
+void loli_GL_var_GLUT_NOT_VISIBLE              (loli_state *);
+void loli_GL_var_GLUT_VISIBLE                  (loli_state *);
+void loli_GL_var_GLUT_HIDDEN                   (loli_state *);
+void loli_GL_var_GLUT_FULLY_RETAINED           (loli_state *);
+void loli_GL_var_GLUT_PARTIALLY_RETAINED       (loli_state *);
+void loli_GL_var_GLUT_FULLY_COVERED            (loli_state *);
 
-void loli_GL_var_GLUT_KEY_F1               (loli_state *);
-void loli_GL_var_GLUT_KEY_F2               (loli_state *);
-void loli_GL_var_GLUT_KEY_F3               (loli_state *);
-void loli_GL_var_GLUT_KEY_F4               (loli_state *);
-void loli_GL_var_GLUT_KEY_F5               (loli_state *);
-void loli_GL_var_GLUT_KEY_F6               (loli_state *);
-void loli_GL_var_GLUT_KEY_F7               (loli_state *);
-void loli_GL_var_GLUT_KEY_F8               (loli_state *);
-void loli_GL_var_GLUT_KEY_F9               (loli_state *);
-void loli_GL_var_GLUT_KEY_F10              (loli_state *);
-void loli_GL_var_GLUT_KEY_F11              (loli_state *);
-void loli_GL_var_GLUT_KEY_F12              (loli_state *);
-void loli_GL_var_GLUT_KEY_LEFT             (loli_state *);
-void loli_GL_var_GLUT_KEY_UP               (loli_state *);
-void loli_GL_var_GLUT_KEY_RIGHT            (loli_state *);
-void loli_GL_var_GLUT_KEY_DOWN             (loli_state *);
-void loli_GL_var_GLUT_KEY_PAGE_UP          (loli_state *);
-void loli_GL_var_GLUT_KEY_PAGE_DOWN        (loli_state *);
-void loli_GL_var_GLUT_KEY_HOME             (loli_state *);
-void loli_GL_var_GLUT_KEY_END              (loli_state *);
-void loli_GL_var_GLUT_KEY_INSERT           (loli_state *);
+void loli_GL_var_GLUT_KEY_F1                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F2                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F3                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F4                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F5                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F6                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F7                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F8                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F9                   (loli_state *);
+void loli_GL_var_GLUT_KEY_F10                  (loli_state *);
+void loli_GL_var_GLUT_KEY_F11                  (loli_state *);
+void loli_GL_var_GLUT_KEY_F12                  (loli_state *);
+void loli_GL_var_GLUT_KEY_LEFT                 (loli_state *);
+void loli_GL_var_GLUT_KEY_UP                   (loli_state *);
+void loli_GL_var_GLUT_KEY_RIGHT                (loli_state *);
+void loli_GL_var_GLUT_KEY_DOWN                 (loli_state *);
+void loli_GL_var_GLUT_KEY_PAGE_UP              (loli_state *);
+void loli_GL_var_GLUT_KEY_PAGE_DOWN            (loli_state *);
+void loli_GL_var_GLUT_KEY_HOME                 (loli_state *);
+void loli_GL_var_GLUT_KEY_END                  (loli_state *);
+void loli_GL_var_GLUT_KEY_INSERT               (loli_state *);
+
+
+void loli_GL_var_GL_FALSE                      (loli_state *);
+void loli_GL_var_GL_TRUE                       (loli_state *);
+void loli_GL_var_GL_BYTE                       (loli_state *);
+void loli_GL_var_GL_UNSIGNED_BYTE              (loli_state *);
+void loli_GL_var_GL_SHORT                      (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT             (loli_state *);
+void loli_GL_var_GL_INT                        (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT               (loli_state *);
+void loli_GL_var_GL_FLOAT                      (loli_state *);
+void loli_GL_var_GL_2_BYTES                    (loli_state *);
+void loli_GL_var_GL_3_BYTES                    (loli_state *);
+void loli_GL_var_GL_4_BYTES                    (loli_state *);
+void loli_GL_var_GL_DOUBLE                     (loli_state *);
+void loli_GL_var_GL_POINTS                     (loli_state *);
+void loli_GL_var_GL_LINES                      (loli_state *);
+void loli_GL_var_GL_LINE_LOOP                  (loli_state *);
+void loli_GL_var_GL_LINE_STRIP                 (loli_state *);
+void loli_GL_var_GL_TRIANGLES                  (loli_state *);
+void loli_GL_var_GL_TRIANGLE_STRIP             (loli_state *);
+void loli_GL_var_GL_QUADS                      (loli_state *);
+void loli_GL_var_GL_QUAD_STRIP                 (loli_state *);
+void loli_GL_var_GL_POLYGON                    (loli_state *);
+void loli_GL_var_GL_VERTEX_ARRAY               (loli_state *);
+void loli_GL_var_GL_NORMAL_ARRAY               (loli_state *);
+void loli_GL_var_GL_COLOR_ARRAY                (loli_state *);
+void loli_GL_var_GL_INDEX_ARRAY                (loli_state *);
+void loli_GL_var_GL_TEXTURE_COORD_ARRAY        (loli_state *);
+void loli_GL_var_GL_EDGE_FLAG_ARRAY            (loli_state *);
+void loli_GL_var_GL_VERTEX_ARRAY_SIZE          (loli_state *);
+void loli_GL_var_GL_VERTEX_ARRAY_TYPE          (loli_state *);
+void loli_GL_var_GL_VERTEX_ARRAY_STRIDE        (loli_state *);
+void loli_GL_var_GL_NORMAL_ARRAY_TYPE          (loli_state *);
+void loli_GL_var_GL_NORMAL_ARRAY_STRIDE        (loli_state *);
+void loli_GL_var_GL_COLOR_ARRAY_SIZE           (loli_state *);
+void loli_GL_var_GL_COLOR_ARRAY_TYPE           (loli_state *);
+void loli_GL_var_GL_COLOR_ARRAY_STRIDE         (loli_state *);
+void loli_GL_var_GL_INDEX_ARRAY_TYPE           (loli_state *);
+void loli_GL_var_GL_INDEX_ARRAY_STRIDE         (loli_state *);
+void loli_GL_var_GL_TEXTURE_COORD_ARRAY_SIZE   (loli_state *);
+void loli_GL_var_GL_TEXTURE_COORD_ARRAY_TYPE   (loli_state *);
+void loli_GL_var_GL_TEXTURE_COORD_ARRAY_STRIDE (loli_state *);
+void loli_GL_var_GL_EDGE_FLAG_ARRAY_STRIDE     (loli_state *);
+void loli_GL_var_GL_VERTEX_ARRAY_POINTER       (loli_state *);
+void loli_GL_var_GL_NORMAL_ARRAY_POINTER       (loli_state *);
+void loli_GL_var_GL_COLOR_ARRAY_POINTER        (loli_state *);
+void loli_GL_var_GL_INDEX_ARRAY_POINTER        (loli_state *);
+void loli_GL_var_GL_TEXTURE_COORD_ARRAY_POINTER(loli_state *);
+void loli_GL_var_GL_EDGE_FLAG_ARRAY_POINTER    (loli_state *);
+void loli_GL_var_GL_V2F                        (loli_state *);
+void loli_GL_var_GL_V3F                        (loli_state *);
+void loli_GL_var_GL_C4UB_V2F                   (loli_state *);
+void loli_GL_var_GL_C4UB_V3F                   (loli_state *);
+void loli_GL_var_GL_C3F_V3F                    (loli_state *);
+void loli_GL_var_GL_N3F_V3F                    (loli_state *);
+void loli_GL_var_GL_C4F_N3F_V3F                (loli_state *);
+void loli_GL_var_GL_T2F_V3F                    (loli_state *);
+void loli_GL_var_GL_T4F_V4F                    (loli_state *);
+void loli_GL_var_GL_T2F_C4UB_V3F               (loli_state *);
+void loli_GL_var_GL_T2F_C3F_V3F                (loli_state *);
+void loli_GL_var_GL_T2F_N3F_V3F                (loli_state *);
+void loli_GL_var_GL_T2F_C4F_N3F_V3F            (loli_state *);
+void loli_GL_var_GL_T4F_C4F_N3F_V4F            (loli_state *);
+void loli_GL_var_GL_MATRIX_MODE                (loli_state *);
+void loli_GL_var_GL_MODELVIEW                  (loli_state *);
+void loli_GL_var_GL_PROJECTION                 (loli_state *);
+void loli_GL_var_GL_TEXTURE                    (loli_state *);
+
 
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
@@ -176,6 +245,73 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GLUT_KEY_HOME,
         loli_GL_var_GLUT_KEY_END,
         loli_GL_var_GLUT_KEY_INSERT,
+
+        loli_GL_var_GL_FALSE,
+        loli_GL_var_GL_TRUE,
+        loli_GL_var_GL_BYTE,
+        loli_GL_var_GL_UNSIGNED_BYTE,
+        loli_GL_var_GL_SHORT,
+        loli_GL_var_GL_UNSIGNED_SHORT,
+        loli_GL_var_GL_INT,
+        loli_GL_var_GL_UNSIGNED_INT,
+        loli_GL_var_GL_FLOAT,
+        loli_GL_var_GL_2_BYTES,
+        loli_GL_var_GL_3_BYTES,
+        loli_GL_var_GL_4_BYTES,
+        loli_GL_var_GL_DOUBLE,
+        loli_GL_var_GL_POINTS,
+        loli_GL_var_GL_LINES,
+        loli_GL_var_GL_LINE_LOOP,
+        loli_GL_var_GL_LINE_STRIP,
+        loli_GL_var_GL_TRIANGLES,
+        loli_GL_var_GL_TRIANGLE_STRIP,
+        loli_GL_var_GL_QUADS,
+        loli_GL_var_GL_QUAD_STRIP,
+        loli_GL_var_GL_POLYGON,
+        loli_GL_var_GL_VERTEX_ARRAY,
+        loli_GL_var_GL_NORMAL_ARRAY,
+        loli_GL_var_GL_COLOR_ARRAY,
+        loli_GL_var_GL_INDEX_ARRAY,
+        loli_GL_var_GL_TEXTURE_COORD_ARRAY,
+        loli_GL_var_GL_EDGE_FLAG_ARRAY,
+        loli_GL_var_GL_VERTEX_ARRAY_SIZE,
+        loli_GL_var_GL_VERTEX_ARRAY_TYPE,
+        loli_GL_var_GL_VERTEX_ARRAY_STRIDE,
+        loli_GL_var_GL_NORMAL_ARRAY_TYPE,
+        loli_GL_var_GL_NORMAL_ARRAY_STRIDE,
+        loli_GL_var_GL_COLOR_ARRAY_SIZE,
+        loli_GL_var_GL_COLOR_ARRAY_TYPE,
+        loli_GL_var_GL_COLOR_ARRAY_STRIDE,
+        loli_GL_var_GL_INDEX_ARRAY_TYPE,
+        loli_GL_var_GL_INDEX_ARRAY_STRIDE,
+        loli_GL_var_GL_TEXTURE_COORD_ARRAY_SIZE,
+        loli_GL_var_GL_TEXTURE_COORD_ARRAY_TYPE,
+        loli_GL_var_GL_TEXTURE_COORD_ARRAY_STRIDE,
+        loli_GL_var_GL_EDGE_FLAG_ARRAY_STRIDE,
+        loli_GL_var_GL_VERTEX_ARRAY_POINTER,
+        loli_GL_var_GL_NORMAL_ARRAY_POINTER,
+        loli_GL_var_GL_COLOR_ARRAY_POINTER,
+        loli_GL_var_GL_INDEX_ARRAY_POINTER,
+        loli_GL_var_GL_TEXTURE_COORD_ARRAY_POINTER,
+        loli_GL_var_GL_EDGE_FLAG_ARRAY_POINTER,
+        loli_GL_var_GL_V2F,
+        loli_GL_var_GL_V3F,
+        loli_GL_var_GL_C4UB_V2F,
+        loli_GL_var_GL_C4UB_V3F,
+        loli_GL_var_GL_C3F_V3F,
+        loli_GL_var_GL_N3F_V3F,
+        loli_GL_var_GL_C4F_N3F_V3F,
+        loli_GL_var_GL_T2F_V3F,
+        loli_GL_var_GL_T4F_V4F,
+        loli_GL_var_GL_T2F_C4UB_V3F,
+        loli_GL_var_GL_T2F_C3F_V3F,
+        loli_GL_var_GL_T2F_N3F_V3F,
+        loli_GL_var_GL_T2F_C4F_N3F_V3F,
+        loli_GL_var_GL_T4F_C4F_N3F_V4F,
+        loli_GL_var_GL_MATRIX_MODE,
+        loli_GL_var_GL_MODELVIEW,
+        loli_GL_var_GL_PROJECTION,
+        loli_GL_var_GL_TEXTURE,
 };
 
 const char * loli_GL_info_table[] = {
@@ -261,6 +397,78 @@ const char * loli_GL_info_table[] = {
         ,"R\0GLUT_KEY_HOME\0Integer"
         ,"R\0GLUT_KEY_END\0Integer"
         ,"R\0GLUT_KEY_INSERT\0Integer"
+
+        ,"R\0GL_FALSE\0Integer"
+        ,"R\0GL_TRUE\0Integer"
+        ,"R\0GL_TRUE\0Integer"
+        ,"R\0GL_BYTE\0Integer"
+        ,"R\0GL_UNSIGNED_BYTE\0Integer"
+        ,"R\0GL_SHORT\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT\0Integer"
+        ,"R\0GL_INT\0Integer"
+        ,"R\0GL_UNSIGNED_INT\0Integer"
+        ,"R\0GL_FLOAT\0Integer"
+        ,"R\0GL_2_BYTES\0Integer"
+        ,"R\0GL_3_BYTES\0Integer"
+        ,"R\0GL_4_BYTES\0Integer"
+        ,"R\0GL_DOUBLE\0Integer"
+
+        ,"R\0GL_POINTS\0Integer"
+        ,"R\0GL_LINES\0Integer"
+        ,"R\0GL_LINE_LOOP\0Integer"
+        ,"R\0GL_LINE_STRIP\0Integer"
+        ,"R\0GL_TRIANGLES\0Integer"
+        ,"R\0GL_TRIANGLE_STRIP\0Integer"
+        ,"R\0GL_TRIANGLE_FAN\0Integer"
+        ,"R\0GL_QUADS\0Integer"
+        ,"R\0GL_QUAD_STRIP\0Integer"
+        ,"R\0GL_POLYGON\0Integer"
+
+        ,"R\0GL_VERTEX_ARRAY\0Integer"
+        ,"R\0GL_NORMAL_ARRAY\0Integer"
+        ,"R\0GL_COLOR_ARRAY\0Integer"
+        ,"R\0GL_INDEX_ARRAY\0Integer"
+        ,"R\0GL_TEXTURE_COORD_ARRAY\0Integer"
+        ,"R\0GL_EDGE_FLAG_ARRAY\0Integer"
+        ,"R\0GL_VERTEX_ARRAY_SIZE\0Integer"
+        ,"R\0GL_VERTEX_ARRAY_TYPE\0Integer"
+        ,"R\0GL_VERTEX_ARRAY_STRIDE\0Integer"
+        ,"R\0GL_NORMAL_ARRAY_TYPE\0Integer"
+        ,"R\0GL_NORMAL_ARRAY_STRIDE\0Integer"
+        ,"R\0GL_COLOR_ARRAY_SIZE\0Integer"
+        ,"R\0GL_COLOR_ARRAY_TYPE\0Integer"
+        ,"R\0GL_COLOR_ARRAY_STRIDE\0Integer"
+        ,"R\0GL_INDEX_ARRAY_TYPE\0Integer"
+        ,"R\0GL_INDEX_ARRAY_STRIDE\0Integer"
+        ,"R\0GL_TEXTURE_COORD_ARRAY_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_COORD_ARRAY_TYPE\0Integer"
+        ,"R\0GL_TEXTURE_COORD_ARRAY_STRIDE\0Integer"
+        ,"R\0GL_EDGE_FLAG_ARRAY_STRIDE\0Integer"
+        ,"R\0GL_VERTEX_ARRAY_POINTER\0Integer"
+        ,"R\0GL_NORMAL_ARRAY_POINTER\0Integer"
+        ,"R\0GL_COLOR_ARRAY_POINTER\0Integer"
+        ,"R\0GL_INDEX_ARRAY_POINTER\0Integer"
+        ,"R\0GL_TEXTURE_COORD_ARRAY_POINTER\0Integer"
+        ,"R\0GL_EDGE_FLAG_ARRAY_POINTER\0Integer"
+        ,"R\0GL_V2F\0Integer"
+        ,"R\0GL_V3F\0Integer"
+        ,"R\0GL_C4UB_V2F\0Integer"
+        ,"R\0GL_C4UB_V3F\0Integer"
+        ,"R\0GL_C3F_V3F\0Integer"
+        ,"R\0GL_N3F_V3F\0Integer"
+        ,"R\0GL_C4F_N3F_V3F\0Integer"
+        ,"R\0GL_T2F_V3F\0Integer"
+        ,"R\0GL_T4F_V4F\0Integer"
+        ,"R\0GL_T2F_C4UB_V3F\0Integer"
+        ,"R\0GL_T2F_C3F_V3F\0Integer"
+        ,"R\0GL_T2F_N3F_V3F\0Integer"
+        ,"R\0GL_T2F_C4F_N3F_V3F\0Integer"
+        ,"R\0GL_T4F_C4F_N3F_V4F\0Integer"
+
+        ,"R\0GL_MATRIX_MODE\0Integer"
+        ,"R\0GL_MODELVIEW\0Integer"
+        ,"R\0GL_PROJECTION\0Integer"
+        ,"R\0GL_TEXTURE\0Integer"
 
         ,"Z"
 };
