@@ -9,6 +9,11 @@ else()
     file(GLOB_RECURSE BIN bin/*.dll)
 endif()
 
+set(MAJOR "0")
+set(MINOR "1")
+set(PATCH "0")
+add_definitions(-DLOLIGL_VERSION="${MAJOR}.${MINOR}.${PATCH}")
+
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 include_directories(${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS})

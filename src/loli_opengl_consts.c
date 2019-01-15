@@ -429,3 +429,203 @@ void loli_GL_var_GL_PROJECTION(loli_state * state) {
 void loli_GL_var_GL_TEXTURE(loli_state * state) {
     loli_push_integer(state, GL_TEXTURE);
 }
+
+void loli_GL_var_GL_POINT_SMOOTH(loli_state * state) {
+    loli_push_integer(state, GL_POINT_SMOOTH);
+}
+
+void loli_GL_var_GL_POINT_SIZE(loli_state * state) {
+    loli_push_integer(state, GL_POINT_SIZE);
+}
+
+void loli_GL_var_GL_POINT_SIZE_GRANULARITY(loli_state * state) {
+    loli_push_integer(state, GL_POINT_SIZE_GRANULARITY);
+}
+
+void loli_GL_var_GL_POINT_SIZE_RANGE(loli_state * state) {
+    loli_push_integer(state, GL_POINT_SIZE_RANGE);
+}
+
+void loli_GL_var_GL_LINE_SMOOTH(loli_state * state) {
+    loli_push_integer(state, GL_LINE_SMOOTH);
+}
+
+void loli_GL_var_GL_LINE_STIPPLE(loli_state * state) {
+    loli_push_integer(state, GL_LINE_STIPPLE);
+}
+
+void loli_GL_var_GL_LINE_STIPPLE_PATTERN(loli_state * state) {
+    loli_push_integer(state, GL_LINE_STIPPLE_PATTERN);
+}
+
+void loli_GL_var_GL_LINE_STIPPLE_REPEAT(loli_state * state) {
+    loli_push_integer(state, GL_LINE_STIPPLE_REPEAT);
+}
+
+void loli_GL_var_GL_LINE_WIDTH(loli_state * state) {
+    loli_push_integer(state, GL_LINE_WIDTH);
+}
+
+void loli_GL_var_GL_LINE_WIDTH_GRANULARITY(loli_state * state) {
+    loli_push_integer(state, GL_LINE_WIDTH_GRANULARITY);
+}
+
+void loli_GL_var_GL_LINE_WIDTH_RANGE(loli_state * state) {
+    loli_push_integer(state, GL_LINE_WIDTH_RANGE);
+}
+
+void loli_GL_var_GL_POINT(loli_state * state) {
+    loli_push_integer(state, GL_POINT);
+}
+
+void loli_GL_var_GL_LINE(loli_state * state) {
+    loli_push_integer(state, GL_LINE);
+}
+
+void loli_GL_var_GL_FILL(loli_state * state) {
+    loli_push_integer(state, GL_FILL);
+}
+
+void loli_GL_var_GL_CW(loli_state * state) {
+    loli_push_integer(state, GL_CW);
+}
+
+void loli_GL_var_GL_CCW(loli_state * state) {
+    loli_push_integer(state, GL_CCW);
+}
+
+void loli_GL_var_GL_FRONT(loli_state * state) {
+    loli_push_integer(state, GL_FRONT);
+}
+
+void loli_GL_var_GL_BACK(loli_state * state) {
+    loli_push_integer(state, GL_BACK);
+}
+
+void loli_GL_var_GL_POLYGON_MODE(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_MODE);
+}
+
+void loli_GL_var_GL_POLYGON_SMOOTH(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_SMOOTH);
+}
+
+void loli_GL_var_GL_POLYGON_STIPPLE(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_STIPPLE);
+}
+
+void loli_GL_var_GL_EDGE_FLAG(loli_state * state) {
+    loli_push_integer(state, GL_EDGE_FLAG);
+}
+
+void loli_GL_var_GL_CULL_FACE(loli_state * state) {
+    loli_push_integer(state, GL_CULL_FACE);
+}
+
+void loli_GL_var_GL_CULL_FACE_MODE(loli_state * state) {
+    loli_push_integer(state, GL_CULL_FACE_MODE);
+}
+
+void loli_GL_var_GL_FRONT_FACE(loli_state * state) {
+    loli_push_integer(state, GL_FRONT_FACE);
+}
+
+void loli_GL_var_GL_POLYGON_OFFSET_FACTOR(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_OFFSET_FACTOR);
+}
+
+void loli_GL_var_GL_POLYGON_OFFSET_UNITS(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_OFFSET_UNITS);
+}
+
+void loli_GL_var_GL_POLYGON_OFFSET_POINT(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_OFFSET_POINT);
+}
+
+void loli_GL_var_GL_POLYGON_OFFSET_LINE(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_OFFSET_LINE);
+}
+
+void loli_GL_var_GL_POLYGON_OFFSET_FILL(loli_state * state) {
+    loli_push_integer(state, GL_POLYGON_OFFSET_FILL);
+}
+
+void loli_GL_var_GL_COMPILE(loli_state * state) {
+    loli_push_integer(state, GL_COMPILE);
+}
+
+void loli_GL_var_GL_COMPILE_AND_EXECUTE(loli_state * state) {
+    loli_push_integer(state, GL_COMPILE_AND_EXECUTE);
+}
+
+void loli_GL_var_GL_LIST_BASE(loli_state * state) {
+    loli_push_integer(state, GL_LIST_BASE);
+}
+
+void loli_GL_var_GL_LIST_INDEX(loli_state * state) {
+    loli_push_integer(state, GL_LIST_INDEX);
+}
+
+void loli_GL_var_GL_LIST_MODE(loli_state * state) {
+    loli_push_integer(state, GL_LIST_MODE);
+}
+
+void loli_GL_var_GL_NEVER(loli_state * state) {
+    loli_push_integer(state, GL_NEVER);
+}
+
+void loli_GL_var_GL_LESS(loli_state * state) {
+    loli_push_integer(state, GL_LESS);
+}
+
+void loli_GL_var_GL_EQUAL(loli_state * state) {
+    loli_push_integer(state, GL_EQUAL);
+}
+
+void loli_GL_var_GL_LEQUAL(loli_state * state) {
+    loli_push_integer(state, GL_LEQUAL);
+}
+
+void loli_GL_var_GL_GREATER(loli_state * state) {
+    loli_push_integer(state, GL_GREATER);
+}
+
+void loli_GL_var_GL_NOTEQUAL(loli_state * state) {
+    loli_push_integer(state, GL_NOTEQUAL);
+}
+
+void loli_GL_var_GL_GEQUAL(loli_state * state) {
+    loli_push_integer(state, GL_GEQUAL);
+}
+
+void loli_GL_var_GL_ALWAYS(loli_state * state) {
+    loli_push_integer(state, GL_ALWAYS);
+}
+
+void loli_GL_var_GL_DEPTH_TEST(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_TEST);
+}
+
+void loli_GL_var_GL_DEPTH_BITS(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_BITS);
+}
+
+void loli_GL_var_GL_DEPTH_CLEAR_VALUE(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_CLEAR_VALUE);
+}
+
+void loli_GL_var_GL_DEPTH_FUNC(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_FUNC);
+}
+
+void loli_GL_var_GL_DEPTH_RANGE(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_RANGE);
+}
+
+void loli_GL_var_GL_DEPTH_WRITEMASK(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_WRITEMASK);
+}
+
+void loli_GL_var_GL_DEPTH_COMPONENT(loli_state * state) {
+    loli_push_integer(state, GL_DEPTH_COMPONENT);
+}

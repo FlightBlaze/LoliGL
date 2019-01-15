@@ -1,5 +1,9 @@
 #include "loli_opengl_consts.c"
 
+void loli_GL__loliGlVersion(loli_state * state) {
+    loli_push_string(state, LOLIGL_VERSION);
+}
+
 void loli_GL__glutInit(loli_state * state) {
     char * argv[1];
     int    argc = 1;

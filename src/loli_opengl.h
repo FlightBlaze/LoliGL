@@ -8,6 +8,12 @@
     #include <GL/glut.h>
 #endif
 
+#ifndef LOLIGL_VERSION
+    #define LOLIGL_VERSION "undefined"
+#endif
+
+void loli_GL__loliGlVersion                    (loli_state *);
+
 // Glut
 void loli_GL__glutInit                         (loli_state *);
 void loli_GL__glutInitDisplayMode              (loli_state *);
@@ -159,10 +165,61 @@ void loli_GL_var_GL_MATRIX_MODE                (loli_state *);
 void loli_GL_var_GL_MODELVIEW                  (loli_state *);
 void loli_GL_var_GL_PROJECTION                 (loli_state *);
 void loli_GL_var_GL_TEXTURE                    (loli_state *);
+void loli_GL_var_GL_POINT_SMOOTH               (loli_state *);
+void loli_GL_var_GL_POINT_SIZE                 (loli_state *);
+void loli_GL_var_GL_POINT_SIZE_GRANULARITY     (loli_state *);
+void loli_GL_var_GL_POINT_SIZE_RANGE           (loli_state *);
+void loli_GL_var_GL_LINE_SMOOTH                (loli_state *);
+void loli_GL_var_GL_LINE_STIPPLE               (loli_state *);
+void loli_GL_var_GL_LINE_STIPPLE_PATTERN       (loli_state *);
+void loli_GL_var_GL_LINE_STIPPLE_REPEAT        (loli_state *);
+void loli_GL_var_GL_LINE_WIDTH                 (loli_state *);
+void loli_GL_var_GL_LINE_WIDTH_GRANULARITY     (loli_state *);
+void loli_GL_var_GL_LINE_WIDTH_RANGE           (loli_state *);
+void loli_GL_var_GL_POINT                      (loli_state *);
+void loli_GL_var_GL_LINE                       (loli_state *);
+void loli_GL_var_GL_FILL                       (loli_state *);
+void loli_GL_var_GL_CW                         (loli_state *);
+void loli_GL_var_GL_CCW                        (loli_state *);
+void loli_GL_var_GL_FRONT                      (loli_state *);
+void loli_GL_var_GL_BACK                       (loli_state *);
+void loli_GL_var_GL_POLYGON_MODE               (loli_state *);
+void loli_GL_var_GL_POLYGON_SMOOTH             (loli_state *);
+void loli_GL_var_GL_POLYGON_STIPPLE            (loli_state *);
+void loli_GL_var_GL_EDGE_FLAG                  (loli_state *);
+void loli_GL_var_GL_CULL_FACE                  (loli_state *);
+void loli_GL_var_GL_CULL_FACE_MODE             (loli_state *);
+void loli_GL_var_GL_FRONT_FACE                 (loli_state *);
+void loli_GL_var_GL_POLYGON_OFFSET_FACTOR      (loli_state *);
+void loli_GL_var_GL_POLYGON_OFFSET_UNITS       (loli_state *);
+void loli_GL_var_GL_POLYGON_OFFSET_POINT       (loli_state *);
+void loli_GL_var_GL_POLYGON_OFFSET_LINE        (loli_state *);
+void loli_GL_var_GL_POLYGON_OFFSET_FILL        (loli_state *);
+void loli_GL_var_GL_COMPILE                    (loli_state *);
+void loli_GL_var_GL_COMPILE_AND_EXECUTE        (loli_state *);
+void loli_GL_var_GL_LIST_BASE                  (loli_state *);
+void loli_GL_var_GL_LIST_INDEX                 (loli_state *);
+void loli_GL_var_GL_LIST_MODE                  (loli_state *);
+void loli_GL_var_GL_NEVER                      (loli_state *);
+void loli_GL_var_GL_LESS                       (loli_state *);
+void loli_GL_var_GL_EQUAL                      (loli_state *);
+void loli_GL_var_GL_LEQUAL                     (loli_state *);
+void loli_GL_var_GL_GREATER                    (loli_state *);
+void loli_GL_var_GL_NOTEQUAL                   (loli_state *);
+void loli_GL_var_GL_GEQUAL                     (loli_state *);
+void loli_GL_var_GL_ALWAYS                     (loli_state *);
+void loli_GL_var_GL_DEPTH_TEST                 (loli_state *);
+void loli_GL_var_GL_DEPTH_BITS                 (loli_state *);
+void loli_GL_var_GL_DEPTH_CLEAR_VALUE          (loli_state *);
+void loli_GL_var_GL_DEPTH_FUNC                 (loli_state *);
+void loli_GL_var_GL_DEPTH_RANGE                (loli_state *);
+void loli_GL_var_GL_DEPTH_WRITEMASK            (loli_state *);
+void loli_GL_var_GL_DEPTH_COMPONENT            (loli_state *);
 
 
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
+        loli_GL__loliGlVersion,
         loli_GL__glutInit,
         loli_GL__glutInitDisplayMode,
         loli_GL__glutInitWindowSize,
@@ -312,10 +369,61 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GL_MODELVIEW,
         loli_GL_var_GL_PROJECTION,
         loli_GL_var_GL_TEXTURE,
+        loli_GL_var_GL_POINT_SMOOTH,
+        loli_GL_var_GL_POINT_SIZE,
+        loli_GL_var_GL_POINT_SIZE_GRANULARITY,
+        loli_GL_var_GL_POINT_SIZE_RANGE,
+        loli_GL_var_GL_LINE_SMOOTH,
+        loli_GL_var_GL_LINE_STIPPLE,
+        loli_GL_var_GL_LINE_STIPPLE_PATTERN,
+        loli_GL_var_GL_LINE_STIPPLE_REPEAT,
+        loli_GL_var_GL_LINE_WIDTH,
+        loli_GL_var_GL_LINE_WIDTH_GRANULARITY,
+        loli_GL_var_GL_LINE_WIDTH_RANGE,
+        loli_GL_var_GL_POINT,
+        loli_GL_var_GL_LINE,
+        loli_GL_var_GL_FILL,
+        loli_GL_var_GL_CW,
+        loli_GL_var_GL_CCW,
+        loli_GL_var_GL_FRONT,
+        loli_GL_var_GL_BACK,
+        loli_GL_var_GL_POLYGON_MODE,
+        loli_GL_var_GL_POLYGON_SMOOTH,
+        loli_GL_var_GL_POLYGON_STIPPLE,
+        loli_GL_var_GL_EDGE_FLAG,
+        loli_GL_var_GL_CULL_FACE,
+        loli_GL_var_GL_CULL_FACE_MODE,
+        loli_GL_var_GL_FRONT_FACE,
+        loli_GL_var_GL_POLYGON_OFFSET_FACTOR,
+        loli_GL_var_GL_POLYGON_OFFSET_UNITS,
+        loli_GL_var_GL_POLYGON_OFFSET_POINT,
+        loli_GL_var_GL_POLYGON_OFFSET_LINE,
+        loli_GL_var_GL_POLYGON_OFFSET_FILL,
+        loli_GL_var_GL_COMPILE,
+        loli_GL_var_GL_COMPILE_AND_EXECUTE,
+        loli_GL_var_GL_LIST_BASE,
+        loli_GL_var_GL_LIST_INDEX,
+        loli_GL_var_GL_LIST_MODE,
+        loli_GL_var_GL_NEVER,
+        loli_GL_var_GL_LESS,
+        loli_GL_var_GL_EQUAL,
+        loli_GL_var_GL_LEQUAL,
+        loli_GL_var_GL_GREATER,
+        loli_GL_var_GL_NOTEQUAL,
+        loli_GL_var_GL_GEQUAL,
+        loli_GL_var_GL_ALWAYS,
+        loli_GL_var_GL_DEPTH_TEST,
+        loli_GL_var_GL_DEPTH_BITS,
+        loli_GL_var_GL_DEPTH_CLEAR_VALUE,
+        loli_GL_var_GL_DEPTH_FUNC,
+        loli_GL_var_GL_DEPTH_RANGE,
+        loli_GL_var_GL_DEPTH_WRITEMASK,
+        loli_GL_var_GL_DEPTH_COMPONENT,
 };
 
 const char * loli_GL_info_table[] = {
         "\0\0"
+        ,"R\0loliGlVersion\0String"
         ,"F\0glutInit\0(String)"
         ,"F\0glutInitDisplayMode\0(Integer)"
         ,"F\0glutInitWindowSize\0(Integer, Integer)"
@@ -469,6 +577,60 @@ const char * loli_GL_info_table[] = {
         ,"R\0GL_MODELVIEW\0Integer"
         ,"R\0GL_PROJECTION\0Integer"
         ,"R\0GL_TEXTURE\0Integer"
+
+        ,"R\0GL_POINT_SMOOTH\0Integer"
+        ,"R\0GL_POINT_SIZE\0Integer"
+        ,"R\0GL_POINT_SIZE_GRANULARITY\0Integer"
+        ,"R\0GL_POINT_SIZE_RANGE\0Integer"
+        ,"R\0GL_LINE_SMOOTH\0Integer"
+        ,"R\0GL_LINE_STIPPLE\0Integer"
+        ,"R\0GL_LINE_STIPPLE_PATTERN\0Integer"
+        ,"R\0GL_LINE_STIPPLE_REPEAT\0Integer"
+        ,"R\0GL_LINE_WIDTH\0Integer"
+        ,"R\0GL_LINE_WIDTH_GRANULARITY\0Integer"
+        ,"R\0GL_LINE_WIDTH_RANGE\0Integer"
+
+        ,"R\0GL_POINT\0Integer"
+        ,"R\0GL_LINE\0Integer"
+        ,"R\0GL_FILL\0Integer"
+        ,"R\0GL_CW\0Integer"
+        ,"R\0GL_CCW\0Integer"
+        ,"R\0GL_FRONT\0Integer"
+        ,"R\0GL_BACK\0Integer"
+        ,"R\0GL_POLYGON_MODE\0Integer"
+        ,"R\0GL_POLYGON_SMOOTH\0Integer"
+        ,"R\0GL_POLYGON_STIPPLE\0Integer"
+        ,"R\0GL_EDGE_FLAG\0Integer"
+        ,"R\0GL_CULL_FACE\0Integer"
+        ,"R\0GL_CULL_FACE_MODE\0Integer"
+        ,"R\0GL_FRONT_FACE\0Integer"
+        ,"R\0GL_POLYGON_OFFSET_FACTOR\0Integer"
+        ,"R\0GL_POLYGON_OFFSET_UNITS\0Integer"
+        ,"R\0GL_POLYGON_OFFSET_POINT\0Integer"
+        ,"R\0GL_POLYGON_OFFSET_LINE\0Integer"
+        ,"R\0GL_POLYGON_OFFSET_FILL\0Integer"
+
+        ,"R\0GL_COMPILE\0Integer"
+        ,"R\0GL_COMPILE_AND_EXECUTE\0Integer"
+        ,"R\0GL_LIST_BASE\0Integer"
+        ,"R\0GL_LIST_INDEX\0Integer"
+        ,"R\0GL_LIST_MODE\0Integer"
+        ,"R\0GL_NEVER\0Integer"
+        ,"R\0GL_LESS\0Integer"
+        ,"R\0GL_EQUAL\0Integer"
+        ,"R\0GL_LEQUAL\0Integer"
+        ,"R\0GL_GREATER\0Integer"
+        ,"R\0GL_NOTEQUAL\0Integer"
+        ,"R\0GL_GEQUAL\0Integer"
+        ,"R\0GL_ALWAYS\0Integer"
+
+        ,"R\0GL_DEPTH_TEST\0Integer"
+        ,"R\0GL_DEPTH_BITS\0Integer"
+        ,"R\0GL_DEPTH_CLEAR_VALUE\0Integer"
+        ,"R\0GL_DEPTH_FUNC\0Integer"
+        ,"R\0GL_DEPTH_RANGE\0Integer"
+        ,"R\0GL_DEPTH_WRITEMASK\0Integer"
+        ,"R\0GL_DEPTH_COMPONENT\0Integer"
 
         ,"Z"
 };
