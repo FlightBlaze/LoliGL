@@ -22,6 +22,7 @@ Then import ``GL`` module from library.
 #### Example: Creating window
 
 ```
+import sys
 import GL
 
 fn glutDisplayFunc {
@@ -29,7 +30,7 @@ fn glutDisplayFunc {
 }
 
 fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
-    if (key == 27.to_byte()): { # exit on `Esc` press
+    if (key == 27.to_b()): { # exit on `Esc` press
         sys.exit(0)
     }
 }
