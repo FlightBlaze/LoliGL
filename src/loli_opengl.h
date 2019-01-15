@@ -1,6 +1,12 @@
 #include "loli.h"
-#include <GL/glut.h>
 #include <string.h>
+
+#ifdef __APPLE__
+    #include <GLUT/glut.h>
+    #include <stdlib.h>
+#else
+    #include <GL/glut.h>
+#endif
 
 // Glut
 void loli_GL__glutInit                     (loli_state *);
