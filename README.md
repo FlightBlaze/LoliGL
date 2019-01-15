@@ -30,12 +30,12 @@ fn glutDisplayFunc {
 }
 
 fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
-    if (key == 27.to_b()): { # exit on `Esc` press
+    if (key == 27t): { # on `Esc` press ...
         sys.exit(0)
     }
 }
 
-GL.glutInit("Test OpenGL application in loli")
+GL.glutInit("LoliGL application")
 GL.glutInitDisplayMode(GL.GLUT_RGB | GL.GLUT_SINGLE)
 GL.glutInitWindowSize(200, 200)
 GL.glutInitWindowPosition(100, 100)

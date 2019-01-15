@@ -29,11 +29,91 @@ void loli_GL__glutInitWindowPosition(loli_state * state) {
     glutInitWindowPosition((int) x,(int) y);
 }
 
+void loli_GL__glutInitDisplayString(loli_state * state) {
+    char * title = loli_arg_string_raw(state, 0);
+
+    glutInitDisplayString(title);
+}
+
 void loli_GL__glutCreateWindow(loli_state * state) {
     char * title = loli_arg_string_raw(state, 0);
 
     loli_push_integer(state, glutCreateWindow(title));
     loli_return_top(state);
+}
+
+void loli_GL__glutCreateSubWindow(loli_state * state) {
+    int window = (int) loli_arg_integer(state, 0);
+    int x = (int) loli_arg_integer(state, 1);
+    int y = (int) loli_arg_integer(state, 2);
+    int width = (int) loli_arg_integer(state, 3);
+    int height = (int) loli_arg_integer(state, 4);
+
+    loli_push_integer(state, glutCreateSubWindow(window, x, y, width, height));
+    loli_return_top(state);
+}
+
+void loli_GL__glutDestroyWindow(loli_state * state) {
+    int window = (int) loli_arg_integer(state, 0);
+
+    glutDestroyWindow(window);
+}
+
+void loli_GL__glutSetWindow(loli_state * state) {
+    int window = (int) loli_arg_integer(state, 0);
+
+    glutSetWindow(window);
+}
+
+void loli_GL__glutGetWindow(loli_state * state) {
+    loli_push_integer(state, glutGetWindow());
+    loli_return_top(state);
+}
+
+void loli_GL__glutSetWindowTitle(loli_state * state) {
+    char * title = loli_arg_string_raw(state, 0);
+
+    glutSetWindowTitle(title);
+}
+
+void loli_GL__glutSetIconTitle(loli_state * state) {
+    char * title = loli_arg_string_raw(state, 0);
+
+    glutSetIconTitle(title);
+}
+
+void loli_GL__glutReshapeWindow(loli_state * state) {
+    int width = (int) loli_arg_integer(state, 0);
+    int height = (int) loli_arg_integer(state, 1);
+
+    glutReshapeWindow(width, height);
+}
+
+void loli_GL__glutPositionWindow(loli_state * state) {
+    int x = (int) loli_arg_integer(state, 0);
+    int y = (int) loli_arg_integer(state, 1);
+
+    glutPositionWindow(x, y);
+}
+
+void loli_GL__glutShowWindow(loli_state * state) {
+    glutShowWindow();
+}
+
+void loli_GL__glutHideWindow(loli_state * state) {
+    glutHideWindow();
+}
+
+void loli_GL__glutIconifyWindow(loli_state * state) {
+    glutIconifyWindow();
+}
+
+void loli_GL__glutPopWindow(loli_state * state) {
+    glutPopWindow();
+}
+
+void loli_GL__glutFullScreen(loli_state * state) {
+    glutFullScreen();
 }
 
 void loli_GL__glutMainLoop(loli_state * state) {
@@ -71,12 +151,12 @@ void loli_GL__glutKeyboardFunc(loli_state * state) {
     glutKeyboardFunc(__fn_glutKeyboardFunc);
 }
 
-void loli_GL__end(loli_state * state) {
+void loli_GL__glEnd(loli_state * state) {
     glEnd();
 }
 
 
-void loli_GL__flush(loli_state * state) {
+void loli_GL__glFlush(loli_state * state) {
     glFlush();
 }
 
