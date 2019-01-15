@@ -116,6 +116,20 @@ void loli_GL__glutFullScreen(loli_state * state) {
     glutFullScreen();
 }
 
+void loli_GL__glutPostWindowRedisplay(loli_state * state) {
+    int window = (int) loli_arg_integer(state, 0);
+
+    glutPostWindowRedisplay(window);
+}
+
+void loli_GL__glutPostRedisplay(loli_state * state) {
+    glutPostRedisplay();
+}
+
+void loli_GL__glutSwapBuffers(loli_state * state) {
+    glutSwapBuffers();
+}
+
 void loli_GL__glutMainLoop(loli_state * state) {
     glutMainLoop();
 }
