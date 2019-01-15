@@ -130,6 +130,18 @@ void loli_GL__glutSwapBuffers(loli_state * state) {
     glutSwapBuffers();
 }
 
+void loli_GL__glutWarpPointer(loli_state * state) {
+    int x = (int) loli_arg_integer(state, 0);
+    int y = (int) loli_arg_integer(state, 1);
+
+    glutWarpPointer(x, y);
+}
+void loli_GL__glutSetCursor(loli_state * state) {
+    int cursor = (int) loli_arg_integer(state, 0);
+
+    glutSetCursor(cursor);
+}
+
 void loli_GL__glutMainLoop(loli_state * state) {
     glutMainLoop();
 }

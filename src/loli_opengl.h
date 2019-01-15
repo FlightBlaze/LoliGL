@@ -34,6 +34,9 @@ void loli_GL__glutPostWindowRedisplay      (loli_state *);
 void loli_GL__glutPostRedisplay            (loli_state *);
 void loli_GL__glutSwapBuffers              (loli_state *);
 
+void loli_GL__glutWarpPointer              (loli_state *);
+void loli_GL__glutSetCursor                (loli_state *);
+
 void loli_GL__glutMainLoop                 (loli_state *);
 void loli_GL__glutDisplayFunc              (loli_state *);
 void loli_GL__glutKeyboardFunc             (loli_state *);
@@ -115,6 +118,9 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL__glutPostWindowRedisplay,
         loli_GL__glutPostRedisplay,
         loli_GL__glutSwapBuffers,
+
+        loli_GL__glutWarpPointer,
+        loli_GL__glutSetCursor,
 
         loli_GL__glutMainLoop,
 
@@ -198,6 +204,9 @@ const char * loli_GL_info_table[] = {
         ,"F\0glutPostWindowRedisplay\0(Integer)"
         ,"F\0glutPostRedisplay"
         ,"F\0glutSwapBuffers"
+
+        ,"F\0glutWarpPointer\0(Integer, Integer)"
+        ,"F\0glutSetCursor\0(Integer)"
 
         ,"F\0glutMainLoop"
         ,"F\0glutDisplayFunc"
