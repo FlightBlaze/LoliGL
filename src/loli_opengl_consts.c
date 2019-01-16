@@ -765,3 +765,67 @@ void loli_GL_var_GL_COLOR_MATERIAL_PARAMETER(loli_state * state) {
 void loli_GL_var_GL_NORMALIZE(loli_state * state) {
     loli_push_integer(state, GL_NORMALIZE);
 }
+
+void loli_GL_var_GL_CLIP_PLANE0(loli_state * state) {
+    loli_push_integer(state, GL_CLIP_PLANE0);
+}
+
+void loli_GL_var_GL_CLIP_PLANE1(loli_state * state) {
+    loli_push_integer(state, GL_CLIP_PLANE1);
+}
+
+void loli_GL_var_GL_CLIP_PLANE2(loli_state * state) {
+    loli_push_integer(state, GL_CLIP_PLANE2);
+}
+
+void loli_GL_var_GL_CLIP_PLANE3(loli_state * state) {
+    loli_push_integer(state, GL_CLIP_PLANE3);
+}
+
+void loli_GL_var_GL_CLIP_PLANE4(loli_state * state) {
+    loli_push_integer(state, GL_CLIP_PLANE4);
+}
+
+void loli_GL_var_GL_CLIP_PLANE5(loli_state * state) {
+    loli_push_integer(state, GL_CLIP_PLANE5);
+}
+
+void loli_GL_var_GL_ACCUM_RED_BITS(loli_state * state) {
+    loli_push_integer(state, GL_ACCUM_RED_BITS);
+}
+
+void loli_GL_var_GL_ACCUM_GREEN_BITS(loli_state * state) {
+    loli_push_integer(state, GL_ACCUM_GREEN_BITS);
+}
+
+void loli_GL_var_GL_ACCUM_BLUE_BITS(loli_state * state) {
+    loli_push_integer(state, GL_ACCUM_BLUE_BITS);
+}
+
+void loli_GL_var_GL_ACCUM_ALPHA_BITS(loli_state * state) {
+    loli_push_integer(state, GL_ACCUM_ALPHA_BITS);
+}
+
+void loli_GL_var_GL_ACCUM_CLEAR_VALUE(loli_state * state) {
+    loli_push_integer(state, GL_ACCUM_CLEAR_VALUE);
+}
+
+void loli_GL_var_GL_ACCUM(loli_state * state) {
+    loli_push_integer(state, GL_ACCUM);
+}
+
+void loli_GL_var_GL_ADD(loli_state * state) {
+    loli_push_integer(state, GL_ADD);
+}
+
+void loli_GL_var_GL_LOAD(loli_state * state) {
+    loli_push_integer(state, GL_LOAD);
+}
+
+void loli_GL_var_GL_MULT(loli_state * state) {
+    loli_push_integer(state, GL_MULT);
+}
+
+void loli_GL_var_GL_RETURN(loli_state * state) {
+    loli_push_integer(state, GL_RETURN);
+}

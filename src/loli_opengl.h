@@ -249,6 +249,22 @@ void loli_GL_var_GL_COLOR_MATERIAL             (loli_state *);
 void loli_GL_var_GL_COLOR_MATERIAL_FACE        (loli_state *);
 void loli_GL_var_GL_COLOR_MATERIAL_PARAMETER   (loli_state *);
 void loli_GL_var_GL_NORMALIZE                  (loli_state *);
+void loli_GL_var_GL_CLIP_PLANE0                (loli_state *);
+void loli_GL_var_GL_CLIP_PLANE1                (loli_state *);
+void loli_GL_var_GL_CLIP_PLANE2                (loli_state *);
+void loli_GL_var_GL_CLIP_PLANE3                (loli_state *);
+void loli_GL_var_GL_CLIP_PLANE4                (loli_state *);
+void loli_GL_var_GL_CLIP_PLANE5                (loli_state *);
+void loli_GL_var_GL_ACCUM_RED_BITS             (loli_state *);
+void loli_GL_var_GL_ACCUM_GREEN_BITS           (loli_state *);
+void loli_GL_var_GL_ACCUM_BLUE_BITS            (loli_state *);
+void loli_GL_var_GL_ACCUM_ALPHA_BITS           (loli_state *);
+void loli_GL_var_GL_ACCUM_CLEAR_VALUE          (loli_state *);
+void loli_GL_var_GL_ACCUM                      (loli_state *);
+void loli_GL_var_GL_ADD                        (loli_state *);
+void loli_GL_var_GL_LOAD                       (loli_state *);
+void loli_GL_var_GL_MULT                       (loli_state *);
+void loli_GL_var_GL_RETURN                     (loli_state *);
 
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
@@ -486,6 +502,22 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GL_COLOR_MATERIAL_FACE,
         loli_GL_var_GL_COLOR_MATERIAL_PARAMETER,
         loli_GL_var_GL_NORMALIZE,
+        loli_GL_var_GL_CLIP_PLANE0,
+        loli_GL_var_GL_CLIP_PLANE1,
+        loli_GL_var_GL_CLIP_PLANE2,
+        loli_GL_var_GL_CLIP_PLANE3,
+        loli_GL_var_GL_CLIP_PLANE4,
+        loli_GL_var_GL_CLIP_PLANE5,
+        loli_GL_var_GL_ACCUM_RED_BITS,
+        loli_GL_var_GL_ACCUM_GREEN_BITS,
+        loli_GL_var_GL_ACCUM_BLUE_BITS,
+        loli_GL_var_GL_ACCUM_ALPHA_BITS,
+        loli_GL_var_GL_ACCUM_CLEAR_VALUE,
+        loli_GL_var_GL_ACCUM,
+        loli_GL_var_GL_ADD,
+        loli_GL_var_GL_LOAD,
+        loli_GL_var_GL_MULT,
+        loli_GL_var_GL_RETURN,
 };
 
 const char * loli_GL_info_table[] = {
@@ -733,6 +765,23 @@ const char * loli_GL_info_table[] = {
         ,"R\0GL_COLOR_MATERIAL_FACE\0Integer"
         ,"R\0GL_COLOR_MATERIAL_PARAMETER\0Integer"
         ,"R\0GL_NORMALIZE\0Integer"
+
+        ,"R\0GL_CLIP_PLANE0\0Integer"
+        ,"R\0GL_CLIP_PLANE1\0Integer"
+        ,"R\0GL_CLIP_PLANE2\0Integer"
+        ,"R\0GL_CLIP_PLANE3\0Integer"
+        ,"R\0GL_CLIP_PLANE4\0Integer"
+        ,"R\0GL_CLIP_PLANE5\0Integer"
+        ,"R\0GL_ACCUM_RED_BITS\0Integer"
+        ,"R\0GL_ACCUM_GREEN_BITS\0Integer"
+        ,"R\0GL_ACCUM_BLUE_BITS\0Integer"
+        ,"R\0GL_ACCUM_ALPHA_BITS\0Integer"
+        ,"R\0GL_ACCUM_CLEAR_VALUE\0Integer"
+        ,"R\0GL_ACCUM\0Integer"
+        ,"R\0GL_ADD\0Integer"
+        ,"R\0GL_LOAD\0Integer"
+        ,"R\0GL_MULT\0Integer"
+        ,"R\0GL_RETURN\0Integer"
 
         ,"Z"
 };
