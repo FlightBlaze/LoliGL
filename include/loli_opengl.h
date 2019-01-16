@@ -44,8 +44,16 @@ void loli_GL__glutWarpPointer                  (loli_state *);
 void loli_GL__glutSetCursor                    (loli_state *);
 
 void loli_GL__glutMainLoop                     (loli_state *);
+
 void loli_GL__glutDisplayFunc                  (loli_state *);
 void loli_GL__glutKeyboardFunc                 (loli_state *);
+void loli_GL__glutSpecialFunc                  (loli_state *);
+void loli_GL__glutReshapeFunc                  (loli_state *);
+void loli_GL__glutVisibilityFunc               (loli_state *);
+void loli_GL__glutMouseFunc                    (loli_state *);
+void loli_GL__glutMotionFunc                   (loli_state *);
+void loli_GL__glutPassiveMotionFunc            (loli_state *);
+void loli_GL__glutEntryFunc                    (loli_state *);
 
 // TODO: delete it
 void loli_GL__example                          (loli_state *);
@@ -301,6 +309,13 @@ loli_call_entry_func loli_GL_call_table[] = {
 
         loli_GL__glutDisplayFunc,
         loli_GL__glutKeyboardFunc,
+        loli_GL__glutSpecialFunc,
+        loli_GL__glutReshapeFunc,
+        loli_GL__glutVisibilityFunc,
+        loli_GL__glutMouseFunc,
+        loli_GL__glutMotionFunc,
+        loli_GL__glutPassiveMotionFunc,
+        loli_GL__glutEntryFunc,
 
         // TODO: delete it
         loli_GL__example,
@@ -536,7 +551,7 @@ const char * loli_GL_info_table[] = {
         ,"F\0glutGetWindow\0(): Integer"
         ,"F\0glutSetWindowTitle\0(String)"
         ,"F\0glutSetIconTitle\0(String)"
-        ,"F\0glutSetIconTitle\0(Integer, Integer)"
+        ,"F\0glutReshapeWindow\0(Integer, Integer)"
         ,"F\0glutPositionWindow\0(Integer, Integer)"
         ,"F\0glutShowWindow"
         ,"F\0glutHideWindow"
@@ -552,8 +567,16 @@ const char * loli_GL_info_table[] = {
         ,"F\0glutSetCursor\0(Integer)"
 
         ,"F\0glutMainLoop"
-        ,"F\0glutDisplayFunc"
-        ,"F\0glutKeyboardFunc"
+
+        ,"F\0glutDisplayFunc\0(Function())"
+        ,"F\0glutKeyboardFunc\0(Function(Byte, Integer, Integer))"
+        ,"F\0glutSpecialFunc\0(Function(Integer, Integer, Integer))"
+        ,"F\0glutReshapeFunc\0(Function(Integer, Integer))"
+        ,"F\0glutVisibilityFunc\0(Function(Integer))"
+        ,"F\0glutMouseFunc\0(Function(Integer, Integer, Integer, Integer))"
+        ,"F\0glutMotionFunc\0(Function(Integer, Integer))"
+        ,"F\0glutPassiveMotionFunc\0(Function(Integer, Integer))"
+        ,"F\0glutEntryFunc\0(Function(Integer))"
 
         // TODO: delete it
         ,"F\0example"

@@ -152,33 +152,167 @@ void loli_GL__glutMainLoop(loli_state * state) {
 
 loli_state * _loli_state;
 
-static void __fn_glutDisplayFunc() {
-    if (_loli_state == 0) return;
+loli_function_val * _fn_glutDisplayFunc_val; // void
+loli_function_val * _fn_glutKeyboardFunc_val; // Byte, Integer, Integer
+loli_function_val * _fn_glutSpecialFunc_val; // Integer, Integer, Integer
+loli_function_val * _fn_glutReshapeFunc_val; // Integer, Integer
+loli_function_val * _fn_glutVisibilityFunc_val; // Integer
+loli_function_val * _fn_glutMouseFunc_val; // Integer, Integer, Integer, Integer
+loli_function_val * _fn_glutMotionFunc_val; // Integer, Integer
+loli_function_val * _fn_glutPassiveMotionFunc_val; // Integer, Integer
+loli_function_val * _fn_glutEntryFunc_val; // Integer
 
-    loli_call_prepare(_loli_state, loli_find_function(_loli_state, "glutDisplayFunc"));
+static void __fn_glutDisplayFunc() {
+    if (_loli_state             == 0) return;
+    if (_fn_glutDisplayFunc_val == 0) return;
+
+    loli_call_prepare(_loli_state, _fn_glutDisplayFunc_val);
     loli_call(_loli_state, 1);
 }
 
 static void __fn_glutKeyboardFunc(unsigned char c, int i1, int i2) {
-    if (_loli_state == 0) return;
+    if (_loli_state              == 0) return;
+    if (_fn_glutKeyboardFunc_val == 0) return;
 
-    loli_call_prepare(_loli_state, loli_find_function(_loli_state, "glutKeyboardFunc"));
+    loli_call_prepare(_loli_state, _fn_glutKeyboardFunc_val);
     loli_push_byte(_loli_state, (uint8_t) c);
     loli_push_integer(_loli_state, i1);
     loli_push_integer(_loli_state, i2);
     loli_call(_loli_state, 3);
 }
 
+static void __fn_glutSpecialFunc(int i1, int i2, int i3) {
+    if (_loli_state             == 0) return;
+    if (_fn_glutSpecialFunc_val == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+    loli_push_integer(_loli_state, i2);
+    loli_push_integer(_loli_state, i3);
+
+    loli_call(_loli_state, 3);
+}
+
+static void __fn_glutReshapeFunc(int i1, int i2) {
+    if (_loli_state             == 0) return;
+    if (_fn_glutReshapeFunc_val == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+    loli_push_integer(_loli_state, i2);
+
+    loli_call(_loli_state, 2);
+}
+
+static void __fn_glutVisibilityFunc(int i1) {
+    if (_loli_state                == 0) return;
+    if (_fn_glutVisibilityFunc_val == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+
+    loli_call(_loli_state, 1);
+}
+
+static void __fn_glutMouseFunc(int i1, int i2, int i3, int i4) {
+    if (_loli_state                == 0) return;
+    if (_fn_glutMouseFunc_val      == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+    loli_push_integer(_loli_state, i2);
+    loli_push_integer(_loli_state, i3);
+    loli_push_integer(_loli_state, i4);
+
+    loli_call(_loli_state, 4);
+}
+
+static void __fn_glutMotionFunc(int i1, int i2) {
+    if (_loli_state                == 0) return;
+    if (_fn_glutMotionFunc_val     == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+    loli_push_integer(_loli_state, i2);
+
+    loli_call(_loli_state, 2);
+}
+
+static void __fn_glutPassiveMotionFunc(int i1, int i2) {
+    if (_loli_state                   == 0) return;
+    if (_fn_glutPassiveMotionFunc_val == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+    loli_push_integer(_loli_state, i2);
+
+    loli_call(_loli_state, 2);
+}
+
+static void __fn_glutEntryFunc(int i1) {
+    if (_loli_state           == 0) return;
+    if (_fn_glutEntryFunc_val == 0) return;
+
+    loli_push_integer(_loli_state, i1);
+
+    loli_call(_loli_state, 1);
+}
+
 void loli_GL__glutDisplayFunc(loli_state * state) {
     _loli_state = state;
+    _fn_glutDisplayFunc_val = loli_arg_function(state, 0);
 
     glutDisplayFunc(__fn_glutDisplayFunc);
 }
 
 void loli_GL__glutKeyboardFunc(loli_state * state) {
     _loli_state = state;
+    _fn_glutKeyboardFunc_val = loli_arg_function(state, 0);
 
     glutKeyboardFunc(__fn_glutKeyboardFunc);
+}
+
+void loli_GL__glutSpecialFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutSpecialFunc_val = loli_arg_function(state, 0);
+
+    glutSpecialFunc(__fn_glutSpecialFunc);
+}
+
+void loli_GL__glutReshapeFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutReshapeFunc_val = loli_arg_function(state, 0);
+
+    glutReshapeFunc(__fn_glutReshapeFunc);
+}
+
+void loli_GL__glutVisibilityFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutVisibilityFunc_val = loli_arg_function(state, 0);
+
+    glutVisibilityFunc(__fn_glutVisibilityFunc);
+}
+
+void loli_GL__glutMouseFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutMouseFunc_val = loli_arg_function(state, 0);
+
+    glutMouseFunc(__fn_glutMouseFunc);
+}
+
+void loli_GL__glutMotionFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutMotionFunc_val = loli_arg_function(state, 0);
+
+    glutMotionFunc(__fn_glutMotionFunc);
+}
+
+void loli_GL__glutPassiveMotionFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutPassiveMotionFunc_val = loli_arg_function(state, 0);
+
+    glutPassiveMotionFunc(__fn_glutPassiveMotionFunc);
+}
+
+void loli_GL__glutEntryFunc(loli_state * state) {
+    _loli_state = state;
+    _fn_glutEntryFunc_val = loli_arg_function(state, 0);
+
+    glutEntryFunc(__fn_glutEntryFunc);
 }
 
 void loli_GL__glEnd(loli_state * state) {

@@ -25,22 +25,31 @@ Then import ``GL`` module from library.
 import sys
 import GL
 
-fn glutDisplayFunc {
-    sayln("glutDisplayFunc called")
-}
+# define `future` functions
+future fn glutKeyboardFunc(Byte, Integer, Integer) { ... }
+future fn glutDisplayFunc                          { ... }
+
+# init window
+GL.glutInit               ("Test OpenGL application in loli")
+GL.glutInitDisplayMode    (GL.GLUT_RGBA | GL.GLUT_SINGLE)
+GL.glutInitWindowSize     (200, 200)
+GL.glutInitWindowPosition (100, 100)
+
+# create window
+GL.glutCreateWindow       (GL.loliGlVersion)
+
+# bind functions
+GL.glutDisplayFunc        (glutDisplayFunc)
+GL.glutKeyboardFunc       (glutKeyboardFunc)
+
+# main loop
+GL.glutMainLoop           ()
 
 fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
-    if (key == 27t): { # on `Esc` press ...
-        sys.exit(0)
-    }
+    if (key == 27t): { sys.exit(0) } # on `Esc` press ...
 }
 
-GL.glutInit("LoliGL application")
-GL.glutInitDisplayMode(GL.GLUT_RGB | GL.GLUT_SINGLE)
-GL.glutInitWindowSize(200, 200)
-GL.glutInitWindowPosition(100, 100)
-GL.glutCreateWindow("Test")
-GL.glutDisplayFunc()
-GL.glutKeyboardFunc()
-GL.glutMainLoop()
+fn glutDisplayFunc {
+    GL.example()
+}
 ```
