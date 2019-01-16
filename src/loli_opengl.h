@@ -215,7 +215,40 @@ void loli_GL_var_GL_DEPTH_FUNC                 (loli_state *);
 void loli_GL_var_GL_DEPTH_RANGE                (loli_state *);
 void loli_GL_var_GL_DEPTH_WRITEMASK            (loli_state *);
 void loli_GL_var_GL_DEPTH_COMPONENT            (loli_state *);
-
+void loli_GL_var_GL_LIGHTING                   (loli_state *);
+void loli_GL_var_GL_LIGHT0                     (loli_state *);
+void loli_GL_var_GL_LIGHT1                     (loli_state *);
+void loli_GL_var_GL_LIGHT2                     (loli_state *);
+void loli_GL_var_GL_LIGHT3                     (loli_state *);
+void loli_GL_var_GL_LIGHT4                     (loli_state *);
+void loli_GL_var_GL_LIGHT5                     (loli_state *);
+void loli_GL_var_GL_LIGHT6                     (loli_state *);
+void loli_GL_var_GL_LIGHT7                     (loli_state *);
+void loli_GL_var_GL_SPOT_EXPONENT              (loli_state *);
+void loli_GL_var_GL_SPOT_CUTOFF                (loli_state *);
+void loli_GL_var_GL_CONSTANT_ATTENUATION       (loli_state *);
+void loli_GL_var_GL_LINEAR_ATTENUATION         (loli_state *);
+void loli_GL_var_GL_QUADRATIC_ATTENUATION      (loli_state *);
+void loli_GL_var_GL_AMBIENT                    (loli_state *);
+void loli_GL_var_GL_DIFFUSE                    (loli_state *);
+void loli_GL_var_GL_SPECULAR                   (loli_state *);
+void loli_GL_var_GL_SHININESS                  (loli_state *);
+void loli_GL_var_GL_EMISSION                   (loli_state *);
+void loli_GL_var_GL_POSITION                   (loli_state *);
+void loli_GL_var_GL_SPOT_DIRECTION             (loli_state *);
+void loli_GL_var_GL_AMBIENT_AND_DIFFUSE        (loli_state *);
+void loli_GL_var_GL_COLOR_INDEXES              (loli_state *);
+void loli_GL_var_GL_LIGHT_MODEL_TWO_SIDE       (loli_state *);
+void loli_GL_var_GL_LIGHT_MODEL_LOCAL_VIEWER   (loli_state *);
+void loli_GL_var_GL_LIGHT_MODEL_AMBIENT        (loli_state *);
+void loli_GL_var_GL_FRONT_AND_BACK             (loli_state *);
+void loli_GL_var_GL_SHADE_MODEL                (loli_state *);
+void loli_GL_var_GL_FLAT                       (loli_state *);
+void loli_GL_var_GL_SMOOTH                     (loli_state *);
+void loli_GL_var_GL_COLOR_MATERIAL             (loli_state *);
+void loli_GL_var_GL_COLOR_MATERIAL_FACE        (loli_state *);
+void loli_GL_var_GL_COLOR_MATERIAL_PARAMETER   (loli_state *);
+void loli_GL_var_GL_NORMALIZE                  (loli_state *);
 
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
@@ -419,6 +452,40 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GL_DEPTH_RANGE,
         loli_GL_var_GL_DEPTH_WRITEMASK,
         loli_GL_var_GL_DEPTH_COMPONENT,
+        loli_GL_var_GL_LIGHTING,
+        loli_GL_var_GL_LIGHT0,
+        loli_GL_var_GL_LIGHT1,
+        loli_GL_var_GL_LIGHT2,
+        loli_GL_var_GL_LIGHT3,
+        loli_GL_var_GL_LIGHT4,
+        loli_GL_var_GL_LIGHT5,
+        loli_GL_var_GL_LIGHT6,
+        loli_GL_var_GL_LIGHT7,
+        loli_GL_var_GL_SPOT_EXPONENT,
+        loli_GL_var_GL_SPOT_CUTOFF,
+        loli_GL_var_GL_CONSTANT_ATTENUATION,
+        loli_GL_var_GL_LINEAR_ATTENUATION,
+        loli_GL_var_GL_QUADRATIC_ATTENUATION,
+        loli_GL_var_GL_AMBIENT,
+        loli_GL_var_GL_DIFFUSE,
+        loli_GL_var_GL_SPECULAR,
+        loli_GL_var_GL_SHININESS,
+        loli_GL_var_GL_EMISSION,
+        loli_GL_var_GL_POSITION,
+        loli_GL_var_GL_SPOT_DIRECTION,
+        loli_GL_var_GL_AMBIENT_AND_DIFFUSE,
+        loli_GL_var_GL_COLOR_INDEXES,
+        loli_GL_var_GL_LIGHT_MODEL_TWO_SIDE,
+        loli_GL_var_GL_LIGHT_MODEL_LOCAL_VIEWER,
+        loli_GL_var_GL_LIGHT_MODEL_AMBIENT,
+        loli_GL_var_GL_FRONT_AND_BACK,
+        loli_GL_var_GL_SHADE_MODEL,
+        loli_GL_var_GL_FLAT,
+        loli_GL_var_GL_SMOOTH,
+        loli_GL_var_GL_COLOR_MATERIAL,
+        loli_GL_var_GL_COLOR_MATERIAL_FACE,
+        loli_GL_var_GL_COLOR_MATERIAL_PARAMETER,
+        loli_GL_var_GL_NORMALIZE,
 };
 
 const char * loli_GL_info_table[] = {
@@ -631,6 +698,41 @@ const char * loli_GL_info_table[] = {
         ,"R\0GL_DEPTH_RANGE\0Integer"
         ,"R\0GL_DEPTH_WRITEMASK\0Integer"
         ,"R\0GL_DEPTH_COMPONENT\0Integer"
+
+        ,"R\0GL_LIGHTING\0Integer"
+        ,"R\0GL_LIGHT0\0Integer"
+        ,"R\0GL_LIGHT1\0Integer"
+        ,"R\0GL_LIGHT2\0Integer"
+        ,"R\0GL_LIGHT3\0Integer"
+        ,"R\0GL_LIGHT4\0Integer"
+        ,"R\0GL_LIGHT5\0Integer"
+        ,"R\0GL_LIGHT6\0Integer"
+        ,"R\0GL_LIGHT7\0Integer"
+        ,"R\0GL_SPOT_EXPONENT\0Integer"
+        ,"R\0GL_SPOT_CUTOFF\0Integer"
+        ,"R\0GL_CONSTANT_ATTENUATION\0Integer"
+        ,"R\0GL_LINEAR_ATTENUATION\0Integer"
+        ,"R\0GL_QUADRATIC_ATTENUATION\0Integer"
+        ,"R\0GL_AMBIENT\0Integer"
+        ,"R\0GL_DIFFUSE\0Integer"
+        ,"R\0GL_SPECULAR\0Integer"
+        ,"R\0GL_SHININESS\0Integer"
+        ,"R\0GL_EMISSION\0Integer"
+        ,"R\0GL_POSITION\0Integer"
+        ,"R\0GL_SPOT_DIRECTION\0Integer"
+        ,"R\0GL_AMBIENT_AND_DIFFUSE\0Integer"
+        ,"R\0GL_COLOR_INDEXES\0Integer"
+        ,"R\0GL_LIGHT_MODEL_TWO_SIDE\0Integer"
+        ,"R\0GL_LIGHT_MODEL_LOCAL_VIEWER\0Integer"
+        ,"R\0GL_LIGHT_MODEL_AMBIENT\0Integer"
+        ,"R\0GL_FRONT_AND_BACK\0Integer"
+        ,"R\0GL_SHADE_MODEL\0Integer"
+        ,"R\0GL_FLAT\0Integer"
+        ,"R\0GL_SMOOTH\0Integer"
+        ,"R\0GL_COLOR_MATERIAL\0Integer"
+        ,"R\0GL_COLOR_MATERIAL_FACE\0Integer"
+        ,"R\0GL_COLOR_MATERIAL_PARAMETER\0Integer"
+        ,"R\0GL_NORMALIZE\0Integer"
 
         ,"Z"
 };

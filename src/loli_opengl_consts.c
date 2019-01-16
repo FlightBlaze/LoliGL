@@ -629,3 +629,139 @@ void loli_GL_var_GL_DEPTH_WRITEMASK(loli_state * state) {
 void loli_GL_var_GL_DEPTH_COMPONENT(loli_state * state) {
     loli_push_integer(state, GL_DEPTH_COMPONENT);
 }
+
+void loli_GL_var_GL_LIGHTING(loli_state * state) {
+    loli_push_integer(state, GL_LIGHTING);
+}
+
+void loli_GL_var_GL_LIGHT0(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT0);
+}
+
+void loli_GL_var_GL_LIGHT1(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT1);
+}
+
+void loli_GL_var_GL_LIGHT2(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT2);
+}
+
+void loli_GL_var_GL_LIGHT3(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT3);
+}
+
+void loli_GL_var_GL_LIGHT4(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT4);
+}
+
+void loli_GL_var_GL_LIGHT5(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT5);
+}
+
+void loli_GL_var_GL_LIGHT6(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT6);
+}
+
+void loli_GL_var_GL_LIGHT7(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT7);
+}
+
+void loli_GL_var_GL_SPOT_EXPONENT(loli_state * state) {
+    loli_push_integer(state, GL_SPOT_EXPONENT);
+}
+
+void loli_GL_var_GL_SPOT_CUTOFF(loli_state * state) {
+    loli_push_integer(state, GL_SPOT_CUTOFF);
+}
+
+void loli_GL_var_GL_CONSTANT_ATTENUATION(loli_state * state) {
+    loli_push_integer(state, GL_CONSTANT_ATTENUATION);
+}
+
+void loli_GL_var_GL_LINEAR_ATTENUATION(loli_state * state) {
+    loli_push_integer(state, GL_LINEAR_ATTENUATION);
+}
+
+void loli_GL_var_GL_QUADRATIC_ATTENUATION(loli_state * state) {
+    loli_push_integer(state, GL_QUADRATIC_ATTENUATION);
+}
+
+void loli_GL_var_GL_AMBIENT(loli_state * state) {
+    loli_push_integer(state, GL_AMBIENT);
+}
+
+void loli_GL_var_GL_DIFFUSE(loli_state * state) {
+    loli_push_integer(state, GL_DIFFUSE);
+}
+
+void loli_GL_var_GL_SPECULAR(loli_state * state) {
+    loli_push_integer(state, GL_SPECULAR);
+}
+
+void loli_GL_var_GL_SHININESS(loli_state * state) {
+    loli_push_integer(state, GL_SHININESS);
+}
+
+void loli_GL_var_GL_EMISSION(loli_state * state) {
+    loli_push_integer(state, GL_EMISSION);
+}
+
+void loli_GL_var_GL_POSITION(loli_state * state) {
+    loli_push_integer(state, GL_POSITION);
+}
+
+void loli_GL_var_GL_SPOT_DIRECTION(loli_state * state) {
+    loli_push_integer(state, GL_SPOT_DIRECTION);
+}
+
+void loli_GL_var_GL_AMBIENT_AND_DIFFUSE(loli_state * state) {
+    loli_push_integer(state, GL_AMBIENT_AND_DIFFUSE);
+}
+
+void loli_GL_var_GL_COLOR_INDEXES(loli_state * state) {
+    loli_push_integer(state, GL_COLOR_INDEXES);
+}
+
+void loli_GL_var_GL_LIGHT_MODEL_TWO_SIDE(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT_MODEL_TWO_SIDE);
+}
+
+void loli_GL_var_GL_LIGHT_MODEL_LOCAL_VIEWER(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT_MODEL_LOCAL_VIEWER);
+}
+
+void loli_GL_var_GL_LIGHT_MODEL_AMBIENT(loli_state * state) {
+    loli_push_integer(state, GL_LIGHT_MODEL_AMBIENT);
+}
+
+void loli_GL_var_GL_FRONT_AND_BACK(loli_state * state) {
+    loli_push_integer(state, GL_FRONT_AND_BACK);
+}
+
+void loli_GL_var_GL_SHADE_MODEL(loli_state * state) {
+    loli_push_integer(state, GL_SHADE_MODEL);
+}
+
+void loli_GL_var_GL_FLAT(loli_state * state) {
+    loli_push_integer(state, GL_FLAT);
+}
+
+void loli_GL_var_GL_SMOOTH(loli_state * state) {
+    loli_push_integer(state, GL_SMOOTH);
+}
+
+void loli_GL_var_GL_COLOR_MATERIAL(loli_state * state) {
+    loli_push_integer(state, GL_COLOR_MATERIAL);
+}
+
+void loli_GL_var_GL_COLOR_MATERIAL_FACE(loli_state * state) {
+    loli_push_integer(state, GL_COLOR_MATERIAL_FACE);
+}
+
+void loli_GL_var_GL_COLOR_MATERIAL_PARAMETER(loli_state * state) {
+    loli_push_integer(state, GL_COLOR_MATERIAL_PARAMETER);
+}
+
+void loli_GL_var_GL_NORMALIZE(loli_state * state) {
+    loli_push_integer(state, GL_NORMALIZE);
+}
