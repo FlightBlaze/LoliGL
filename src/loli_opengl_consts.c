@@ -1,4 +1,4 @@
-#include "loli_opengl.h"
+#include "../include/loli_opengl.h"
 
 void loli_GL_var_GLUT_RGB(loli_state * state) {
     loli_push_integer(state, GLUT_RGB);

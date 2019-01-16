@@ -1,4 +1,4 @@
-// The Loli programming language header file, version 0.6
+// The Loli programming language header file, version 0.7
 
 #ifndef LOLI_H
 # define LOLI_H
@@ -31,6 +31,7 @@ typedef struct loli_config_ {
     char sipkey[16];
     void *data;
 } loli_config;
+char *loli_get_version();
 void loli_config_init(loli_config *config);
 loli_config *loli_config_get(loli_state *s);
 loli_state *loli_new_state(loli_config *config);
@@ -76,7 +77,7 @@ const char *loli_import_current_root_dir(loli_state *s);
 #define LOLI_ID_RUNTIMEERROR 21
 #define LOLI_ID_VALUEERROR   22
 #define LOLI_ID_INDEXERROR   23
-#define LOLI_ID_DBZERROR     24  
+#define LOLI_ID_DBZERROR     24
 #define LOLI_ID_UNIT         25
 #define LOLI_ID_COROUTINE    26
 #define START_CLASS_ID       27
