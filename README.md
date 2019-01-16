@@ -50,6 +50,6 @@ fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
 }
 
 fn glutDisplayFunc {
-    GL.example()
+    sayln("on display draw")
 }
 ```

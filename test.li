@@ -26,5 +26,5 @@ fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
 }
 
 fn glutDisplayFunc {
-    sayln("on display draw")
+    GL.example()
 }
