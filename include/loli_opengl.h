@@ -1032,7 +1032,6 @@ void loli_GL_var_GL_ALPHA_BLEND_EQUATION_ATI   (loli_state *);
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
         loli_GL__loliGlVersion,
-        loli_GL__arr_parse,
         loli_GL__glutInit,
         loli_GL__glutInitDisplayMode,
         loli_GL__glutInitWindowSize,

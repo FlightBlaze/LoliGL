@@ -171,7 +171,6 @@ loli_generic_val *   loli_as_generic   (loli_value *value);
 loli_hash_val *      loli_as_hash      (loli_value *value);
 int64_t              loli_as_integer   (loli_value *value);
 loli_string_val *    loli_as_string    (loli_value *value);
-char *loli_as_string_raw(loli_value *value, struct loli_value_ *pValue_);
 void loli_call(loli_state *s, int count);
 void loli_call_prepare(loli_state *s, loli_function_val *func);
 loli_value *loli_call_result(loli_state *s);
