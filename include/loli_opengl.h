@@ -43,6 +43,14 @@ void loli_GL__glutSwapBuffers                  (loli_state *);
 void loli_GL__glutWarpPointer                  (loli_state *);
 void loli_GL__glutSetCursor                    (loli_state *);
 
+void loli_GL__glutEstablishOverlay             (loli_state *);
+void loli_GL__glutRemoveOverlay                (loli_state *);
+void loli_GL__glutUseLayer                     (loli_state *);
+void loli_GL__glutPostOverlayRedisplay         (loli_state *);
+void loli_GL__glutPostWindowOverlayRedisplay   (loli_state *);
+void loli_GL__glutShowOverlay                  (loli_state *);
+void loli_GL__glutHideOverlay                  (loli_state *);
+
 void loli_GL__glutMainLoop                     (loli_state *);
 
 void loli_GL__glutDisplayFunc                  (loli_state *);
@@ -919,6 +927,14 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL__glutWarpPointer,
         loli_GL__glutSetCursor,
 
+        loli_GL__glutEstablishOverlay,
+        loli_GL__glutRemoveOverlay,
+        loli_GL__glutUseLayer,
+        loli_GL__glutPostOverlayRedisplay,
+        loli_GL__glutPostWindowOverlayRedisplay,
+        loli_GL__glutShowOverlay,
+        loli_GL__glutHideOverlay,
+
         loli_GL__glutMainLoop,
 
         loli_GL__glutDisplayFunc,
@@ -1793,6 +1809,14 @@ const char * loli_GL_info_table[] = {
 
         ,"F\0glutWarpPointer\0(Integer, Integer)"
         ,"F\0glutSetCursor\0(Integer)"
+
+        ,"F\0glutEstablishOverlay"
+        ,"F\0glutRemoveOverlay"
+        ,"F\0glutUseLayer\0(Integer)"
+        ,"F\0glutPostOverlayRedisplay"
+        ,"F\0glutPostWindowOverlayRedisplay\0(Integer)"
+        ,"F\0glutShowOverlay"
+        ,"F\0glutHideOverlay"
 
         ,"F\0glutMainLoop"
 

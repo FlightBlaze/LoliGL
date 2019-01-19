@@ -140,10 +140,43 @@ void loli_GL__glutWarpPointer(loli_state * state) {
 
     glutWarpPointer(x, y);
 }
+
 void loli_GL__glutSetCursor(loli_state * state) {
     int cursor = (int) loli_arg_integer(state, 0);
 
     glutSetCursor(cursor);
+}
+
+void loli_GL__glutEstablishOverlay(loli_state * state) {
+    glutEstablishOverlay();
+}
+
+void loli_GL__glutRemoveOverlay(loli_state * state) {
+    glutRemoveOverlay();
+}
+
+void loli_GL__glutUseLayer(loli_state * state) {
+    unsigned int layer = (unsigned int) loli_arg_integer(state, 0);
+
+    glutUseLayer(layer);
+}
+
+void loli_GL__glutPostOverlayRedisplay(loli_state * state) {
+    glutPostOverlayRedisplay();
+}
+
+void loli_GL__glutPostWindowOverlayRedisplay(loli_state * state) {
+    int window = (int) loli_arg_integer(state, 0);
+
+    glutPostWindowOverlayRedisplay(window);
+}
+
+void loli_GL__glutShowOverlay(loli_state * state) {
+    glutShowOverlay();
+}
+
+void loli_GL__glutHideOverlay(loli_state * state) {
+    glutHideOverlay();
 }
 
 void loli_GL__glutMainLoop(loli_state * state) {
