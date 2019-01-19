@@ -179,11 +179,91 @@ void loli_GL__glutHideOverlay(loli_state * state) {
     glutHideOverlay();
 }
 
-void loli_GL__glutMainLoop(loli_state * state) {
-    glutMainLoop();
-}
 
 loli_state * _loli_state;
+
+loli_function_val * _fn_glutCreateMenu_val; // Integer
+
+static void __fn_glutCreateMenu(int menu) {
+    if (_loli_state            == 0) return;
+    if (_fn_glutCreateMenu_val == 0) return;
+
+    loli_call_prepare(_loli_state, _fn_glutCreateMenu_val);
+    loli_push_integer(_loli_state, menu);
+    loli_call(_loli_state, 1);
+}
+
+void loli_GL__glutCreateMenu(loli_state * state) {
+    _fn_glutCreateMenu_val = loli_arg_function(state, 0);
+
+    loli_push_integer(state, glutCreateMenu(__fn_glutCreateMenu));
+    loli_return_top(state);
+}
+
+void loli_GL__glutDestroyMenu(loli_state * state) {
+    int menu = (int) loli_arg_integer(state, 0);
+
+    glutDestroyMenu(menu);
+}
+
+void loli_GL__glutGetMenu(loli_state * state) {
+    loli_push_integer(state, glutGetMenu());
+    loli_return_top(state);
+}
+
+void loli_GL__glutSetMenu(loli_state * state) {
+    int menu = (int) loli_arg_integer(state, 0);
+
+    glutSetMenu(menu);
+}
+
+void loli_GL__glutAddMenuEntry(loli_state * state) {
+    char * label = loli_arg_string_raw(state, 0);
+    int    value = (int) loli_arg_integer(state, 1);
+
+    glutAddMenuEntry(label, value);
+}
+
+void loli_GL__glutAddSubMenu(loli_state * state) {
+    char * label = loli_arg_string_raw(state, 0);
+    int    subMenu = (int) loli_arg_integer(state, 1);
+
+    glutAddSubMenu(label, subMenu);
+}
+
+void loli_GL__glutChangeToMenuEntry(loli_state * state) {
+    int    item = (int) loli_arg_integer(state, 0);
+    char * label = loli_arg_string_raw(state, 1);
+    int    value = (int) loli_arg_integer(state, 2);
+
+    glutChangeToMenuEntry(item, label, value);
+}
+
+void loli_GL__glutChangeToSubMenu(loli_state * state) {
+    int    item = (int) loli_arg_integer(state, 0);
+    char * label = loli_arg_string_raw(state, 1);
+    int    value = (int) loli_arg_integer(state, 2);
+
+    glutChangeToSubMenu(item, label, value);
+}
+
+void loli_GL__glutRemoveMenuItem(loli_state * state) {
+    int item = (int) loli_arg_integer(state, 0);
+
+    glutRemoveMenuItem(item);
+}
+
+void loli_GL__glutAttachMenu(loli_state * state) {
+    int button = (int) loli_arg_integer(state, 0);
+
+    glutAttachMenu(button);
+}
+
+void loli_GL__glutDetachMenu(loli_state * state) {
+    int button = (int) loli_arg_integer(state, 0);
+
+    glutDetachMenu(button);
+}
 
 loli_function_val * _fn_glutDisplayFunc_val; // void
 loli_function_val * _fn_glutKeyboardFunc_val; // Byte, Integer, Integer
@@ -200,7 +280,7 @@ static void __fn_glutDisplayFunc() {
     if (_fn_glutDisplayFunc_val == 0) return;
 
     loli_call_prepare(_loli_state, _fn_glutDisplayFunc_val);
-    loli_call(_loli_state, 1);
+    loli_call(_loli_state, 0);
 }
 
 static void __fn_glutKeyboardFunc(unsigned char c, int i1, int i2) {
@@ -346,6 +426,10 @@ void loli_GL__glutEntryFunc(loli_state * state) {
     _fn_glutEntryFunc_val = loli_arg_function(state, 0);
 
     glutEntryFunc(__fn_glutEntryFunc);
+}
+
+void loli_GL__glutMainLoop(loli_state * state) {
+    glutMainLoop();
 }
 
 void loli_GL__glEnd(loli_state * state) {

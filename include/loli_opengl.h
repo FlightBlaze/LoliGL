@@ -51,6 +51,18 @@ void loli_GL__glutPostWindowOverlayRedisplay   (loli_state *);
 void loli_GL__glutShowOverlay                  (loli_state *);
 void loli_GL__glutHideOverlay                  (loli_state *);
 
+void loli_GL__glutCreateMenu                   (loli_state *);
+void loli_GL__glutDestroyMenu                  (loli_state *);
+void loli_GL__glutGetMenu                      (loli_state *);
+void loli_GL__glutSetMenu                      (loli_state *);
+void loli_GL__glutAddMenuEntry                 (loli_state *);
+void loli_GL__glutAddSubMenu                   (loli_state *);
+void loli_GL__glutChangeToMenuEntry            (loli_state *);
+void loli_GL__glutChangeToSubMenu              (loli_state *);
+void loli_GL__glutRemoveMenuItem               (loli_state *);
+void loli_GL__glutAttachMenu                   (loli_state *);
+void loli_GL__glutDetachMenu                   (loli_state *);
+
 void loli_GL__glutMainLoop                     (loli_state *);
 
 void loli_GL__glutDisplayFunc                  (loli_state *);
@@ -935,6 +947,18 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL__glutShowOverlay,
         loli_GL__glutHideOverlay,
 
+        loli_GL__glutCreateMenu,
+        loli_GL__glutDestroyMenu,
+        loli_GL__glutGetMenu,
+        loli_GL__glutSetMenu,
+        loli_GL__glutAddMenuEntry,
+        loli_GL__glutAddSubMenu,
+        loli_GL__glutChangeToMenuEntry,
+        loli_GL__glutChangeToSubMenu,
+        loli_GL__glutRemoveMenuItem,
+        loli_GL__glutAttachMenu,
+        loli_GL__glutDetachMenu,
+
         loli_GL__glutMainLoop,
 
         loli_GL__glutDisplayFunc,
@@ -1817,6 +1841,18 @@ const char * loli_GL_info_table[] = {
         ,"F\0glutPostWindowOverlayRedisplay\0(Integer)"
         ,"F\0glutShowOverlay"
         ,"F\0glutHideOverlay"
+
+        ,"F\0glutCreateMenu\0(Function(Integer)): Integer"
+        ,"F\0glutDestroyMenu\0(Integer)"
+        ,"F\0glutGetMenu\0(): Integer"
+        ,"F\0glutSetMenu\0(Integer)"
+        ,"F\0glutAddMenuEntry\0(String, Integer)"
+        ,"F\0glutAddSubMenu\0(String, Integer)"
+        ,"F\0glutChangeToMenuEntry\0(Integer, String, Integer)"
+        ,"F\0glutChangeToSubMenu\0(Integer, String, Integer)"
+        ,"F\0glutRemoveMenuItem\0(Integer)"
+        ,"F\0glutAttachMenu\0(Integer)"
+        ,"F\0glutDetachMenu\0(Integer)"
 
         ,"F\0glutMainLoop"
 
