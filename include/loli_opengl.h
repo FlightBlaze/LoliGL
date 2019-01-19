@@ -126,6 +126,126 @@ void loli_GL_var_GLUT_KEY_HOME                 (loli_state *);
 void loli_GL_var_GLUT_KEY_END                  (loli_state *);
 void loli_GL_var_GLUT_KEY_INSERT               (loli_state *);
 
+void loli_GL_var_GLUT_LEFT_BUTTON(loli_state *);
+void loli_GL_var_GLUT_MIDDLE_BUTTON(loli_state *);
+void loli_GL_var_GLUT_DOWN(loli_state *);
+void loli_GL_var_GLUT_UP(loli_state *);
+void loli_GL_var_GLUT_ENTERED(loli_state *);
+void loli_GL_var_GLUT_WINDOW_X(loli_state *);
+void loli_GL_var_GLUT_WINDOW_Y(loli_state *);
+void loli_GL_var_GLUT_WINDOW_WIDTH(loli_state *);
+void loli_GL_var_GLUT_WINDOW_HEIGHT(loli_state *);
+void loli_GL_var_GLUT_WINDOW_BUFFER_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_STENCIL_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_DEPTH_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_RED_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_GREEN_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_BLUE_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_ALPHA_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_ACCUM_RED_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_ACCUM_GREEN_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_ACCUM_BLUE_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_ACCUM_ALPHA_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_DOUBLEBUFFER(loli_state *);
+void loli_GL_var_GLUT_WINDOW_RGBA(loli_state *);
+void loli_GL_var_GLUT_WINDOW_PARENT(loli_state *);
+void loli_GL_var_GLUT_WINDOW_NUM_CHILDREN(loli_state *);
+void loli_GL_var_GLUT_WINDOW_COLORMAP_SIZE(loli_state *);
+void loli_GL_var_GLUT_WINDOW_NUM_SAMPLES(loli_state *);
+void loli_GL_var_GLUT_WINDOW_STEREO(loli_state *);
+void loli_GL_var_GLUT_WINDOW_CURSOR(loli_state *);
+void loli_GL_var_GLUT_SCREEN_WIDTH(loli_state *);
+void loli_GL_var_GLUT_SCREEN_HEIGHT(loli_state *);
+void loli_GL_var_GLUT_SCREEN_WIDTH_MM(loli_state *);
+void loli_GL_var_GLUT_SCREEN_HEIGHT_MM(loli_state *);
+void loli_GL_var_GLUT_MENU_NUM_ITEMS(loli_state *);
+void loli_GL_var_GLUT_DISPLAY_MODE_POSSIBLE(loli_state *);
+void loli_GL_var_GLUT_INIT_WINDOW_X(loli_state *);
+void loli_GL_var_GLUT_INIT_WINDOW_Y(loli_state *);
+void loli_GL_var_GLUT_INIT_WINDOW_WIDTH(loli_state *);
+void loli_GL_var_GLUT_INIT_WINDOW_HEIGHT(loli_state *);
+void loli_GL_var_GLUT_INIT_DISPLAY_MODE(loli_state *);
+void loli_GL_var_GLUT_ELAPSED_TIME(loli_state *);
+void loli_GL_var_GLUT_WINDOW_FORMAT_ID(loli_state *);
+void loli_GL_var_GLUT_HAS_KEYBOARD(loli_state *);
+void loli_GL_var_GLUT_HAS_MOUSE(loli_state *);
+void loli_GL_var_GLUT_HAS_SPACEBALL(loli_state *);
+void loli_GL_var_GLUT_HAS_DIAL_AND_BUTTON_BOX(loli_state *);
+void loli_GL_var_GLUT_HAS_TABLET(loli_state *);
+void loli_GL_var_GLUT_NUM_MOUSE_BUTTONS(loli_state *);
+void loli_GL_var_GLUT_NUM_SPACEBALL_BUTTONS(loli_state *);
+void loli_GL_var_GLUT_NUM_BUTTON_BOX_BUTTONS(loli_state *);
+void loli_GL_var_GLUT_NUM_DIALS(loli_state *);
+void loli_GL_var_GLUT_NUM_TABLET_BUTTONS(loli_state *);
+void loli_GL_var_GLUT_DEVICE_IGNORE_KEY_REPEAT(loli_state *);
+void loli_GL_var_GLUT_DEVICE_KEY_REPEAT(loli_state *);
+void loli_GL_var_GLUT_HAS_JOYSTICK(loli_state *);
+void loli_GL_var_GLUT_OWNS_JOYSTICK(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_BUTTONS(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_AXES(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_POLL_RATE(loli_state *);
+void loli_GL_var_GLUT_OVERLAY_POSSIBLE(loli_state *);
+void loli_GL_var_GLUT_LAYER_IN_USE(loli_state *);
+void loli_GL_var_GLUT_HAS_OVERLAY(loli_state *);
+void loli_GL_var_GLUT_TRANSPARENT_INDEX(loli_state *);
+void loli_GL_var_GLUT_NORMAL_DAMAGED(loli_state *);
+void loli_GL_var_GLUT_OVERLAY_DAMAGED(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_POSSIBLE(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_IN_USE(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_X_DELTA(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_Y_DELTA(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_WIDTH_DELTA(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_HEIGHT_DELTA(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_X(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_Y(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_WIDTH(loli_state *);
+void loli_GL_var_GLUT_VIDEO_RESIZE_HEIGHT(loli_state *);
+void loli_GL_var_GLUT_NORMAL(loli_state *);
+void loli_GL_var_GLUT_OVERLAY(loli_state *);
+void loli_GL_var_GLUT_ACTIVE_SHIFT(loli_state *);
+void loli_GL_var_GLUT_ACTIVE_CTRL(loli_state *);
+void loli_GL_var_GLUT_ACTIVE_ALT(loli_state *);
+void loli_GL_var_GLUT_CURSOR_RIGHT_ARROW(loli_state *);
+void loli_GL_var_GLUT_CURSOR_LEFT_ARROW(loli_state *);
+void loli_GL_var_GLUT_CURSOR_INFO(loli_state *);
+void loli_GL_var_GLUT_CURSOR_DESTROY(loli_state *);
+void loli_GL_var_GLUT_CURSOR_HELP(loli_state *);
+void loli_GL_var_GLUT_CURSOR_CYCLE(loli_state *);
+void loli_GL_var_GLUT_CURSOR_SPRAY(loli_state *);
+void loli_GL_var_GLUT_CURSOR_WAIT(loli_state *);
+void loli_GL_var_GLUT_CURSOR_TEXT(loli_state *);
+void loli_GL_var_GLUT_CURSOR_CROSSHAIR(loli_state *);
+void loli_GL_var_GLUT_CURSOR_UP_DOWN(loli_state *);
+void loli_GL_var_GLUT_CURSOR_LEFT_RIGHT(loli_state *);
+void loli_GL_var_GLUT_CURSOR_TOP_SIDE(loli_state *);
+void loli_GL_var_GLUT_CURSOR_BOTTOM_SIDE(loli_state *);
+void loli_GL_var_GLUT_CURSOR_LEFT_SIDE(loli_state *);
+void loli_GL_var_GLUT_CURSOR_RIGHT_SIDE(loli_state *);
+void loli_GL_var_GLUT_CURSOR_TOP_LEFT_CORNER(loli_state *);
+void loli_GL_var_GLUT_CURSOR_TOP_RIGHT_CORNER(loli_state *);
+void loli_GL_var_GLUT_CURSOR_BOTTOM_RIGHT_CORNER(loli_state *);
+void loli_GL_var_GLUT_CURSOR_BOTTOM_LEFT_CORNER(loli_state *);
+void loli_GL_var_GLUT_CURSOR_INHERIT(loli_state *);
+void loli_GL_var_GLUT_CURSOR_NONE(loli_state *);
+void loli_GL_var_GLUT_CURSOR_FULL_CROSSHAIR(loli_state *);
+void loli_GL_var_GLUT_RED(loli_state *);
+void loli_GL_var_GLUT_GREEN(loli_state *);
+void loli_GL_var_GLUT_BLUE(loli_state *);
+void loli_GL_var_GLUT_KEY_REPEAT_OFF(loli_state *);
+void loli_GL_var_GLUT_KEY_REPEAT_ON(loli_state *);
+void loli_GL_var_GLUT_KEY_REPEAT_DEFAULT(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_A(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_B(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_C(loli_state *);
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_D(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_ACTIVE(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_POSSIBLE(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_WIDTH(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_HEIGHT(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_PIXEL_DEPTH(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_REFRESH_RATE(loli_state *);
+void loli_GL_var_GLUT_GAME_MODE_DISPLAY_CHANGED(loli_state *);
+
 
 void loli_GL_var_GL_FALSE                      (loli_state *);
 void loli_GL_var_GL_TRUE                       (loli_state *);
@@ -1021,6 +1141,126 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GLUT_KEY_END,
         loli_GL_var_GLUT_KEY_INSERT,
 
+        loli_GL_var_GLUT_LEFT_BUTTON,
+        loli_GL_var_GLUT_MIDDLE_BUTTON,
+        loli_GL_var_GLUT_DOWN,
+        loli_GL_var_GLUT_UP,
+        loli_GL_var_GLUT_ENTERED,
+        loli_GL_var_GLUT_WINDOW_X,
+        loli_GL_var_GLUT_WINDOW_Y,
+        loli_GL_var_GLUT_WINDOW_WIDTH,
+        loli_GL_var_GLUT_WINDOW_HEIGHT,
+        loli_GL_var_GLUT_WINDOW_BUFFER_SIZE,
+        loli_GL_var_GLUT_WINDOW_STENCIL_SIZE,
+        loli_GL_var_GLUT_WINDOW_DEPTH_SIZE,
+        loli_GL_var_GLUT_WINDOW_RED_SIZE,
+        loli_GL_var_GLUT_WINDOW_GREEN_SIZE,
+        loli_GL_var_GLUT_WINDOW_BLUE_SIZE,
+        loli_GL_var_GLUT_WINDOW_ALPHA_SIZE,
+        loli_GL_var_GLUT_WINDOW_ACCUM_RED_SIZE,
+        loli_GL_var_GLUT_WINDOW_ACCUM_GREEN_SIZE,
+        loli_GL_var_GLUT_WINDOW_ACCUM_BLUE_SIZE,
+        loli_GL_var_GLUT_WINDOW_ACCUM_ALPHA_SIZE,
+        loli_GL_var_GLUT_WINDOW_DOUBLEBUFFER,
+        loli_GL_var_GLUT_WINDOW_RGBA,
+        loli_GL_var_GLUT_WINDOW_PARENT,
+        loli_GL_var_GLUT_WINDOW_NUM_CHILDREN,
+        loli_GL_var_GLUT_WINDOW_COLORMAP_SIZE,
+        loli_GL_var_GLUT_WINDOW_NUM_SAMPLES,
+        loli_GL_var_GLUT_WINDOW_STEREO,
+        loli_GL_var_GLUT_WINDOW_CURSOR,
+        loli_GL_var_GLUT_SCREEN_WIDTH,
+        loli_GL_var_GLUT_SCREEN_HEIGHT,
+        loli_GL_var_GLUT_SCREEN_WIDTH_MM,
+        loli_GL_var_GLUT_SCREEN_HEIGHT_MM,
+        loli_GL_var_GLUT_MENU_NUM_ITEMS,
+        loli_GL_var_GLUT_DISPLAY_MODE_POSSIBLE,
+        loli_GL_var_GLUT_INIT_WINDOW_X,
+        loli_GL_var_GLUT_INIT_WINDOW_Y,
+        loli_GL_var_GLUT_INIT_WINDOW_WIDTH,
+        loli_GL_var_GLUT_INIT_WINDOW_HEIGHT,
+        loli_GL_var_GLUT_INIT_DISPLAY_MODE,
+        loli_GL_var_GLUT_ELAPSED_TIME,
+        loli_GL_var_GLUT_WINDOW_FORMAT_ID,
+        loli_GL_var_GLUT_HAS_KEYBOARD,
+        loli_GL_var_GLUT_HAS_MOUSE,
+        loli_GL_var_GLUT_HAS_SPACEBALL,
+        loli_GL_var_GLUT_HAS_DIAL_AND_BUTTON_BOX,
+        loli_GL_var_GLUT_HAS_TABLET,
+        loli_GL_var_GLUT_NUM_MOUSE_BUTTONS,
+        loli_GL_var_GLUT_NUM_SPACEBALL_BUTTONS,
+        loli_GL_var_GLUT_NUM_BUTTON_BOX_BUTTONS,
+        loli_GL_var_GLUT_NUM_DIALS,
+        loli_GL_var_GLUT_NUM_TABLET_BUTTONS,
+        loli_GL_var_GLUT_DEVICE_IGNORE_KEY_REPEAT,
+        loli_GL_var_GLUT_DEVICE_KEY_REPEAT,
+        loli_GL_var_GLUT_HAS_JOYSTICK,
+        loli_GL_var_GLUT_OWNS_JOYSTICK,
+        loli_GL_var_GLUT_JOYSTICK_BUTTONS,
+        loli_GL_var_GLUT_JOYSTICK_AXES,
+        loli_GL_var_GLUT_JOYSTICK_POLL_RATE,
+        loli_GL_var_GLUT_OVERLAY_POSSIBLE,
+        loli_GL_var_GLUT_LAYER_IN_USE,
+        loli_GL_var_GLUT_HAS_OVERLAY,
+        loli_GL_var_GLUT_TRANSPARENT_INDEX,
+        loli_GL_var_GLUT_NORMAL_DAMAGED,
+        loli_GL_var_GLUT_OVERLAY_DAMAGED,
+        loli_GL_var_GLUT_VIDEO_RESIZE_POSSIBLE,
+        loli_GL_var_GLUT_VIDEO_RESIZE_IN_USE,
+        loli_GL_var_GLUT_VIDEO_RESIZE_X_DELTA,
+        loli_GL_var_GLUT_VIDEO_RESIZE_Y_DELTA,
+        loli_GL_var_GLUT_VIDEO_RESIZE_WIDTH_DELTA,
+        loli_GL_var_GLUT_VIDEO_RESIZE_HEIGHT_DELTA,
+        loli_GL_var_GLUT_VIDEO_RESIZE_X,
+        loli_GL_var_GLUT_VIDEO_RESIZE_Y,
+        loli_GL_var_GLUT_VIDEO_RESIZE_WIDTH,
+        loli_GL_var_GLUT_VIDEO_RESIZE_HEIGHT,
+        loli_GL_var_GLUT_NORMAL,
+        loli_GL_var_GLUT_OVERLAY,
+        loli_GL_var_GLUT_ACTIVE_SHIFT,
+        loli_GL_var_GLUT_ACTIVE_CTRL,
+        loli_GL_var_GLUT_ACTIVE_ALT,
+        loli_GL_var_GLUT_CURSOR_RIGHT_ARROW,
+        loli_GL_var_GLUT_CURSOR_LEFT_ARROW,
+        loli_GL_var_GLUT_CURSOR_INFO,
+        loli_GL_var_GLUT_CURSOR_DESTROY,
+        loli_GL_var_GLUT_CURSOR_HELP,
+        loli_GL_var_GLUT_CURSOR_CYCLE,
+        loli_GL_var_GLUT_CURSOR_SPRAY,
+        loli_GL_var_GLUT_CURSOR_WAIT,
+        loli_GL_var_GLUT_CURSOR_TEXT,
+        loli_GL_var_GLUT_CURSOR_CROSSHAIR,
+        loli_GL_var_GLUT_CURSOR_UP_DOWN,
+        loli_GL_var_GLUT_CURSOR_LEFT_RIGHT,
+        loli_GL_var_GLUT_CURSOR_TOP_SIDE,
+        loli_GL_var_GLUT_CURSOR_BOTTOM_SIDE,
+        loli_GL_var_GLUT_CURSOR_LEFT_SIDE,
+        loli_GL_var_GLUT_CURSOR_RIGHT_SIDE,
+        loli_GL_var_GLUT_CURSOR_TOP_LEFT_CORNER,
+        loli_GL_var_GLUT_CURSOR_TOP_RIGHT_CORNER,
+        loli_GL_var_GLUT_CURSOR_BOTTOM_RIGHT_CORNER,
+        loli_GL_var_GLUT_CURSOR_BOTTOM_LEFT_CORNER,
+        loli_GL_var_GLUT_CURSOR_INHERIT,
+        loli_GL_var_GLUT_CURSOR_NONE,
+        loli_GL_var_GLUT_CURSOR_FULL_CROSSHAIR,
+        loli_GL_var_GLUT_RED,
+        loli_GL_var_GLUT_GREEN,
+        loli_GL_var_GLUT_BLUE,
+        loli_GL_var_GLUT_KEY_REPEAT_OFF,
+        loli_GL_var_GLUT_KEY_REPEAT_ON,
+        loli_GL_var_GLUT_KEY_REPEAT_DEFAULT,
+        loli_GL_var_GLUT_JOYSTICK_BUTTON_A,
+        loli_GL_var_GLUT_JOYSTICK_BUTTON_B,
+        loli_GL_var_GLUT_JOYSTICK_BUTTON_C,
+        loli_GL_var_GLUT_JOYSTICK_BUTTON_D,
+        loli_GL_var_GLUT_GAME_MODE_ACTIVE,
+        loli_GL_var_GLUT_GAME_MODE_POSSIBLE,
+        loli_GL_var_GLUT_GAME_MODE_WIDTH,
+        loli_GL_var_GLUT_GAME_MODE_HEIGHT,
+        loli_GL_var_GLUT_GAME_MODE_PIXEL_DEPTH,
+        loli_GL_var_GLUT_GAME_MODE_REFRESH_RATE,
+        loli_GL_var_GLUT_GAME_MODE_DISPLAY_CHANGED,
+
         loli_GL_var_GL_FALSE,
         loli_GL_var_GL_TRUE,
         loli_GL_var_GL_BYTE,
@@ -1869,8 +2109,8 @@ const char * loli_GL_info_table[] = {
         // TODO: delete it
         ,"F\0example"
 
-        ,"F\0end"
-        ,"F\0flush"
+        ,"F\0glEnd"
+        ,"F\0glFlush"
 
 
         ,"R\0GLUT_RGB\0Integer"
@@ -1889,9 +2129,9 @@ const char * loli_GL_info_table[] = {
         ,"R\0GLUT_MENU_NOT_IN_USE\0Integer"
         ,"R\0GLUT_MENU_IN_USE\0Integer"
         ,"R\0GLUT_NOT_VISIBLE\0Integer"
+        ,"R\0GLUT_VISIBLE\0Integer"
         ,"R\0GLUT_HIDDEN\0Integer"
         ,"R\0GLUT_FULLY_RETAINED\0Integer"
-        ,"R\0GLUT_PARTIALLY_RETAINED\0Integer"
         ,"R\0GLUT_PARTIALLY_RETAINED\0Integer"
         ,"R\0GLUT_FULLY_COVERED\0Integer"
 
@@ -1907,6 +2147,7 @@ const char * loli_GL_info_table[] = {
         ,"R\0GLUT_KEY_F10\0Integer"
         ,"R\0GLUT_KEY_F11\0Integer"
         ,"R\0GLUT_KEY_F12\0Integer"
+        ,"R\0GLUT_KEY_LEFT\0Integer"
         ,"R\0GLUT_KEY_UP\0Integer"
         ,"R\0GLUT_KEY_RIGHT\0Integer"
         ,"R\0GLUT_KEY_DOWN\0Integer"
@@ -1915,6 +2156,126 @@ const char * loli_GL_info_table[] = {
         ,"R\0GLUT_KEY_HOME\0Integer"
         ,"R\0GLUT_KEY_END\0Integer"
         ,"R\0GLUT_KEY_INSERT\0Integer"
+
+        ,"R\0GLUT_LEFT_BUTTON\0Integer"
+        ,"R\0GLUT_MIDDLE_BUTTON\0Integer"
+        ,"R\0GLUT_DOWN\0Integer"
+        ,"R\0GLUT_UP\0Integer"
+        ,"R\0GLUT_ENTERED\0Integer"
+        ,"R\0GLUT_WINDOW_X\0Integer"
+        ,"R\0GLUT_WINDOW_Y\0Integer"
+        ,"R\0GLUT_WINDOW_WIDTH\0Integer"
+        ,"R\0GLUT_WINDOW_HEIGHT\0Integer"
+        ,"R\0GLUT_WINDOW_BUFFER_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_STENCIL_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_DEPTH_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_RED_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_GREEN_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_BLUE_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_ALPHA_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_ACCUM_RED_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_ACCUM_GREEN_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_ACCUM_BLUE_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_ACCUM_ALPHA_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_DOUBLEBUFFER\0Integer"
+        ,"R\0GLUT_WINDOW_RGBA\0Integer"
+        ,"R\0GLUT_WINDOW_PARENT\0Integer"
+        ,"R\0GLUT_WINDOW_NUM_CHILDREN\0Integer"
+        ,"R\0GLUT_WINDOW_COLORMAP_SIZE\0Integer"
+        ,"R\0GLUT_WINDOW_NUM_SAMPLES\0Integer"
+        ,"R\0GLUT_WINDOW_STEREO\0Integer"
+        ,"R\0GLUT_WINDOW_CURSOR\0Integer"
+        ,"R\0GLUT_SCREEN_WIDTH\0Integer"
+        ,"R\0GLUT_SCREEN_HEIGHT\0Integer"
+        ,"R\0GLUT_SCREEN_WIDTH_MM\0Integer"
+        ,"R\0GLUT_SCREEN_HEIGHT_MM\0Integer"
+        ,"R\0GLUT_MENU_NUM_ITEMS\0Integer"
+        ,"R\0GLUT_DISPLAY_MODE_POSSIBLE\0Integer"
+        ,"R\0GLUT_INIT_WINDOW_X\0Integer"
+        ,"R\0GLUT_INIT_WINDOW_Y\0Integer"
+        ,"R\0GLUT_INIT_WINDOW_WIDTH\0Integer"
+        ,"R\0GLUT_INIT_WINDOW_HEIGHT\0Integer"
+        ,"R\0GLUT_INIT_DISPLAY_MODE\0Integer"
+        ,"R\0GLUT_ELAPSED_TIME\0Integer"
+        ,"R\0GLUT_WINDOW_FORMAT_ID\0Integer"
+        ,"R\0GLUT_HAS_KEYBOARD\0Integer"
+        ,"R\0GLUT_HAS_MOUSE\0Integer"
+        ,"R\0GLUT_HAS_SPACEBALL\0Integer"
+        ,"R\0GLUT_HAS_DIAL_AND_BUTTON_BOX\0Integer"
+        ,"R\0GLUT_HAS_TABLET\0Integer"
+        ,"R\0GLUT_NUM_MOUSE_BUTTONS\0Integer"
+        ,"R\0GLUT_NUM_SPACEBALL_BUTTONS\0Integer"
+        ,"R\0GLUT_NUM_BUTTON_BOX_BUTTONS\0Integer"
+        ,"R\0GLUT_NUM_DIALS\0Integer"
+        ,"R\0GLUT_NUM_TABLET_BUTTONS\0Integer"
+        ,"R\0GLUT_DEVICE_IGNORE_KEY_REPEAT\0Integer"
+        ,"R\0GLUT_DEVICE_KEY_REPEAT\0Integer"
+        ,"R\0GLUT_HAS_JOYSTICK\0Integer"
+        ,"R\0GLUT_OWNS_JOYSTICK\0Integer"
+        ,"R\0GLUT_JOYSTICK_BUTTONS\0Integer"
+        ,"R\0GLUT_JOYSTICK_AXES\0Integer"
+        ,"R\0GLUT_JOYSTICK_POLL_RATE\0Integer"
+        ,"R\0GLUT_OVERLAY_POSSIBLE\0Integer"
+        ,"R\0GLUT_LAYER_IN_USE\0Integer"
+        ,"R\0GLUT_HAS_OVERLAY\0Integer"
+        ,"R\0GLUT_TRANSPARENT_INDEX\0Integer"
+        ,"R\0GLUT_NORMAL_DAMAGED\0Integer"
+        ,"R\0GLUT_OVERLAY_DAMAGED\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_POSSIBLE\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_IN_USE\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_X_DELTA\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_Y_DELTA\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_WIDTH_DELTA\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_HEIGHT_DELTA\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_X\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_Y\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_WIDTH\0Integer"
+        ,"R\0GLUT_VIDEO_RESIZE_HEIGHT\0Integer"
+        ,"R\0GLUT_NORMAL\0Integer"
+        ,"R\0GLUT_OVERLAY\0Integer"
+        ,"R\0GLUT_ACTIVE_SHIFT\0Integer"
+        ,"R\0GLUT_ACTIVE_CTRL\0Integer"
+        ,"R\0GLUT_ACTIVE_ALT\0Integer"
+        ,"R\0GLUT_CURSOR_RIGHT_ARROW\0Integer"
+        ,"R\0GLUT_CURSOR_LEFT_ARROW\0Integer"
+        ,"R\0GLUT_CURSOR_INFO\0Integer"
+        ,"R\0GLUT_CURSOR_DESTROY\0Integer"
+        ,"R\0GLUT_CURSOR_HELP\0Integer"
+        ,"R\0GLUT_CURSOR_CYCLE\0Integer"
+        ,"R\0GLUT_CURSOR_SPRAY\0Integer"
+        ,"R\0GLUT_CURSOR_WAIT\0Integer"
+        ,"R\0GLUT_CURSOR_TEXT\0Integer"
+        ,"R\0GLUT_CURSOR_CROSSHAIR\0Integer"
+        ,"R\0GLUT_CURSOR_UP_DOWN\0Integer"
+        ,"R\0GLUT_CURSOR_LEFT_RIGHT\0Integer"
+        ,"R\0GLUT_CURSOR_TOP_SIDE\0Integer"
+        ,"R\0GLUT_CURSOR_BOTTOM_SIDE\0Integer"
+        ,"R\0GLUT_CURSOR_LEFT_SIDE\0Integer"
+        ,"R\0GLUT_CURSOR_RIGHT_SIDE\0Integer"
+        ,"R\0GLUT_CURSOR_TOP_LEFT_CORNER\0Integer"
+        ,"R\0GLUT_CURSOR_TOP_RIGHT_CORNER\0Integer"
+        ,"R\0GLUT_CURSOR_BOTTOM_RIGHT_CORNER\0Integer"
+        ,"R\0GLUT_CURSOR_BOTTOM_LEFT_CORNER\0Integer"
+        ,"R\0GLUT_CURSOR_INHERIT\0Integer"
+        ,"R\0GLUT_CURSOR_NONE\0Integer"
+        ,"R\0GLUT_CURSOR_FULL_CROSSHAIR\0Integer"
+        ,"R\0GLUT_RED\0Integer"
+        ,"R\0GLUT_GREEN\0Integer"
+        ,"R\0GLUT_BLUE\0Integer"
+        ,"R\0GLUT_KEY_REPEAT_OFF\0Integer"
+        ,"R\0GLUT_KEY_REPEAT_ON\0Integer"
+        ,"R\0GLUT_KEY_REPEAT_DEFAULT\0Integer"
+        ,"R\0GLUT_JOYSTICK_BUTTON_A\0Integer"
+        ,"R\0GLUT_JOYSTICK_BUTTON_B\0Integer"
+        ,"R\0GLUT_JOYSTICK_BUTTON_C\0Integer"
+        ,"R\0GLUT_JOYSTICK_BUTTON_D\0Integer"
+        ,"R\0GLUT_GAME_MODE_ACTIVE\0Integer"
+        ,"R\0GLUT_GAME_MODE_POSSIBLE\0Integer"
+        ,"R\0GLUT_GAME_MODE_WIDTH\0Integer"
+        ,"R\0GLUT_GAME_MODE_HEIGHT\0Integer"
+        ,"R\0GLUT_GAME_MODE_PIXEL_DEPTH\0Integer"
+        ,"R\0GLUT_GAME_MODE_REFRESH_RATE\0Integer"
+        ,"R\0GLUT_GAME_MODE_DISPLAY_CHANGED\0Integer"
 
         ,"R\0GL_FALSE\0Integer"
         ,"R\0GL_TRUE\0Integer"

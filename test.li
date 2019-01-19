@@ -18,10 +18,13 @@ GL.glutCreateWindow       (GL.loliGlVersion)
 GL.glutDisplayFunc        (glutDisplayFunc)
 GL.glutKeyboardFunc       (glutKeyboardFunc)
 
+GL.glutSetCursor(GL.GLUT_CURSOR_RIGHT_ARROW)
+
 # main loop
 GL.glutMainLoop           ()
 
 fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
+
     if (key == 27t): { sys.exit(0) } # on `Esc` press ...
 }
 

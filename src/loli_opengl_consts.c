@@ -166,6 +166,482 @@ void loli_GL_var_GLUT_KEY_INSERT(loli_state * state) {
     loli_push_integer(state, GLUT_KEY_INSERT);
 }
 
+void loli_GL_var_GLUT_LEFT_BUTTON(loli_state * state) {
+    loli_push_integer(state, GLUT_LEFT_BUTTON);
+}
+
+void loli_GL_var_GLUT_MIDDLE_BUTTON(loli_state * state) {
+    loli_push_integer(state, GLUT_MIDDLE_BUTTON);
+}
+
+void loli_GL_var_GLUT_DOWN(loli_state * state) {
+    loli_push_integer(state, GLUT_DOWN);
+}
+
+void loli_GL_var_GLUT_UP(loli_state * state) {
+    loli_push_integer(state, GLUT_UP);
+}
+
+void loli_GL_var_GLUT_ENTERED(loli_state * state) {
+    loli_push_integer(state, GLUT_ENTERED);
+}
+
+void loli_GL_var_GLUT_WINDOW_X(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_X);
+}
+
+void loli_GL_var_GLUT_WINDOW_Y(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_Y);
+}
+
+void loli_GL_var_GLUT_WINDOW_WIDTH(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_WIDTH);
+}
+
+void loli_GL_var_GLUT_WINDOW_HEIGHT(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_HEIGHT);
+}
+
+void loli_GL_var_GLUT_WINDOW_BUFFER_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_BUFFER_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_STENCIL_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_STENCIL_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_DEPTH_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_DEPTH_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_RED_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_RED_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_GREEN_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_GREEN_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_BLUE_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_BLUE_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_ALPHA_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_ALPHA_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_ACCUM_RED_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_ACCUM_RED_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_ACCUM_GREEN_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_ACCUM_GREEN_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_ACCUM_BLUE_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_ACCUM_BLUE_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_ACCUM_ALPHA_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_ACCUM_ALPHA_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_DOUBLEBUFFER(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_DOUBLEBUFFER);
+}
+
+void loli_GL_var_GLUT_WINDOW_RGBA(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_RGBA);
+}
+
+void loli_GL_var_GLUT_WINDOW_PARENT(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_PARENT);
+}
+
+void loli_GL_var_GLUT_WINDOW_NUM_CHILDREN(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_NUM_CHILDREN);
+}
+
+void loli_GL_var_GLUT_WINDOW_COLORMAP_SIZE(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_COLORMAP_SIZE);
+}
+
+void loli_GL_var_GLUT_WINDOW_NUM_SAMPLES(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_NUM_SAMPLES);
+}
+
+void loli_GL_var_GLUT_WINDOW_STEREO(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_STEREO);
+}
+
+void loli_GL_var_GLUT_WINDOW_CURSOR(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_STEREO);
+}
+
+void loli_GL_var_GLUT_SCREEN_WIDTH(loli_state * state) {
+    loli_push_integer(state, GLUT_SCREEN_WIDTH);
+}
+
+void loli_GL_var_GLUT_SCREEN_HEIGHT(loli_state * state) {
+    loli_push_integer(state, GLUT_SCREEN_HEIGHT);
+}
+
+void loli_GL_var_GLUT_SCREEN_WIDTH_MM(loli_state * state) {
+    loli_push_integer(state, GLUT_SCREEN_WIDTH_MM);
+}
+
+void loli_GL_var_GLUT_SCREEN_HEIGHT_MM(loli_state * state) {
+    loli_push_integer(state, GLUT_SCREEN_HEIGHT_MM);
+}
+
+void loli_GL_var_GLUT_MENU_NUM_ITEMS(loli_state * state) {
+    loli_push_integer(state, GLUT_MENU_NUM_ITEMS);
+}
+
+void loli_GL_var_GLUT_DISPLAY_MODE_POSSIBLE(loli_state * state) {
+    loli_push_integer(state, GLUT_DISPLAY_MODE_POSSIBLE);
+}
+
+void loli_GL_var_GLUT_INIT_WINDOW_X(loli_state * state) {
+    loli_push_integer(state, GLUT_INIT_WINDOW_X);
+}
+
+void loli_GL_var_GLUT_INIT_WINDOW_Y(loli_state * state) {
+    loli_push_integer(state, GLUT_INIT_WINDOW_Y);
+}
+
+void loli_GL_var_GLUT_INIT_WINDOW_WIDTH(loli_state * state) {
+    loli_push_integer(state, GLUT_INIT_WINDOW_WIDTH);
+}
+
+void loli_GL_var_GLUT_INIT_WINDOW_HEIGHT(loli_state * state) {
+    loli_push_integer(state, GLUT_INIT_WINDOW_HEIGHT);
+}
+
+void loli_GL_var_GLUT_INIT_DISPLAY_MODE(loli_state * state) {
+    loli_push_integer(state, GLUT_INIT_DISPLAY_MODE);
+}
+
+void loli_GL_var_GLUT_ELAPSED_TIME(loli_state * state) {
+    loli_push_integer(state, GLUT_ELAPSED_TIME);
+}
+
+void loli_GL_var_GLUT_WINDOW_FORMAT_ID(loli_state * state) {
+    loli_push_integer(state, GLUT_WINDOW_FORMAT_ID);
+}
+
+void loli_GL_var_GLUT_HAS_KEYBOARD(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_KEYBOARD);
+}
+
+void loli_GL_var_GLUT_HAS_MOUSE(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_MOUSE);
+}
+
+void loli_GL_var_GLUT_HAS_SPACEBALL(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_SPACEBALL);
+}
+
+void loli_GL_var_GLUT_HAS_DIAL_AND_BUTTON_BOX(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_DIAL_AND_BUTTON_BOX);
+}
+
+void loli_GL_var_GLUT_HAS_TABLET(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_TABLET);
+}
+
+void loli_GL_var_GLUT_NUM_MOUSE_BUTTONS(loli_state * state) {
+    loli_push_integer(state, GLUT_NUM_MOUSE_BUTTONS);
+}
+
+void loli_GL_var_GLUT_NUM_SPACEBALL_BUTTONS(loli_state * state) {
+    loli_push_integer(state, GLUT_NUM_SPACEBALL_BUTTONS);
+}
+
+void loli_GL_var_GLUT_NUM_BUTTON_BOX_BUTTONS(loli_state * state) {
+    loli_push_integer(state, GLUT_NUM_BUTTON_BOX_BUTTONS);
+}
+
+void loli_GL_var_GLUT_NUM_DIALS(loli_state * state) {
+    loli_push_integer(state, GLUT_NUM_DIALS);
+}
+
+void loli_GL_var_GLUT_NUM_TABLET_BUTTONS(loli_state * state) {
+    loli_push_integer(state, GLUT_NUM_TABLET_BUTTONS);
+}
+
+void loli_GL_var_GLUT_DEVICE_IGNORE_KEY_REPEAT(loli_state * state) {
+    loli_push_integer(state, GLUT_DEVICE_IGNORE_KEY_REPEAT);
+}
+
+void loli_GL_var_GLUT_DEVICE_KEY_REPEAT(loli_state * state) {
+    loli_push_integer(state, GLUT_DEVICE_KEY_REPEAT);
+}
+
+void loli_GL_var_GLUT_HAS_JOYSTICK(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_JOYSTICK);
+}
+
+void loli_GL_var_GLUT_OWNS_JOYSTICK(loli_state * state) {
+    loli_push_integer(state, GLUT_OWNS_JOYSTICK);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_BUTTONS(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_BUTTONS);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_AXES(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_AXES);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_POLL_RATE(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_POLL_RATE);
+}
+
+void loli_GL_var_GLUT_OVERLAY_POSSIBLE(loli_state * state) {
+    loli_push_integer(state, GLUT_OVERLAY_POSSIBLE);
+}
+
+void loli_GL_var_GLUT_LAYER_IN_USE(loli_state * state) {
+    loli_push_integer(state, GLUT_LAYER_IN_USE);
+}
+
+void loli_GL_var_GLUT_HAS_OVERLAY(loli_state * state) {
+    loli_push_integer(state, GLUT_HAS_OVERLAY);
+}
+
+void loli_GL_var_GLUT_TRANSPARENT_INDEX(loli_state * state) {
+    loli_push_integer(state, GLUT_TRANSPARENT_INDEX);
+}
+
+void loli_GL_var_GLUT_NORMAL_DAMAGED(loli_state * state) {
+    loli_push_integer(state, GLUT_NORMAL_DAMAGED);
+}
+
+void loli_GL_var_GLUT_OVERLAY_DAMAGED(loli_state * state) {
+    loli_push_integer(state, GLUT_OVERLAY_DAMAGED);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_POSSIBLE(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_POSSIBLE);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_IN_USE(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_IN_USE);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_X_DELTA(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_X_DELTA);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_Y_DELTA(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_Y_DELTA);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_WIDTH_DELTA(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_WIDTH_DELTA);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_HEIGHT_DELTA(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_HEIGHT_DELTA);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_X(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_X);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_Y(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_Y);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_WIDTH(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_WIDTH);
+}
+
+void loli_GL_var_GLUT_VIDEO_RESIZE_HEIGHT(loli_state * state) {
+    loli_push_integer(state, GLUT_VIDEO_RESIZE_HEIGHT);
+}
+
+void loli_GL_var_GLUT_NORMAL(loli_state * state) {
+    loli_push_integer(state, GLUT_NORMAL);
+}
+
+void loli_GL_var_GLUT_OVERLAY(loli_state * state) {
+    loli_push_integer(state, GLUT_OVERLAY);
+}
+
+void loli_GL_var_GLUT_ACTIVE_SHIFT(loli_state * state) {
+    loli_push_integer(state, GLUT_ACTIVE_SHIFT);
+}
+
+void loli_GL_var_GLUT_ACTIVE_CTRL(loli_state * state) {
+    loli_push_integer(state, GLUT_ACTIVE_CTRL);
+}
+
+void loli_GL_var_GLUT_ACTIVE_ALT(loli_state * state) {
+    loli_push_integer(state, GLUT_ACTIVE_ALT);
+}
+
+void loli_GL_var_GLUT_CURSOR_RIGHT_ARROW(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_RIGHT_ARROW);
+}
+
+void loli_GL_var_GLUT_CURSOR_LEFT_ARROW(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_LEFT_ARROW);
+}
+
+void loli_GL_var_GLUT_CURSOR_INFO(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_INFO);
+}
+
+void loli_GL_var_GLUT_CURSOR_DESTROY(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_DESTROY);
+}
+
+void loli_GL_var_GLUT_CURSOR_HELP(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_HELP);
+}
+
+void loli_GL_var_GLUT_CURSOR_CYCLE(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_CYCLE);
+}
+
+void loli_GL_var_GLUT_CURSOR_SPRAY(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_SPRAY);
+}
+
+void loli_GL_var_GLUT_CURSOR_WAIT(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_WAIT);
+}
+
+void loli_GL_var_GLUT_CURSOR_TEXT(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_TEXT);
+}
+
+void loli_GL_var_GLUT_CURSOR_CROSSHAIR(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_CROSSHAIR);
+}
+
+void loli_GL_var_GLUT_CURSOR_UP_DOWN(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_UP_DOWN);
+}
+
+void loli_GL_var_GLUT_CURSOR_LEFT_RIGHT(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_LEFT_RIGHT);
+}
+
+void loli_GL_var_GLUT_CURSOR_TOP_SIDE(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_TOP_SIDE);
+}
+
+void loli_GL_var_GLUT_CURSOR_BOTTOM_SIDE(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_BOTTOM_SIDE);
+}
+
+void loli_GL_var_GLUT_CURSOR_LEFT_SIDE(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_LEFT_SIDE);
+}
+
+void loli_GL_var_GLUT_CURSOR_RIGHT_SIDE(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_RIGHT_SIDE);
+}
+
+void loli_GL_var_GLUT_CURSOR_TOP_LEFT_CORNER(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_TOP_LEFT_CORNER);
+}
+
+void loli_GL_var_GLUT_CURSOR_TOP_RIGHT_CORNER(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_TOP_RIGHT_CORNER);
+}
+
+void loli_GL_var_GLUT_CURSOR_BOTTOM_RIGHT_CORNER(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_BOTTOM_RIGHT_CORNER);
+}
+
+void loli_GL_var_GLUT_CURSOR_BOTTOM_LEFT_CORNER(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_BOTTOM_LEFT_CORNER);
+}
+
+void loli_GL_var_GLUT_CURSOR_INHERIT(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_INHERIT);
+}
+
+void loli_GL_var_GLUT_CURSOR_NONE(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_NONE);
+}
+
+void loli_GL_var_GLUT_CURSOR_FULL_CROSSHAIR(loli_state * state) {
+    loli_push_integer(state, GLUT_CURSOR_FULL_CROSSHAIR);
+}
+
+void loli_GL_var_GLUT_RED(loli_state * state) {
+    loli_push_integer(state, GLUT_RED);
+}
+
+void loli_GL_var_GLUT_GREEN(loli_state * state) {
+    loli_push_integer(state, GLUT_GREEN);
+}
+
+void loli_GL_var_GLUT_BLUE(loli_state * state) {
+    loli_push_integer(state, GLUT_BLUE);
+}
+
+void loli_GL_var_GLUT_KEY_REPEAT_OFF(loli_state * state) {
+    loli_push_integer(state, GLUT_KEY_REPEAT_OFF);
+}
+
+void loli_GL_var_GLUT_KEY_REPEAT_ON(loli_state * state) {
+    loli_push_integer(state, GLUT_KEY_REPEAT_ON);
+}
+
+void loli_GL_var_GLUT_KEY_REPEAT_DEFAULT(loli_state * state) {
+    loli_push_integer(state, GLUT_KEY_REPEAT_DEFAULT);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_A(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_BUTTON_A);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_B(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_BUTTON_B);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_C(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_BUTTON_C);
+}
+
+void loli_GL_var_GLUT_JOYSTICK_BUTTON_D(loli_state * state) {
+    loli_push_integer(state, GLUT_JOYSTICK_BUTTON_D);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_ACTIVE(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_ACTIVE);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_POSSIBLE(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_POSSIBLE);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_WIDTH(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_WIDTH);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_HEIGHT(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_HEIGHT);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_PIXEL_DEPTH(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_PIXEL_DEPTH);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_REFRESH_RATE(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_REFRESH_RATE);
+}
+
+void loli_GL_var_GLUT_GAME_MODE_DISPLAY_CHANGED(loli_state * state) {
+    loli_push_integer(state, GLUT_GAME_MODE_DISPLAY_CHANGED);
+}
+
 /* __gl_h_ */
 
 void loli_GL_var_GL_FALSE(loli_state * state) {
