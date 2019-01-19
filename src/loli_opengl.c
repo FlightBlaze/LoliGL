@@ -298,6 +298,7 @@ static void __fn_glutSpecialFunc(int i1, int i2, int i3) {
     if (_loli_state             == 0) return;
     if (_fn_glutSpecialFunc_val == 0) return;
 
+    loli_call_prepare(_loli_state, _fn_glutSpecialFunc_val);
     loli_push_integer(_loli_state, i1);
     loli_push_integer(_loli_state, i2);
     loli_push_integer(_loli_state, i3);
@@ -309,6 +310,7 @@ static void __fn_glutReshapeFunc(int i1, int i2) {
     if (_loli_state             == 0) return;
     if (_fn_glutReshapeFunc_val == 0) return;
 
+    loli_call_prepare(_loli_state, _fn_glutReshapeFunc_val);
     loli_push_integer(_loli_state, i1);
     loli_push_integer(_loli_state, i2);
 
@@ -319,19 +321,21 @@ static void __fn_glutVisibilityFunc(int i1) {
     if (_loli_state                == 0) return;
     if (_fn_glutVisibilityFunc_val == 0) return;
 
+    loli_call_prepare(_loli_state, _fn_glutVisibilityFunc_val);
     loli_push_integer(_loli_state, i1);
 
     loli_call(_loli_state, 1);
 }
 
-static void __fn_glutMouseFunc(int i1, int i2, int i3, int i4) {
+static void __fn_glutMouseFunc(int button, int state, int x, int y) {
     if (_loli_state                == 0) return;
     if (_fn_glutMouseFunc_val      == 0) return;
 
-    loli_push_integer(_loli_state, i1);
-    loli_push_integer(_loli_state, i2);
-    loli_push_integer(_loli_state, i3);
-    loli_push_integer(_loli_state, i4);
+    loli_call_prepare(_loli_state, _fn_glutMouseFunc_val);
+    loli_push_integer(_loli_state, button);
+    loli_push_integer(_loli_state, state);
+    loli_push_integer(_loli_state, x);
+    loli_push_integer(_loli_state, y);
 
     loli_call(_loli_state, 4);
 }
@@ -340,6 +344,7 @@ static void __fn_glutMotionFunc(int i1, int i2) {
     if (_loli_state                == 0) return;
     if (_fn_glutMotionFunc_val     == 0) return;
 
+    loli_call_prepare(_loli_state, _fn_glutMotionFunc_val);
     loli_push_integer(_loli_state, i1);
     loli_push_integer(_loli_state, i2);
 
@@ -350,6 +355,7 @@ static void __fn_glutPassiveMotionFunc(int i1, int i2) {
     if (_loli_state                   == 0) return;
     if (_fn_glutPassiveMotionFunc_val == 0) return;
 
+    loli_call_prepare(_loli_state, _fn_glutPassiveMotionFunc_val);
     loli_push_integer(_loli_state, i1);
     loli_push_integer(_loli_state, i2);
 
@@ -360,6 +366,7 @@ static void __fn_glutEntryFunc(int i1) {
     if (_loli_state           == 0) return;
     if (_fn_glutEntryFunc_val == 0) return;
 
+    loli_call_prepare(_loli_state, _fn_glutEntryFunc_val);
     loli_push_integer(_loli_state, i1);
 
     loli_call(_loli_state, 1);

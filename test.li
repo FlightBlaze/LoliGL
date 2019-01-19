@@ -2,14 +2,15 @@ import sys
 import "cmake-build-debug/GL" as GL
 
 # define `future` functions
-future fn glutKeyboardFunc(Byte, Integer, Integer) { ... }
-future fn glutDisplayFunc                          { ... }
+future fn glutKeyboardFunc(Byte, Integer, Integer)          { ... }
+future fn glutDisplayFunc                                   { ... }
+future fn glutMouseFunc(Integer, Integer, Integer, Integer) { ... }
 
 # init window
 GL.glutInit               ("Test OpenGL application in loli")
 GL.glutInitDisplayMode    (GL.GLUT_RGBA | GL.GLUT_SINGLE)
-GL.glutInitWindowSize     (200, 200)
-GL.glutInitWindowPosition (100, 100)
+GL.glutInitWindowSize     (400, 400)
+GL.glutInitWindowPosition (200, 200)
 
 # create window
 GL.glutCreateWindow       (GL.loliGlVersion)
@@ -17,8 +18,7 @@ GL.glutCreateWindow       (GL.loliGlVersion)
 # bind functions
 GL.glutDisplayFunc        (glutDisplayFunc)
 GL.glutKeyboardFunc       (glutKeyboardFunc)
-
-GL.glutSetCursor(GL.GLUT_CURSOR_RIGHT_ARROW)
+GL.glutMouseFunc          (glutMouseFunc)
 
 # main loop
 GL.glutMainLoop           ()
@@ -30,4 +30,8 @@ fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
 
 fn glutDisplayFunc {
     GL.example()
+}
+
+fn glutMouseFunc(button: Integer, state: Integer, x: Integer, y: Integer) {
+    GL.glutSetCursor(GL.GLUT_CURSOR_WAIT)
 }
