@@ -1,6 +1,6 @@
 # LoliGL
 
-> OpenGL & GLUT port for [loli programming language](https://github.com/txlyre/loli)
+> OpenGL & GLUT port for [Loli programming language](https://github.com/loli-foundation/loli)
 
 ### Building
 
