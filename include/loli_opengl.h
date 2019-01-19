@@ -273,6 +273,620 @@ void loli_GL_var_GL_ADD                        (loli_state *);
 void loli_GL_var_GL_LOAD                       (loli_state *);
 void loli_GL_var_GL_MULT                       (loli_state *);
 void loli_GL_var_GL_RETURN                     (loli_state *);
+void loli_GL_var_GL_ALPHA_TEST                 (loli_state *);
+void loli_GL_var_GL_ALPHA_TEST_REF             (loli_state *);
+void loli_GL_var_GL_ALPHA_TEST_FUNC            (loli_state *);
+void loli_GL_var_GL_BLEND                      (loli_state *);
+void loli_GL_var_GL_BLEND_SRC                  (loli_state *);
+void loli_GL_var_GL_BLEND_DST                  (loli_state *);
+void loli_GL_var_GL_ZERO                       (loli_state *);
+void loli_GL_var_GL_ONE                        (loli_state *);
+void loli_GL_var_GL_SRC_COLOR                  (loli_state *);
+void loli_GL_var_GL_ONE_MINUS_SRC_COLOR        (loli_state *);
+void loli_GL_var_GL_SRC_ALPHA                  (loli_state *);
+void loli_GL_var_GL_ONE_MINUS_SRC_ALPHA        (loli_state *);
+void loli_GL_var_GL_DST_ALPHA                  (loli_state *);
+void loli_GL_var_GL_ONE_MINUS_DST_ALPHA        (loli_state *);
+void loli_GL_var_GL_DST_COLOR                  (loli_state *);
+void loli_GL_var_GL_ONE_MINUS_DST_COLOR        (loli_state *);
+void loli_GL_var_GL_SRC_ALPHA_SATURATE         (loli_state *);
+void loli_GL_var_GL_FEEDBACK                   (loli_state *);
+void loli_GL_var_GL_RENDER                     (loli_state *);
+void loli_GL_var_GL_SELECT                     (loli_state *);
+void loli_GL_var_GL_2D                         (loli_state *);
+void loli_GL_var_GL_3D                         (loli_state *);
+void loli_GL_var_GL_3D_COLOR                   (loli_state *);
+void loli_GL_var_GL_3D_COLOR_TEXTURE           (loli_state *);
+void loli_GL_var_GL_4D_COLOR_TEXTURE           (loli_state *);
+void loli_GL_var_GL_POINT_TOKEN                (loli_state *);
+void loli_GL_var_GL_LINE_TOKEN                 (loli_state *);
+void loli_GL_var_GL_LINE_RESET_TOKEN           (loli_state *);
+void loli_GL_var_GL_POLYGON_TOKEN              (loli_state *);
+void loli_GL_var_GL_BITMAP_TOKEN               (loli_state *);
+void loli_GL_var_GL_DRAW_PIXEL_TOKEN           (loli_state *);
+void loli_GL_var_GL_COPY_PIXEL_TOKEN           (loli_state *);
+void loli_GL_var_GL_PASS_THROUGH_TOKEN         (loli_state *);
+void loli_GL_var_GL_FEEDBACK_BUFFER_POINTER    (loli_state *);
+void loli_GL_var_GL_FEEDBACK_BUFFER_SIZE       (loli_state *);
+void loli_GL_var_GL_FEEDBACK_BUFFER_TYPE       (loli_state *);
+void loli_GL_var_GL_SELECTION_BUFFER_POINTER   (loli_state *);
+void loli_GL_var_GL_SELECTION_BUFFER_SIZE      (loli_state *);
+void loli_GL_var_GL_FOG                        (loli_state *);
+void loli_GL_var_GL_FOG_MODE                   (loli_state *);
+void loli_GL_var_GL_FOG_DENSITY                (loli_state *);
+void loli_GL_var_GL_FOG_COLOR                  (loli_state *);
+void loli_GL_var_GL_FOG_INDEX                  (loli_state *);
+void loli_GL_var_GL_FOG_START                  (loli_state *);
+void loli_GL_var_GL_FOG_END                    (loli_state *);
+void loli_GL_var_GL_LINEAR                     (loli_state *);
+void loli_GL_var_GL_EXP                        (loli_state *);
+void loli_GL_var_GL_EXP2                       (loli_state *);
+void loli_GL_var_GL_LOGIC_OP                   (loli_state *);
+void loli_GL_var_GL_INDEX_LOGIC_OP             (loli_state *);
+void loli_GL_var_GL_COLOR_LOGIC_OP             (loli_state *);
+void loli_GL_var_GL_LOGIC_OP_MODE              (loli_state *);
+void loli_GL_var_GL_CLEAR                      (loli_state *);
+void loli_GL_var_GL_SET                        (loli_state *);
+void loli_GL_var_GL_COPY                       (loli_state *);
+void loli_GL_var_GL_COPY_INVERTED              (loli_state *);
+void loli_GL_var_GL_NOOP                       (loli_state *);
+void loli_GL_var_GL_INVERT                     (loli_state *);
+void loli_GL_var_GL_AND                        (loli_state *);
+void loli_GL_var_GL_NAND                       (loli_state *);
+void loli_GL_var_GL_OR                         (loli_state *);
+void loli_GL_var_GL_NOR                        (loli_state *);
+void loli_GL_var_GL_XOR                        (loli_state *);
+void loli_GL_var_GL_EQUIV                      (loli_state *);
+void loli_GL_var_GL_AND_REVERSE                (loli_state *);
+void loli_GL_var_GL_AND_INVERTED               (loli_state *);
+void loli_GL_var_GL_OR_REVERSE                 (loli_state *);
+void loli_GL_var_GL_OR_INVERTED                (loli_state *);
+void loli_GL_var_GL_STENCIL_BITS               (loli_state *);
+void loli_GL_var_GL_STENCIL_TEST               (loli_state *);
+void loli_GL_var_GL_STENCIL_CLEAR_VALUE        (loli_state *);
+void loli_GL_var_GL_STENCIL_FUNC               (loli_state *);
+void loli_GL_var_GL_STENCIL_VALUE_MASK         (loli_state *);
+void loli_GL_var_GL_STENCIL_FAIL               (loli_state *);
+void loli_GL_var_GL_STENCIL_PASS_DEPTH_FAIL    (loli_state *);
+void loli_GL_var_GL_STENCIL_PASS_DEPTH_PASS    (loli_state *);
+void loli_GL_var_GL_STENCIL_REF                (loli_state *);
+void loli_GL_var_GL_STENCIL_WRITEMASK          (loli_state *);
+void loli_GL_var_GL_STENCIL_INDEX              (loli_state *);
+void loli_GL_var_GL_KEEP                       (loli_state *);
+void loli_GL_var_GL_REPLACE                    (loli_state *);
+void loli_GL_var_GL_INCR                       (loli_state *);
+void loli_GL_var_GL_DECR                       (loli_state *);
+void loli_GL_var_GL_NONE                       (loli_state *);
+void loli_GL_var_GL_LEFT                       (loli_state *);
+void loli_GL_var_GL_RIGHT                      (loli_state *);
+void loli_GL_var_GL_FRONT_LEFT                 (loli_state *);
+void loli_GL_var_GL_FRONT_RIGHT                (loli_state *);
+void loli_GL_var_GL_BACK_LEFT                  (loli_state *);
+void loli_GL_var_GL_BACK_RIGHT                 (loli_state *);
+void loli_GL_var_GL_AUX0                       (loli_state *);
+void loli_GL_var_GL_AUX1                       (loli_state *);
+void loli_GL_var_GL_AUX2                       (loli_state *);
+void loli_GL_var_GL_AUX3                       (loli_state *);
+void loli_GL_var_GL_COLOR_INDEX                (loli_state *);
+void loli_GL_var_GL_RED                        (loli_state *);
+void loli_GL_var_GL_GREEN                      (loli_state *);
+void loli_GL_var_GL_BLUE                       (loli_state *);
+void loli_GL_var_GL_ALPHA                      (loli_state *);
+void loli_GL_var_GL_LUMINANCE                  (loli_state *);
+void loli_GL_var_GL_LUMINANCE_ALPHA            (loli_state *);
+void loli_GL_var_GL_ALPHA_BITS                 (loli_state *);
+void loli_GL_var_GL_RED_BITS                   (loli_state *);
+void loli_GL_var_GL_GREEN_BITS                 (loli_state *);
+void loli_GL_var_GL_BLUE_BITS                  (loli_state *);
+void loli_GL_var_GL_INDEX_BITS                 (loli_state *);
+void loli_GL_var_GL_SUBPIXEL_BITS              (loli_state *);
+void loli_GL_var_GL_AUX_BUFFERS                (loli_state *);
+void loli_GL_var_GL_READ_BUFFER                (loli_state *);
+void loli_GL_var_GL_DRAW_BUFFER                (loli_state *);
+void loli_GL_var_GL_DOUBLEBUFFER               (loli_state *);
+void loli_GL_var_GL_STEREO                     (loli_state *);
+void loli_GL_var_GL_BITMAP                     (loli_state *);
+void loli_GL_var_GL_COLOR                      (loli_state *);
+void loli_GL_var_GL_DEPTH                      (loli_state *);
+void loli_GL_var_GL_STENCIL                    (loli_state *);
+void loli_GL_var_GL_DITHER                     (loli_state *);
+void loli_GL_var_GL_RGB                        (loli_state *);
+void loli_GL_var_GL_RGBA                       (loli_state *);
+void loli_GL_var_GL_MAX_LIST_NESTING           (loli_state *);
+void loli_GL_var_GL_MAX_EVAL_ORDER             (loli_state *);
+void loli_GL_var_GL_MAX_LIGHTS                 (loli_state *);
+void loli_GL_var_GL_MAX_CLIP_PLANES            (loli_state *);
+void loli_GL_var_GL_MAX_TEXTURE_SIZE           (loli_state *);
+void loli_GL_var_GL_MAX_PIXEL_MAP_TABLE        (loli_state *);
+void loli_GL_var_GL_MAX_ATTRIB_STACK_DEPTH     (loli_state *);
+void loli_GL_var_GL_MAX_MODELVIEW_STACK_DEPTH  (loli_state *);
+void loli_GL_var_GL_MAX_NAME_STACK_DEPTH       (loli_state *);
+void loli_GL_var_GL_MAX_PROJECTION_STACK_DEPTH (loli_state *);
+void loli_GL_var_GL_MAX_TEXTURE_STACK_DEPTH    (loli_state *);
+void loli_GL_var_GL_MAX_VIEWPORT_DIMS          (loli_state *);
+void loli_GL_var_GL_MAX_CLIENT_ATTRIB_STACK_DEPTH(loli_state *);
+void loli_GL_var_GL_ATTRIB_STACK_DEPTH         (loli_state *);
+void loli_GL_var_GL_CLIENT_ATTRIB_STACK_DEPTH  (loli_state *);
+void loli_GL_var_GL_COLOR_CLEAR_VALUE          (loli_state *);
+void loli_GL_var_GL_COLOR_WRITEMASK            (loli_state *);
+void loli_GL_var_GL_CURRENT_INDEX              (loli_state *);
+void loli_GL_var_GL_CURRENT_COLOR              (loli_state *);
+void loli_GL_var_GL_CURRENT_NORMAL             (loli_state *);
+void loli_GL_var_GL_CURRENT_RASTER_COLOR       (loli_state *);
+void loli_GL_var_GL_CURRENT_RASTER_DISTANCE    (loli_state *);
+void loli_GL_var_GL_CURRENT_RASTER_INDEX       (loli_state *);
+void loli_GL_var_GL_CURRENT_RASTER_POSITION    (loli_state *);
+void loli_GL_var_GL_CURRENT_RASTER_TEXTURE_COORDS(loli_state *);
+void loli_GL_var_GL_CURRENT_RASTER_POSITION_VALID(loli_state *);
+void loli_GL_var_GL_CURRENT_TEXTURE_COORDS     (loli_state *);
+void loli_GL_var_GL_INDEX_CLEAR_VALUE          (loli_state *);
+void loli_GL_var_GL_INDEX_MODE                 (loli_state *);
+void loli_GL_var_GL_INDEX_WRITEMASK            (loli_state *);
+void loli_GL_var_GL_MODELVIEW_MATRIX           (loli_state *);
+void loli_GL_var_GL_MODELVIEW_STACK_DEPTH      (loli_state *);
+void loli_GL_var_GL_NAME_STACK_DEPTH           (loli_state *);
+void loli_GL_var_GL_PROJECTION_MATRIX          (loli_state *);
+void loli_GL_var_GL_PROJECTION_STACK_DEPTH     (loli_state *);
+void loli_GL_var_GL_RENDER_MODE                (loli_state *);
+void loli_GL_var_GL_RGBA_MODE                  (loli_state *);
+void loli_GL_var_GL_TEXTURE_MATRIX             (loli_state *);
+void loli_GL_var_GL_TEXTURE_STACK_DEPTH        (loli_state *);
+void loli_GL_var_GL_VIEWPORT                   (loli_state *);
+void loli_GL_var_GL_AUTO_NORMAL                (loli_state *);
+void loli_GL_var_GL_MAP1_COLOR_4               (loli_state *);
+void loli_GL_var_GL_MAP1_INDEX                 (loli_state *);
+void loli_GL_var_GL_MAP1_NORMAL                (loli_state *);
+void loli_GL_var_GL_MAP1_TEXTURE_COORD_1       (loli_state *);
+void loli_GL_var_GL_MAP1_TEXTURE_COORD_2       (loli_state *);
+void loli_GL_var_GL_MAP1_TEXTURE_COORD_3       (loli_state *);
+void loli_GL_var_GL_MAP1_TEXTURE_COORD_4       (loli_state *);
+void loli_GL_var_GL_MAP1_VERTEX_3              (loli_state *);
+void loli_GL_var_GL_MAP1_VERTEX_4              (loli_state *);
+void loli_GL_var_GL_MAP2_COLOR_4               (loli_state *);
+void loli_GL_var_GL_MAP2_INDEX                 (loli_state *);
+void loli_GL_var_GL_MAP2_NORMAL                (loli_state *);
+void loli_GL_var_GL_MAP2_TEXTURE_COORD_1       (loli_state *);
+void loli_GL_var_GL_MAP2_TEXTURE_COORD_2       (loli_state *);
+void loli_GL_var_GL_MAP2_TEXTURE_COORD_3       (loli_state *);
+void loli_GL_var_GL_MAP2_TEXTURE_COORD_4       (loli_state *);
+void loli_GL_var_GL_MAP2_VERTEX_3              (loli_state *);
+void loli_GL_var_GL_MAP2_VERTEX_4              (loli_state *);
+void loli_GL_var_GL_MAP1_GRID_DOMAIN           (loli_state *);
+void loli_GL_var_GL_MAP1_GRID_SEGMENTS         (loli_state *);
+void loli_GL_var_GL_MAP2_GRID_DOMAIN           (loli_state *);
+void loli_GL_var_GL_MAP2_GRID_SEGMENTS         (loli_state *);
+void loli_GL_var_GL_COEFF                      (loli_state *);
+void loli_GL_var_GL_ORDER                      (loli_state *);
+void loli_GL_var_GL_DOMAIN                     (loli_state *);
+void loli_GL_var_GL_PERSPECTIVE_CORRECTION_HINT(loli_state *);
+void loli_GL_var_GL_POINT_SMOOTH_HINT          (loli_state *);
+void loli_GL_var_GL_LINE_SMOOTH_HINT           (loli_state *);
+void loli_GL_var_GL_POLYGON_SMOOTH_HINT        (loli_state *);
+void loli_GL_var_GL_DONT_CARE                  (loli_state *);
+void loli_GL_var_GL_FASTEST                    (loli_state *);
+void loli_GL_var_GL_NICEST                     (loli_state *);
+void loli_GL_var_GL_SCISSOR_BOX                (loli_state *);
+void loli_GL_var_GL_SCISSOR_TEST               (loli_state *);
+void loli_GL_var_GL_MAP_COLOR                  (loli_state *);
+void loli_GL_var_GL_MAP_STENCIL                (loli_state *);
+void loli_GL_var_GL_INDEX_SHIFT                (loli_state *);
+void loli_GL_var_GL_INDEX_OFFSET               (loli_state *);
+void loli_GL_var_GL_RED_SCALE                  (loli_state *);
+void loli_GL_var_GL_RED_BIAS                   (loli_state *);
+void loli_GL_var_GL_GREEN_SCALE                (loli_state *);
+void loli_GL_var_GL_GREEN_BIAS                 (loli_state *);
+void loli_GL_var_GL_BLUE_SCALE                 (loli_state *);
+void loli_GL_var_GL_BLUE_BIAS                  (loli_state *);
+void loli_GL_var_GL_ALPHA_SCALE                (loli_state *);
+void loli_GL_var_GL_ALPHA_BIAS                 (loli_state *);
+void loli_GL_var_GL_DEPTH_SCALE                (loli_state *);
+void loli_GL_var_GL_DEPTH_BIAS                 (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_S_TO_S_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_I_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_R_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_G_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_B_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_A_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_R_TO_R_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_G_TO_G_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_B_TO_B_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_A_TO_A_SIZE      (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_S_TO_S           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_I           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_R           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_G           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_B           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_I_TO_A           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_R_TO_R           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_G_TO_G           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_B_TO_B           (loli_state *);
+void loli_GL_var_GL_PIXEL_MAP_A_TO_A           (loli_state *);
+void loli_GL_var_GL_PACK_ALIGNMENT             (loli_state *);
+void loli_GL_var_GL_PACK_LSB_FIRST             (loli_state *);
+void loli_GL_var_GL_PACK_ROW_LENGTH            (loli_state *);
+void loli_GL_var_GL_PACK_SKIP_PIXELS           (loli_state *);
+void loli_GL_var_GL_PACK_SKIP_ROWS             (loli_state *);
+void loli_GL_var_GL_PACK_SWAP_BYTES            (loli_state *);
+void loli_GL_var_GL_UNPACK_ALIGNMENT           (loli_state *);
+void loli_GL_var_GL_UNPACK_LSB_FIRST           (loli_state *);
+void loli_GL_var_GL_UNPACK_ROW_LENGTH          (loli_state *);
+void loli_GL_var_GL_UNPACK_SKIP_PIXELS         (loli_state *);
+void loli_GL_var_GL_UNPACK_SKIP_ROWS           (loli_state *);
+void loli_GL_var_GL_UNPACK_SWAP_BYTES          (loli_state *);
+void loli_GL_var_GL_ZOOM_X                     (loli_state *);
+void loli_GL_var_GL_ZOOM_Y                     (loli_state *);
+void loli_GL_var_GL_TEXTURE_ENV                (loli_state *);
+void loli_GL_var_GL_TEXTURE_ENV_MODE           (loli_state *);
+void loli_GL_var_GL_TEXTURE_1D                 (loli_state *);
+void loli_GL_var_GL_TEXTURE_2D                 (loli_state *);
+void loli_GL_var_GL_TEXTURE_WRAP_S             (loli_state *);
+void loli_GL_var_GL_TEXTURE_WRAP_T             (loli_state *);
+void loli_GL_var_GL_TEXTURE_MAG_FILTER         (loli_state *);
+void loli_GL_var_GL_TEXTURE_MIN_FILTER         (loli_state *);
+void loli_GL_var_GL_TEXTURE_ENV_COLOR          (loli_state *);
+void loli_GL_var_GL_TEXTURE_GEN_S              (loli_state *);
+void loli_GL_var_GL_TEXTURE_GEN_T              (loli_state *);
+void loli_GL_var_GL_TEXTURE_GEN_R              (loli_state *);
+void loli_GL_var_GL_TEXTURE_GEN_Q              (loli_state *);
+void loli_GL_var_GL_TEXTURE_GEN_MODE           (loli_state *);
+void loli_GL_var_GL_TEXTURE_BORDER_COLOR       (loli_state *);
+void loli_GL_var_GL_TEXTURE_WIDTH              (loli_state *);
+void loli_GL_var_GL_TEXTURE_HEIGHT             (loli_state *);
+void loli_GL_var_GL_TEXTURE_BORDER             (loli_state *);
+void loli_GL_var_GL_TEXTURE_COMPONENTS         (loli_state *);
+void loli_GL_var_GL_TEXTURE_RED_SIZE           (loli_state *);
+void loli_GL_var_GL_TEXTURE_GREEN_SIZE         (loli_state *);
+void loli_GL_var_GL_TEXTURE_BLUE_SIZE          (loli_state *);
+void loli_GL_var_GL_TEXTURE_ALPHA_SIZE         (loli_state *);
+void loli_GL_var_GL_TEXTURE_LUMINANCE_SIZE     (loli_state *);
+void loli_GL_var_GL_TEXTURE_INTENSITY_SIZE     (loli_state *);
+void loli_GL_var_GL_NEAREST_MIPMAP_NEAREST     (loli_state *);
+void loli_GL_var_GL_NEAREST_MIPMAP_LINEAR      (loli_state *);
+void loli_GL_var_GL_LINEAR_MIPMAP_NEAREST      (loli_state *);
+void loli_GL_var_GL_LINEAR_MIPMAP_LINEAR       (loli_state *);
+void loli_GL_var_GL_OBJECT_LINEAR              (loli_state *);
+void loli_GL_var_GL_OBJECT_PLANE               (loli_state *);
+void loli_GL_var_GL_EYE_LINEAR                 (loli_state *);
+void loli_GL_var_GL_EYE_PLANE                  (loli_state *);
+void loli_GL_var_GL_SPHERE_MAP                 (loli_state *);
+void loli_GL_var_GL_DECAL                      (loli_state *);
+void loli_GL_var_GL_MODULATE                   (loli_state *);
+void loli_GL_var_GL_NEAREST                    (loli_state *);
+void loli_GL_var_GL_REPEAT                     (loli_state *);
+void loli_GL_var_GL_CLAMP                      (loli_state *);
+void loli_GL_var_GL_S                          (loli_state *);
+void loli_GL_var_GL_T                          (loli_state *);
+void loli_GL_var_GL_R                          (loli_state *);
+void loli_GL_var_GL_Q                          (loli_state *);
+void loli_GL_var_GL_VENDOR                     (loli_state *);
+void loli_GL_var_GL_RENDERER                   (loli_state *);
+void loli_GL_var_GL_VERSION                    (loli_state *);
+void loli_GL_var_GL_EXTENSIONS                 (loli_state *);
+void loli_GL_var_GL_NO_ERROR                   (loli_state *);
+void loli_GL_var_GL_INVALID_ENUM               (loli_state *);
+void loli_GL_var_GL_INVALID_VALUE              (loli_state *);
+void loli_GL_var_GL_INVALID_OPERATION          (loli_state *);
+void loli_GL_var_GL_STACK_OVERFLOW             (loli_state *);
+void loli_GL_var_GL_STACK_UNDERFLOW            (loli_state *);
+void loli_GL_var_GL_OUT_OF_MEMORY              (loli_state *);
+void loli_GL_var_GL_CURRENT_BIT                (loli_state *);
+void loli_GL_var_GL_POINT_BIT                  (loli_state *);
+void loli_GL_var_GL_LINE_BIT                   (loli_state *);
+void loli_GL_var_GL_POLYGON_BIT                (loli_state *);
+void loli_GL_var_GL_POLYGON_STIPPLE_BIT        (loli_state *);
+void loli_GL_var_GL_PIXEL_MODE_BIT             (loli_state *);
+void loli_GL_var_GL_LIGHTING_BIT               (loli_state *);
+void loli_GL_var_GL_FOG_BIT                    (loli_state *);
+void loli_GL_var_GL_DEPTH_BUFFER_BIT           (loli_state *);
+void loli_GL_var_GL_ACCUM_BUFFER_BIT           (loli_state *);
+void loli_GL_var_GL_STENCIL_BUFFER_BIT         (loli_state *);
+void loli_GL_var_GL_VIEWPORT_BIT               (loli_state *);
+void loli_GL_var_GL_TRANSFORM_BIT              (loli_state *);
+void loli_GL_var_GL_ENABLE_BIT                 (loli_state *);
+void loli_GL_var_GL_COLOR_BUFFER_BIT           (loli_state *);
+void loli_GL_var_GL_HINT_BIT                   (loli_state *);
+void loli_GL_var_GL_EVAL_BIT                   (loli_state *);
+void loli_GL_var_GL_LIST_BIT                   (loli_state *);
+void loli_GL_var_GL_TEXTURE_BIT                (loli_state *);
+void loli_GL_var_GL_SCISSOR_BIT                (loli_state *);
+void loli_GL_var_GL_ALL_ATTRIB_BITS            (loli_state *);
+void loli_GL_var_GL_PROXY_TEXTURE_1D           (loli_state *);
+void loli_GL_var_GL_PROXY_TEXTURE_2D           (loli_state *);
+void loli_GL_var_GL_TEXTURE_PRIORITY           (loli_state *);
+void loli_GL_var_GL_TEXTURE_RESIDENT           (loli_state *);
+void loli_GL_var_GL_TEXTURE_BINDING_1D         (loli_state *);
+void loli_GL_var_GL_TEXTURE_BINDING_2D         (loli_state *);
+void loli_GL_var_GL_TEXTURE_INTERNAL_FORMAT    (loli_state *);
+void loli_GL_var_GL_ALPHA4                     (loli_state *);
+void loli_GL_var_GL_ALPHA8                     (loli_state *);
+void loli_GL_var_GL_ALPHA12                    (loli_state *);
+void loli_GL_var_GL_ALPHA16                    (loli_state *);
+void loli_GL_var_GL_LUMINANCE4                 (loli_state *);
+void loli_GL_var_GL_LUMINANCE8                 (loli_state *);
+void loli_GL_var_GL_LUMINANCE12                (loli_state *);
+void loli_GL_var_GL_LUMINANCE16                (loli_state *);
+void loli_GL_var_GL_LUMINANCE4_ALPHA4          (loli_state *);
+void loli_GL_var_GL_LUMINANCE6_ALPHA2          (loli_state *);
+void loli_GL_var_GL_LUMINANCE8_ALPHA8          (loli_state *);
+void loli_GL_var_GL_LUMINANCE12_ALPHA4         (loli_state *);
+void loli_GL_var_GL_LUMINANCE12_ALPHA12        (loli_state *);
+void loli_GL_var_GL_LUMINANCE16_ALPHA16        (loli_state *);
+void loli_GL_var_GL_INTENSITY                  (loli_state *);
+void loli_GL_var_GL_INTENSITY4                 (loli_state *);
+void loli_GL_var_GL_INTENSITY8                 (loli_state *);
+void loli_GL_var_GL_INTENSITY12                (loli_state *);
+void loli_GL_var_GL_INTENSITY16                (loli_state *);
+void loli_GL_var_GL_R3_G3_B2                   (loli_state *);
+void loli_GL_var_GL_RGB4                       (loli_state *);
+void loli_GL_var_GL_RGB5                       (loli_state *);
+void loli_GL_var_GL_RGB8                       (loli_state *);
+void loli_GL_var_GL_RGB10                      (loli_state *);
+void loli_GL_var_GL_RGB12                      (loli_state *);
+void loli_GL_var_GL_RGB16                      (loli_state *);
+void loli_GL_var_GL_RGBA2                      (loli_state *);
+void loli_GL_var_GL_RGBA4                      (loli_state *);
+void loli_GL_var_GL_RGB5_A1                    (loli_state *);
+void loli_GL_var_GL_RGBA8                      (loli_state *);
+void loli_GL_var_GL_RGB10_A2                   (loli_state *);
+void loli_GL_var_GL_RGBA12                     (loli_state *);
+void loli_GL_var_GL_RGBA16                     (loli_state *);
+void loli_GL_var_GL_CLIENT_PIXEL_STORE_BIT     (loli_state *);
+void loli_GL_var_GL_CLIENT_VERTEX_ARRAY_BIT    (loli_state *);
+void loli_GL_var_GL_ALL_CLIENT_ATTRIB_BITS     (loli_state *);
+void loli_GL_var_GL_CLIENT_ALL_ATTRIB_BITS     (loli_state *);
+void loli_GL_var_GL_RESCALE_NORMAL             (loli_state *);
+void loli_GL_var_GL_CLAMP_TO_EDGE              (loli_state *);
+void loli_GL_var_GL_MAX_ELEMENTS_VERTICES      (loli_state *);
+void loli_GL_var_GL_MAX_ELEMENTS_INDICES       (loli_state *);
+void loli_GL_var_GL_BGR                        (loli_state *);
+void loli_GL_var_GL_BGRA                       (loli_state *);
+void loli_GL_var_GL_UNSIGNED_BYTE_3_3_2        (loli_state *);
+void loli_GL_var_GL_UNSIGNED_BYTE_2_3_3_REV    (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_5_6_5       (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_5_6_5_REV   (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_4_4_4_4     (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_4_4_4_4_REV (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_5_5_5_1     (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_1_5_5_5_REV (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT_8_8_8_8       (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT_8_8_8_8_REV   (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT_10_10_10_2    (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT_2_10_10_10_REV(loli_state *);
+void loli_GL_var_GL_LIGHT_MODEL_COLOR_CONTROL  (loli_state *);
+void loli_GL_var_GL_SINGLE_COLOR               (loli_state *);
+void loli_GL_var_GL_SEPARATE_SPECULAR_COLOR    (loli_state *);
+void loli_GL_var_GL_TEXTURE_MIN_LOD            (loli_state *);
+void loli_GL_var_GL_TEXTURE_MAX_LOD            (loli_state *);
+void loli_GL_var_GL_TEXTURE_BASE_LEVEL         (loli_state *);
+void loli_GL_var_GL_TEXTURE_MAX_LEVEL          (loli_state *);
+void loli_GL_var_GL_SMOOTH_POINT_SIZE_RANGE    (loli_state *);
+void loli_GL_var_GL_SMOOTH_POINT_SIZE_GRANULARITY(loli_state *);
+void loli_GL_var_GL_SMOOTH_LINE_WIDTH_RANGE    (loli_state *);
+void loli_GL_var_GL_SMOOTH_LINE_WIDTH_GRANULARITY(loli_state *);
+void loli_GL_var_GL_ALIASED_POINT_SIZE_RANGE   (loli_state *);
+void loli_GL_var_GL_ALIASED_LINE_WIDTH_RANGE   (loli_state *);
+void loli_GL_var_GL_PACK_SKIP_IMAGES           (loli_state *);
+void loli_GL_var_GL_PACK_IMAGE_HEIGHT          (loli_state *);
+void loli_GL_var_GL_UNPACK_SKIP_IMAGES         (loli_state *);
+void loli_GL_var_GL_UNPACK_IMAGE_HEIGHT        (loli_state *);
+void loli_GL_var_GL_TEXTURE_3D                 (loli_state *);
+void loli_GL_var_GL_PROXY_TEXTURE_3D           (loli_state *);
+void loli_GL_var_GL_TEXTURE_DEPTH              (loli_state *);
+void loli_GL_var_GL_TEXTURE_WRAP_R             (loli_state *);
+void loli_GL_var_GL_MAX_3D_TEXTURE_SIZE        (loli_state *);
+void loli_GL_var_GL_TEXTURE_BINDING_3D         (loli_state *);
+void loli_GL_var_GL_CONSTANT_COLOR             (loli_state *);
+void loli_GL_var_GL_ONE_MINUS_CONSTANT_COLOR   (loli_state *);
+void loli_GL_var_GL_CONSTANT_ALPHA             (loli_state *);
+void loli_GL_var_GL_ONE_MINUS_CONSTANT_ALPHA   (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE                (loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_COLOR_TABLE(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_COLOR_TABLE(loli_state *);
+void loli_GL_var_GL_PROXY_COLOR_TABLE          (loli_state *);
+void loli_GL_var_GL_PROXY_POST_CONVOLUTION_COLOR_TABLE(loli_state *);
+void loli_GL_var_GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE(loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_SCALE          (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_BIAS           (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_FORMAT         (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_WIDTH          (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_RED_SIZE       (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_GREEN_SIZE     (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_BLUE_SIZE      (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_ALPHA_SIZE     (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_LUMINANCE_SIZE (loli_state *);
+void loli_GL_var_GL_COLOR_TABLE_INTENSITY_SIZE (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_1D             (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_2D             (loli_state *);
+void loli_GL_var_GL_SEPARABLE_2D               (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_BORDER_MODE    (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_FILTER_SCALE   (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_FILTER_BIAS    (loli_state *);
+void loli_GL_var_GL_REDUCE                     (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_FORMAT         (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_WIDTH          (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_HEIGHT         (loli_state *);
+void loli_GL_var_GL_MAX_CONVOLUTION_WIDTH      (loli_state *);
+void loli_GL_var_GL_MAX_CONVOLUTION_HEIGHT     (loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_RED_SCALE (loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_GREEN_SCALE(loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_BLUE_SCALE(loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_ALPHA_SCALE(loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_RED_BIAS  (loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_GREEN_BIAS(loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_BLUE_BIAS (loli_state *);
+void loli_GL_var_GL_POST_CONVOLUTION_ALPHA_BIAS(loli_state *);
+void loli_GL_var_GL_CONSTANT_BORDER            (loli_state *);
+void loli_GL_var_GL_REPLICATE_BORDER           (loli_state *);
+void loli_GL_var_GL_CONVOLUTION_BORDER_COLOR   (loli_state *);
+void loli_GL_var_GL_COLOR_MATRIX               (loli_state *);
+void loli_GL_var_GL_COLOR_MATRIX_STACK_DEPTH   (loli_state *);
+void loli_GL_var_GL_MAX_COLOR_MATRIX_STACK_DEPTH(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_RED_SCALE(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_GREEN_SCALE(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_BLUE_SCALE(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_ALPHA_SCALE(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_RED_BIAS (loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_GREEN_BIAS(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_BLUE_BIAS(loli_state *);
+void loli_GL_var_GL_POST_COLOR_MATRIX_ALPHA_BIAS(loli_state *);
+void loli_GL_var_GL_HISTOGRAM                  (loli_state *);
+void loli_GL_var_GL_PROXY_HISTOGRAM            (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_WIDTH            (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_FORMAT           (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_RED_SIZE         (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_GREEN_SIZE       (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_BLUE_SIZE        (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_ALPHA_SIZE       (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_LUMINANCE_SIZE   (loli_state *);
+void loli_GL_var_GL_HISTOGRAM_SINK             (loli_state *);
+void loli_GL_var_GL_MINMAX                     (loli_state *);
+void loli_GL_var_GL_MINMAX_FORMAT              (loli_state *);
+void loli_GL_var_GL_MINMAX_SINK                (loli_state *);
+void loli_GL_var_GL_TABLE_TOO_LARGE            (loli_state *);
+void loli_GL_var_GL_BLEND_EQUATION             (loli_state *);
+void loli_GL_var_GL_MIN                        (loli_state *);
+void loli_GL_var_GL_MAX                        (loli_state *);
+void loli_GL_var_GL_FUNC_ADD                   (loli_state *);
+void loli_GL_var_GL_FUNC_SUBTRACT              (loli_state *);
+void loli_GL_var_GL_FUNC_REVERSE_SUBTRACT      (loli_state *);
+void loli_GL_var_GL_BLEND_COLOR                (loli_state *);
+void loli_GL_var_GL_TEXTURE0                   (loli_state *);
+void loli_GL_var_GL_TEXTURE1                   (loli_state *);
+void loli_GL_var_GL_TEXTURE2                   (loli_state *);
+void loli_GL_var_GL_TEXTURE3                   (loli_state *);
+void loli_GL_var_GL_TEXTURE4                   (loli_state *);
+void loli_GL_var_GL_TEXTURE5                   (loli_state *);
+void loli_GL_var_GL_TEXTURE6                   (loli_state *);
+void loli_GL_var_GL_TEXTURE7                   (loli_state *);
+void loli_GL_var_GL_TEXTURE8                   (loli_state *);
+void loli_GL_var_GL_TEXTURE9                   (loli_state *);
+void loli_GL_var_GL_TEXTURE10                  (loli_state *);
+void loli_GL_var_GL_TEXTURE11                  (loli_state *);
+void loli_GL_var_GL_TEXTURE12                  (loli_state *);
+void loli_GL_var_GL_TEXTURE13                  (loli_state *);
+void loli_GL_var_GL_TEXTURE14                  (loli_state *);
+void loli_GL_var_GL_TEXTURE15                  (loli_state *);
+void loli_GL_var_GL_TEXTURE16                  (loli_state *);
+void loli_GL_var_GL_TEXTURE17                  (loli_state *);
+void loli_GL_var_GL_TEXTURE18                  (loli_state *);
+void loli_GL_var_GL_TEXTURE19                  (loli_state *);
+void loli_GL_var_GL_TEXTURE20                  (loli_state *);
+void loli_GL_var_GL_TEXTURE21                  (loli_state *);
+void loli_GL_var_GL_TEXTURE22                  (loli_state *);
+void loli_GL_var_GL_TEXTURE23                  (loli_state *);
+void loli_GL_var_GL_TEXTURE24                  (loli_state *);
+void loli_GL_var_GL_TEXTURE25                  (loli_state *);
+void loli_GL_var_GL_TEXTURE26                  (loli_state *);
+void loli_GL_var_GL_TEXTURE27                  (loli_state *);
+void loli_GL_var_GL_TEXTURE28                  (loli_state *);
+void loli_GL_var_GL_TEXTURE29                  (loli_state *);
+void loli_GL_var_GL_TEXTURE30                  (loli_state *);
+void loli_GL_var_GL_TEXTURE31                  (loli_state *);
+void loli_GL_var_GL_ACTIVE_TEXTURE             (loli_state *);
+void loli_GL_var_GL_CLIENT_ACTIVE_TEXTURE      (loli_state *);
+void loli_GL_var_GL_MAX_TEXTURE_UNITS          (loli_state *);
+void loli_GL_var_GL_NORMAL_MAP                 (loli_state *);
+void loli_GL_var_GL_REFLECTION_MAP             (loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP           (loli_state *);
+void loli_GL_var_GL_TEXTURE_BINDING_CUBE_MAP   (loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP_POSITIVE_X(loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP_NEGATIVE_X(loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP_POSITIVE_Y(loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP_NEGATIVE_Y(loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP_POSITIVE_Z(loli_state *);
+void loli_GL_var_GL_TEXTURE_CUBE_MAP_NEGATIVE_Z(loli_state *);
+void loli_GL_var_GL_PROXY_TEXTURE_CUBE_MAP     (loli_state *);
+void loli_GL_var_GL_MAX_CUBE_MAP_TEXTURE_SIZE  (loli_state *);
+void loli_GL_var_GL_COMPRESSED_ALPHA           (loli_state *);
+void loli_GL_var_GL_COMPRESSED_LUMINANCE       (loli_state *);
+void loli_GL_var_GL_COMPRESSED_LUMINANCE_ALPHA (loli_state *);
+void loli_GL_var_GL_COMPRESSED_INTENSITY       (loli_state *);
+void loli_GL_var_GL_COMPRESSED_RGB             (loli_state *);
+void loli_GL_var_GL_COMPRESSED_RGBA            (loli_state *);
+void loli_GL_var_GL_TEXTURE_COMPRESSION_HINT   (loli_state *);
+void loli_GL_var_GL_TEXTURE_COMPRESSED_IMAGE_SIZE(loli_state *);
+void loli_GL_var_GL_TEXTURE_COMPRESSED         (loli_state *);
+void loli_GL_var_GL_NUM_COMPRESSED_TEXTURE_FORMATS(loli_state *);
+void loli_GL_var_GL_COMPRESSED_TEXTURE_FORMATS (loli_state *);
+void loli_GL_var_GL_MULTISAMPLE                (loli_state *);
+void loli_GL_var_GL_SAMPLE_ALPHA_TO_COVERAGE   (loli_state *);
+void loli_GL_var_GL_SAMPLE_ALPHA_TO_ONE        (loli_state *);
+void loli_GL_var_GL_SAMPLE_COVERAGE            (loli_state *);
+void loli_GL_var_GL_SAMPLE_BUFFERS             (loli_state *);
+void loli_GL_var_GL_SAMPLES                    (loli_state *);
+void loli_GL_var_GL_SAMPLE_COVERAGE_VALUE      (loli_state *);
+void loli_GL_var_GL_SAMPLE_COVERAGE_INVERT     (loli_state *);
+void loli_GL_var_GL_MULTISAMPLE_BIT            (loli_state *);
+void loli_GL_var_GL_TRANSPOSE_MODELVIEW_MATRIX (loli_state *);
+void loli_GL_var_GL_TRANSPOSE_PROJECTION_MATRIX(loli_state *);
+void loli_GL_var_GL_TRANSPOSE_TEXTURE_MATRIX   (loli_state *);
+void loli_GL_var_GL_TRANSPOSE_COLOR_MATRIX     (loli_state *);
+void loli_GL_var_GL_COMBINE                    (loli_state *);
+void loli_GL_var_GL_COMBINE_RGB                (loli_state *);
+void loli_GL_var_GL_COMBINE_ALPHA              (loli_state *);
+void loli_GL_var_GL_SOURCE0_RGB                (loli_state *);
+void loli_GL_var_GL_SOURCE1_RGB                (loli_state *);
+void loli_GL_var_GL_SOURCE2_RGB                (loli_state *);
+void loli_GL_var_GL_SOURCE0_ALPHA              (loli_state *);
+void loli_GL_var_GL_SOURCE1_ALPHA              (loli_state *);
+void loli_GL_var_GL_SOURCE2_ALPHA              (loli_state *);
+void loli_GL_var_GL_OPERAND0_RGB               (loli_state *);
+void loli_GL_var_GL_OPERAND1_RGB               (loli_state *);
+void loli_GL_var_GL_OPERAND2_RGB               (loli_state *);
+void loli_GL_var_GL_OPERAND0_ALPHA             (loli_state *);
+void loli_GL_var_GL_OPERAND1_ALPHA             (loli_state *);
+void loli_GL_var_GL_OPERAND2_ALPHA             (loli_state *);
+void loli_GL_var_GL_RGB_SCALE                  (loli_state *);
+void loli_GL_var_GL_ADD_SIGNED                 (loli_state *);
+void loli_GL_var_GL_INTERPOLATE                (loli_state *);
+void loli_GL_var_GL_SUBTRACT                   (loli_state *);
+void loli_GL_var_GL_CONSTANT                   (loli_state *);
+void loli_GL_var_GL_PRIMARY_COLOR              (loli_state *);
+void loli_GL_var_GL_PREVIOUS                   (loli_state *);
+void loli_GL_var_GL_DOT3_RGB                   (loli_state *);
+void loli_GL_var_GL_DOT3_RGBA                  (loli_state *);
+void loli_GL_var_GL_CLAMP_TO_BORDER            (loli_state *);
+void loli_GL_var_GL_TEXTURE0_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE1_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE2_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE3_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE4_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE5_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE6_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE7_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE8_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE9_ARB               (loli_state *);
+void loli_GL_var_GL_TEXTURE10_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE11_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE12_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE13_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE14_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE15_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE16_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE17_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE18_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE19_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE20_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE21_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE22_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE23_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE24_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE25_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE26_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE27_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE28_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE29_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE30_ARB              (loli_state *);
+void loli_GL_var_GL_TEXTURE31_ARB              (loli_state *);
+void loli_GL_var_GL_ACTIVE_TEXTURE_ARB         (loli_state *);
+void loli_GL_var_GL_CLIENT_ACTIVE_TEXTURE_ARB  (loli_state *);
+void loli_GL_var_GL_MAX_TEXTURE_UNITS_ARB      (loli_state *);
+void loli_GL_var_GL_DEPTH_STENCIL_MESA         (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT_24_8_MESA     (loli_state *);
+void loli_GL_var_GL_UNSIGNED_INT_8_24_REV_MESA (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_15_1_MESA   (loli_state *);
+void loli_GL_var_GL_UNSIGNED_SHORT_1_15_REV_MESA(loli_state *);
+void loli_GL_var_GL_ALPHA_BLEND_EQUATION_ATI   (loli_state *);
 
 loli_call_entry_func loli_GL_call_table[] = {
         NULL,
@@ -533,6 +1147,620 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL_var_GL_LOAD,
         loli_GL_var_GL_MULT,
         loli_GL_var_GL_RETURN,
+        loli_GL_var_GL_ALPHA_TEST,
+        loli_GL_var_GL_ALPHA_TEST_REF,
+        loli_GL_var_GL_ALPHA_TEST_FUNC,
+        loli_GL_var_GL_BLEND,
+        loli_GL_var_GL_BLEND_SRC,
+        loli_GL_var_GL_BLEND_DST,
+        loli_GL_var_GL_ZERO,
+        loli_GL_var_GL_ONE,
+        loli_GL_var_GL_SRC_COLOR,
+        loli_GL_var_GL_ONE_MINUS_SRC_COLOR,
+        loli_GL_var_GL_SRC_ALPHA,
+        loli_GL_var_GL_ONE_MINUS_SRC_ALPHA,
+        loli_GL_var_GL_DST_ALPHA,
+        loli_GL_var_GL_ONE_MINUS_DST_ALPHA,
+        loli_GL_var_GL_DST_COLOR,
+        loli_GL_var_GL_ONE_MINUS_DST_COLOR,
+        loli_GL_var_GL_SRC_ALPHA_SATURATE,
+        loli_GL_var_GL_FEEDBACK,
+        loli_GL_var_GL_RENDER,
+        loli_GL_var_GL_SELECT,
+        loli_GL_var_GL_2D,
+        loli_GL_var_GL_3D,
+        loli_GL_var_GL_3D_COLOR,
+        loli_GL_var_GL_3D_COLOR_TEXTURE,
+        loli_GL_var_GL_4D_COLOR_TEXTURE,
+        loli_GL_var_GL_POINT_TOKEN,
+        loli_GL_var_GL_LINE_TOKEN,
+        loli_GL_var_GL_LINE_RESET_TOKEN,
+        loli_GL_var_GL_POLYGON_TOKEN,
+        loli_GL_var_GL_BITMAP_TOKEN,
+        loli_GL_var_GL_DRAW_PIXEL_TOKEN,
+        loli_GL_var_GL_COPY_PIXEL_TOKEN,
+        loli_GL_var_GL_PASS_THROUGH_TOKEN,
+        loli_GL_var_GL_FEEDBACK_BUFFER_POINTER,
+        loli_GL_var_GL_FEEDBACK_BUFFER_SIZE,
+        loli_GL_var_GL_FEEDBACK_BUFFER_TYPE,
+        loli_GL_var_GL_SELECTION_BUFFER_POINTER,
+        loli_GL_var_GL_SELECTION_BUFFER_SIZE,
+        loli_GL_var_GL_FOG,
+        loli_GL_var_GL_FOG_MODE,
+        loli_GL_var_GL_FOG_DENSITY,
+        loli_GL_var_GL_FOG_COLOR,
+        loli_GL_var_GL_FOG_INDEX,
+        loli_GL_var_GL_FOG_START,
+        loli_GL_var_GL_FOG_END,
+        loli_GL_var_GL_LINEAR,
+        loli_GL_var_GL_EXP,
+        loli_GL_var_GL_EXP2,
+        loli_GL_var_GL_LOGIC_OP,
+        loli_GL_var_GL_INDEX_LOGIC_OP,
+        loli_GL_var_GL_COLOR_LOGIC_OP,
+        loli_GL_var_GL_LOGIC_OP_MODE,
+        loli_GL_var_GL_CLEAR,
+        loli_GL_var_GL_SET,
+        loli_GL_var_GL_COPY,
+        loli_GL_var_GL_COPY_INVERTED,
+        loli_GL_var_GL_NOOP,
+        loli_GL_var_GL_INVERT,
+        loli_GL_var_GL_AND,
+        loli_GL_var_GL_NAND,
+        loli_GL_var_GL_OR,
+        loli_GL_var_GL_NOR,
+        loli_GL_var_GL_XOR,
+        loli_GL_var_GL_EQUIV,
+        loli_GL_var_GL_AND_REVERSE,
+        loli_GL_var_GL_AND_INVERTED,
+        loli_GL_var_GL_OR_REVERSE,
+        loli_GL_var_GL_OR_INVERTED,
+        loli_GL_var_GL_STENCIL_BITS,
+        loli_GL_var_GL_STENCIL_TEST,
+        loli_GL_var_GL_STENCIL_CLEAR_VALUE,
+        loli_GL_var_GL_STENCIL_FUNC,
+        loli_GL_var_GL_STENCIL_VALUE_MASK,
+        loli_GL_var_GL_STENCIL_FAIL,
+        loli_GL_var_GL_STENCIL_PASS_DEPTH_FAIL,
+        loli_GL_var_GL_STENCIL_PASS_DEPTH_PASS,
+        loli_GL_var_GL_STENCIL_REF,
+        loli_GL_var_GL_STENCIL_WRITEMASK,
+        loli_GL_var_GL_STENCIL_INDEX,
+        loli_GL_var_GL_KEEP,
+        loli_GL_var_GL_REPLACE,
+        loli_GL_var_GL_INCR,
+        loli_GL_var_GL_DECR,
+        loli_GL_var_GL_NONE,
+        loli_GL_var_GL_LEFT,
+        loli_GL_var_GL_RIGHT,
+        loli_GL_var_GL_FRONT_LEFT,
+        loli_GL_var_GL_FRONT_RIGHT,
+        loli_GL_var_GL_BACK_LEFT,
+        loli_GL_var_GL_BACK_RIGHT,
+        loli_GL_var_GL_AUX0,
+        loli_GL_var_GL_AUX1,
+        loli_GL_var_GL_AUX2,
+        loli_GL_var_GL_AUX3,
+        loli_GL_var_GL_COLOR_INDEX,
+        loli_GL_var_GL_RED,
+        loli_GL_var_GL_GREEN,
+        loli_GL_var_GL_BLUE,
+        loli_GL_var_GL_ALPHA,
+        loli_GL_var_GL_LUMINANCE,
+        loli_GL_var_GL_LUMINANCE_ALPHA,
+        loli_GL_var_GL_ALPHA_BITS,
+        loli_GL_var_GL_RED_BITS,
+        loli_GL_var_GL_GREEN_BITS,
+        loli_GL_var_GL_BLUE_BITS,
+        loli_GL_var_GL_INDEX_BITS,
+        loli_GL_var_GL_SUBPIXEL_BITS,
+        loli_GL_var_GL_AUX_BUFFERS,
+        loli_GL_var_GL_READ_BUFFER,
+        loli_GL_var_GL_DRAW_BUFFER,
+        loli_GL_var_GL_DOUBLEBUFFER,
+        loli_GL_var_GL_STEREO,
+        loli_GL_var_GL_BITMAP,
+        loli_GL_var_GL_COLOR,
+        loli_GL_var_GL_DEPTH,
+        loli_GL_var_GL_STENCIL,
+        loli_GL_var_GL_DITHER,
+        loli_GL_var_GL_RGB,
+        loli_GL_var_GL_RGBA,
+        loli_GL_var_GL_MAX_LIST_NESTING,
+        loli_GL_var_GL_MAX_EVAL_ORDER,
+        loli_GL_var_GL_MAX_LIGHTS,
+        loli_GL_var_GL_MAX_CLIP_PLANES,
+        loli_GL_var_GL_MAX_TEXTURE_SIZE,
+        loli_GL_var_GL_MAX_PIXEL_MAP_TABLE,
+        loli_GL_var_GL_MAX_ATTRIB_STACK_DEPTH,
+        loli_GL_var_GL_MAX_MODELVIEW_STACK_DEPTH,
+        loli_GL_var_GL_MAX_NAME_STACK_DEPTH,
+        loli_GL_var_GL_MAX_PROJECTION_STACK_DEPTH,
+        loli_GL_var_GL_MAX_TEXTURE_STACK_DEPTH,
+        loli_GL_var_GL_MAX_VIEWPORT_DIMS,
+        loli_GL_var_GL_MAX_CLIENT_ATTRIB_STACK_DEPTH,
+        loli_GL_var_GL_ATTRIB_STACK_DEPTH,
+        loli_GL_var_GL_CLIENT_ATTRIB_STACK_DEPTH,
+        loli_GL_var_GL_COLOR_CLEAR_VALUE,
+        loli_GL_var_GL_COLOR_WRITEMASK,
+        loli_GL_var_GL_CURRENT_INDEX,
+        loli_GL_var_GL_CURRENT_COLOR,
+        loli_GL_var_GL_CURRENT_NORMAL,
+        loli_GL_var_GL_CURRENT_RASTER_COLOR,
+        loli_GL_var_GL_CURRENT_RASTER_DISTANCE,
+        loli_GL_var_GL_CURRENT_RASTER_INDEX,
+        loli_GL_var_GL_CURRENT_RASTER_POSITION,
+        loli_GL_var_GL_CURRENT_RASTER_TEXTURE_COORDS,
+        loli_GL_var_GL_CURRENT_RASTER_POSITION_VALID,
+        loli_GL_var_GL_CURRENT_TEXTURE_COORDS,
+        loli_GL_var_GL_INDEX_CLEAR_VALUE,
+        loli_GL_var_GL_INDEX_MODE,
+        loli_GL_var_GL_INDEX_WRITEMASK,
+        loli_GL_var_GL_MODELVIEW_MATRIX,
+        loli_GL_var_GL_MODELVIEW_STACK_DEPTH,
+        loli_GL_var_GL_NAME_STACK_DEPTH,
+        loli_GL_var_GL_PROJECTION_MATRIX,
+        loli_GL_var_GL_PROJECTION_STACK_DEPTH,
+        loli_GL_var_GL_RENDER_MODE,
+        loli_GL_var_GL_RGBA_MODE,
+        loli_GL_var_GL_TEXTURE_MATRIX,
+        loli_GL_var_GL_TEXTURE_STACK_DEPTH,
+        loli_GL_var_GL_VIEWPORT,
+        loli_GL_var_GL_AUTO_NORMAL,
+        loli_GL_var_GL_MAP1_COLOR_4,
+        loli_GL_var_GL_MAP1_INDEX,
+        loli_GL_var_GL_MAP1_NORMAL,
+        loli_GL_var_GL_MAP1_TEXTURE_COORD_1,
+        loli_GL_var_GL_MAP1_TEXTURE_COORD_2,
+        loli_GL_var_GL_MAP1_TEXTURE_COORD_3,
+        loli_GL_var_GL_MAP1_TEXTURE_COORD_4,
+        loli_GL_var_GL_MAP1_VERTEX_3,
+        loli_GL_var_GL_MAP1_VERTEX_4,
+        loli_GL_var_GL_MAP2_COLOR_4,
+        loli_GL_var_GL_MAP2_INDEX,
+        loli_GL_var_GL_MAP2_NORMAL,
+        loli_GL_var_GL_MAP2_TEXTURE_COORD_1,
+        loli_GL_var_GL_MAP2_TEXTURE_COORD_2,
+        loli_GL_var_GL_MAP2_TEXTURE_COORD_3,
+        loli_GL_var_GL_MAP2_TEXTURE_COORD_4,
+        loli_GL_var_GL_MAP2_VERTEX_3,
+        loli_GL_var_GL_MAP2_VERTEX_4,
+        loli_GL_var_GL_MAP1_GRID_DOMAIN,
+        loli_GL_var_GL_MAP1_GRID_SEGMENTS,
+        loli_GL_var_GL_MAP2_GRID_DOMAIN,
+        loli_GL_var_GL_MAP2_GRID_SEGMENTS,
+        loli_GL_var_GL_COEFF,
+        loli_GL_var_GL_ORDER,
+        loli_GL_var_GL_DOMAIN,
+        loli_GL_var_GL_PERSPECTIVE_CORRECTION_HINT,
+        loli_GL_var_GL_POINT_SMOOTH_HINT,
+        loli_GL_var_GL_LINE_SMOOTH_HINT,
+        loli_GL_var_GL_POLYGON_SMOOTH_HINT,
+        loli_GL_var_GL_DONT_CARE,
+        loli_GL_var_GL_FASTEST,
+        loli_GL_var_GL_NICEST,
+        loli_GL_var_GL_SCISSOR_BOX,
+        loli_GL_var_GL_SCISSOR_TEST,
+        loli_GL_var_GL_MAP_COLOR,
+        loli_GL_var_GL_MAP_STENCIL,
+        loli_GL_var_GL_INDEX_SHIFT,
+        loli_GL_var_GL_INDEX_OFFSET,
+        loli_GL_var_GL_RED_SCALE,
+        loli_GL_var_GL_RED_BIAS,
+        loli_GL_var_GL_GREEN_SCALE,
+        loli_GL_var_GL_GREEN_BIAS,
+        loli_GL_var_GL_BLUE_SCALE,
+        loli_GL_var_GL_BLUE_BIAS,
+        loli_GL_var_GL_ALPHA_SCALE,
+        loli_GL_var_GL_ALPHA_BIAS,
+        loli_GL_var_GL_DEPTH_SCALE,
+        loli_GL_var_GL_DEPTH_BIAS,
+        loli_GL_var_GL_PIXEL_MAP_S_TO_S_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_I_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_R_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_G_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_B_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_A_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_R_TO_R_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_G_TO_G_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_B_TO_B_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_A_TO_A_SIZE,
+        loli_GL_var_GL_PIXEL_MAP_S_TO_S,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_I,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_R,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_G,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_B,
+        loli_GL_var_GL_PIXEL_MAP_I_TO_A,
+        loli_GL_var_GL_PIXEL_MAP_R_TO_R,
+        loli_GL_var_GL_PIXEL_MAP_G_TO_G,
+        loli_GL_var_GL_PIXEL_MAP_B_TO_B,
+        loli_GL_var_GL_PIXEL_MAP_A_TO_A,
+        loli_GL_var_GL_PACK_ALIGNMENT,
+        loli_GL_var_GL_PACK_LSB_FIRST,
+        loli_GL_var_GL_PACK_ROW_LENGTH,
+        loli_GL_var_GL_PACK_SKIP_PIXELS,
+        loli_GL_var_GL_PACK_SKIP_ROWS,
+        loli_GL_var_GL_PACK_SWAP_BYTES,
+        loli_GL_var_GL_UNPACK_ALIGNMENT,
+        loli_GL_var_GL_UNPACK_LSB_FIRST,
+        loli_GL_var_GL_UNPACK_ROW_LENGTH,
+        loli_GL_var_GL_UNPACK_SKIP_PIXELS,
+        loli_GL_var_GL_UNPACK_SKIP_ROWS,
+        loli_GL_var_GL_UNPACK_SWAP_BYTES,
+        loli_GL_var_GL_ZOOM_X,
+        loli_GL_var_GL_ZOOM_Y,
+        loli_GL_var_GL_TEXTURE_ENV,
+        loli_GL_var_GL_TEXTURE_ENV_MODE,
+        loli_GL_var_GL_TEXTURE_1D,
+        loli_GL_var_GL_TEXTURE_2D,
+        loli_GL_var_GL_TEXTURE_WRAP_S,
+        loli_GL_var_GL_TEXTURE_WRAP_T,
+        loli_GL_var_GL_TEXTURE_MAG_FILTER,
+        loli_GL_var_GL_TEXTURE_MIN_FILTER,
+        loli_GL_var_GL_TEXTURE_ENV_COLOR,
+        loli_GL_var_GL_TEXTURE_GEN_S,
+        loli_GL_var_GL_TEXTURE_GEN_T,
+        loli_GL_var_GL_TEXTURE_GEN_R,
+        loli_GL_var_GL_TEXTURE_GEN_Q,
+        loli_GL_var_GL_TEXTURE_GEN_MODE,
+        loli_GL_var_GL_TEXTURE_BORDER_COLOR,
+        loli_GL_var_GL_TEXTURE_WIDTH,
+        loli_GL_var_GL_TEXTURE_HEIGHT,
+        loli_GL_var_GL_TEXTURE_BORDER,
+        loli_GL_var_GL_TEXTURE_COMPONENTS,
+        loli_GL_var_GL_TEXTURE_RED_SIZE,
+        loli_GL_var_GL_TEXTURE_GREEN_SIZE,
+        loli_GL_var_GL_TEXTURE_BLUE_SIZE,
+        loli_GL_var_GL_TEXTURE_ALPHA_SIZE,
+        loli_GL_var_GL_TEXTURE_LUMINANCE_SIZE,
+        loli_GL_var_GL_TEXTURE_INTENSITY_SIZE,
+        loli_GL_var_GL_NEAREST_MIPMAP_NEAREST,
+        loli_GL_var_GL_NEAREST_MIPMAP_LINEAR,
+        loli_GL_var_GL_LINEAR_MIPMAP_NEAREST,
+        loli_GL_var_GL_LINEAR_MIPMAP_LINEAR,
+        loli_GL_var_GL_OBJECT_LINEAR,
+        loli_GL_var_GL_OBJECT_PLANE,
+        loli_GL_var_GL_EYE_LINEAR,
+        loli_GL_var_GL_EYE_PLANE,
+        loli_GL_var_GL_SPHERE_MAP,
+        loli_GL_var_GL_DECAL,
+        loli_GL_var_GL_MODULATE,
+        loli_GL_var_GL_NEAREST,
+        loli_GL_var_GL_REPEAT,
+        loli_GL_var_GL_CLAMP,
+        loli_GL_var_GL_S,
+        loli_GL_var_GL_T,
+        loli_GL_var_GL_R,
+        loli_GL_var_GL_Q,
+        loli_GL_var_GL_VENDOR,
+        loli_GL_var_GL_RENDERER,
+        loli_GL_var_GL_VERSION,
+        loli_GL_var_GL_EXTENSIONS,
+        loli_GL_var_GL_NO_ERROR,
+        loli_GL_var_GL_INVALID_ENUM,
+        loli_GL_var_GL_INVALID_VALUE,
+        loli_GL_var_GL_INVALID_OPERATION,
+        loli_GL_var_GL_STACK_OVERFLOW,
+        loli_GL_var_GL_STACK_UNDERFLOW,
+        loli_GL_var_GL_OUT_OF_MEMORY,
+        loli_GL_var_GL_CURRENT_BIT,
+        loli_GL_var_GL_POINT_BIT,
+        loli_GL_var_GL_LINE_BIT,
+        loli_GL_var_GL_POLYGON_BIT,
+        loli_GL_var_GL_POLYGON_STIPPLE_BIT,
+        loli_GL_var_GL_PIXEL_MODE_BIT,
+        loli_GL_var_GL_LIGHTING_BIT,
+        loli_GL_var_GL_FOG_BIT,
+        loli_GL_var_GL_DEPTH_BUFFER_BIT,
+        loli_GL_var_GL_ACCUM_BUFFER_BIT,
+        loli_GL_var_GL_STENCIL_BUFFER_BIT,
+        loli_GL_var_GL_VIEWPORT_BIT,
+        loli_GL_var_GL_TRANSFORM_BIT,
+        loli_GL_var_GL_ENABLE_BIT,
+        loli_GL_var_GL_COLOR_BUFFER_BIT,
+        loli_GL_var_GL_HINT_BIT,
+        loli_GL_var_GL_EVAL_BIT,
+        loli_GL_var_GL_LIST_BIT,
+        loli_GL_var_GL_TEXTURE_BIT,
+        loli_GL_var_GL_SCISSOR_BIT,
+        loli_GL_var_GL_ALL_ATTRIB_BITS,
+        loli_GL_var_GL_PROXY_TEXTURE_1D,
+        loli_GL_var_GL_PROXY_TEXTURE_2D,
+        loli_GL_var_GL_TEXTURE_PRIORITY,
+        loli_GL_var_GL_TEXTURE_RESIDENT,
+        loli_GL_var_GL_TEXTURE_BINDING_1D,
+        loli_GL_var_GL_TEXTURE_BINDING_2D,
+        loli_GL_var_GL_TEXTURE_INTERNAL_FORMAT,
+        loli_GL_var_GL_ALPHA4,
+        loli_GL_var_GL_ALPHA8,
+        loli_GL_var_GL_ALPHA12,
+        loli_GL_var_GL_ALPHA16,
+        loli_GL_var_GL_LUMINANCE4,
+        loli_GL_var_GL_LUMINANCE8,
+        loli_GL_var_GL_LUMINANCE12,
+        loli_GL_var_GL_LUMINANCE16,
+        loli_GL_var_GL_LUMINANCE4_ALPHA4,
+        loli_GL_var_GL_LUMINANCE6_ALPHA2,
+        loli_GL_var_GL_LUMINANCE8_ALPHA8,
+        loli_GL_var_GL_LUMINANCE12_ALPHA4,
+        loli_GL_var_GL_LUMINANCE12_ALPHA12,
+        loli_GL_var_GL_LUMINANCE16_ALPHA16,
+        loli_GL_var_GL_INTENSITY,
+        loli_GL_var_GL_INTENSITY4,
+        loli_GL_var_GL_INTENSITY8,
+        loli_GL_var_GL_INTENSITY12,
+        loli_GL_var_GL_INTENSITY16,
+        loli_GL_var_GL_R3_G3_B2,
+        loli_GL_var_GL_RGB4,
+        loli_GL_var_GL_RGB5,
+        loli_GL_var_GL_RGB8,
+        loli_GL_var_GL_RGB10,
+        loli_GL_var_GL_RGB12,
+        loli_GL_var_GL_RGB16,
+        loli_GL_var_GL_RGBA2,
+        loli_GL_var_GL_RGBA4,
+        loli_GL_var_GL_RGB5_A1,
+        loli_GL_var_GL_RGBA8,
+        loli_GL_var_GL_RGB10_A2,
+        loli_GL_var_GL_RGBA12,
+        loli_GL_var_GL_RGBA16,
+        loli_GL_var_GL_CLIENT_PIXEL_STORE_BIT,
+        loli_GL_var_GL_CLIENT_VERTEX_ARRAY_BIT,
+        loli_GL_var_GL_ALL_CLIENT_ATTRIB_BITS,
+        loli_GL_var_GL_CLIENT_ALL_ATTRIB_BITS,
+        loli_GL_var_GL_RESCALE_NORMAL,
+        loli_GL_var_GL_CLAMP_TO_EDGE,
+        loli_GL_var_GL_MAX_ELEMENTS_VERTICES,
+        loli_GL_var_GL_MAX_ELEMENTS_INDICES,
+        loli_GL_var_GL_BGR,
+        loli_GL_var_GL_BGRA,
+        loli_GL_var_GL_UNSIGNED_BYTE_3_3_2,
+        loli_GL_var_GL_UNSIGNED_BYTE_2_3_3_REV,
+        loli_GL_var_GL_UNSIGNED_SHORT_5_6_5,
+        loli_GL_var_GL_UNSIGNED_SHORT_5_6_5_REV,
+        loli_GL_var_GL_UNSIGNED_SHORT_4_4_4_4,
+        loli_GL_var_GL_UNSIGNED_SHORT_4_4_4_4_REV,
+        loli_GL_var_GL_UNSIGNED_SHORT_5_5_5_1,
+        loli_GL_var_GL_UNSIGNED_SHORT_1_5_5_5_REV,
+        loli_GL_var_GL_UNSIGNED_INT_8_8_8_8,
+        loli_GL_var_GL_UNSIGNED_INT_8_8_8_8_REV,
+        loli_GL_var_GL_UNSIGNED_INT_10_10_10_2,
+        loli_GL_var_GL_UNSIGNED_INT_2_10_10_10_REV,
+        loli_GL_var_GL_LIGHT_MODEL_COLOR_CONTROL,
+        loli_GL_var_GL_SINGLE_COLOR,
+        loli_GL_var_GL_SEPARATE_SPECULAR_COLOR,
+        loli_GL_var_GL_TEXTURE_MIN_LOD,
+        loli_GL_var_GL_TEXTURE_MAX_LOD,
+        loli_GL_var_GL_TEXTURE_BASE_LEVEL,
+        loli_GL_var_GL_TEXTURE_MAX_LEVEL,
+        loli_GL_var_GL_SMOOTH_POINT_SIZE_RANGE,
+        loli_GL_var_GL_SMOOTH_POINT_SIZE_GRANULARITY,
+        loli_GL_var_GL_SMOOTH_LINE_WIDTH_RANGE,
+        loli_GL_var_GL_SMOOTH_LINE_WIDTH_GRANULARITY,
+        loli_GL_var_GL_ALIASED_POINT_SIZE_RANGE,
+        loli_GL_var_GL_ALIASED_LINE_WIDTH_RANGE,
+        loli_GL_var_GL_PACK_SKIP_IMAGES,
+        loli_GL_var_GL_PACK_IMAGE_HEIGHT,
+        loli_GL_var_GL_UNPACK_SKIP_IMAGES,
+        loli_GL_var_GL_UNPACK_IMAGE_HEIGHT,
+        loli_GL_var_GL_TEXTURE_3D,
+        loli_GL_var_GL_PROXY_TEXTURE_3D,
+        loli_GL_var_GL_TEXTURE_DEPTH,
+        loli_GL_var_GL_TEXTURE_WRAP_R,
+        loli_GL_var_GL_MAX_3D_TEXTURE_SIZE,
+        loli_GL_var_GL_TEXTURE_BINDING_3D,
+        loli_GL_var_GL_CONSTANT_COLOR,
+        loli_GL_var_GL_ONE_MINUS_CONSTANT_COLOR,
+        loli_GL_var_GL_CONSTANT_ALPHA,
+        loli_GL_var_GL_ONE_MINUS_CONSTANT_ALPHA,
+        loli_GL_var_GL_COLOR_TABLE,
+        loli_GL_var_GL_POST_CONVOLUTION_COLOR_TABLE,
+        loli_GL_var_GL_POST_COLOR_MATRIX_COLOR_TABLE,
+        loli_GL_var_GL_PROXY_COLOR_TABLE,
+        loli_GL_var_GL_PROXY_POST_CONVOLUTION_COLOR_TABLE,
+        loli_GL_var_GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE,
+        loli_GL_var_GL_COLOR_TABLE_SCALE,
+        loli_GL_var_GL_COLOR_TABLE_BIAS,
+        loli_GL_var_GL_COLOR_TABLE_FORMAT,
+        loli_GL_var_GL_COLOR_TABLE_WIDTH,
+        loli_GL_var_GL_COLOR_TABLE_RED_SIZE,
+        loli_GL_var_GL_COLOR_TABLE_GREEN_SIZE,
+        loli_GL_var_GL_COLOR_TABLE_BLUE_SIZE,
+        loli_GL_var_GL_COLOR_TABLE_ALPHA_SIZE,
+        loli_GL_var_GL_COLOR_TABLE_LUMINANCE_SIZE,
+        loli_GL_var_GL_COLOR_TABLE_INTENSITY_SIZE,
+        loli_GL_var_GL_CONVOLUTION_1D,
+        loli_GL_var_GL_CONVOLUTION_2D,
+        loli_GL_var_GL_SEPARABLE_2D,
+        loli_GL_var_GL_CONVOLUTION_BORDER_MODE,
+        loli_GL_var_GL_CONVOLUTION_FILTER_SCALE,
+        loli_GL_var_GL_CONVOLUTION_FILTER_BIAS,
+        loli_GL_var_GL_REDUCE,
+        loli_GL_var_GL_CONVOLUTION_FORMAT,
+        loli_GL_var_GL_CONVOLUTION_WIDTH,
+        loli_GL_var_GL_CONVOLUTION_HEIGHT,
+        loli_GL_var_GL_MAX_CONVOLUTION_WIDTH,
+        loli_GL_var_GL_MAX_CONVOLUTION_HEIGHT,
+        loli_GL_var_GL_POST_CONVOLUTION_RED_SCALE,
+        loli_GL_var_GL_POST_CONVOLUTION_GREEN_SCALE,
+        loli_GL_var_GL_POST_CONVOLUTION_BLUE_SCALE,
+        loli_GL_var_GL_POST_CONVOLUTION_ALPHA_SCALE,
+        loli_GL_var_GL_POST_CONVOLUTION_RED_BIAS,
+        loli_GL_var_GL_POST_CONVOLUTION_GREEN_BIAS,
+        loli_GL_var_GL_POST_CONVOLUTION_BLUE_BIAS,
+        loli_GL_var_GL_POST_CONVOLUTION_ALPHA_BIAS,
+        loli_GL_var_GL_CONSTANT_BORDER,
+        loli_GL_var_GL_REPLICATE_BORDER,
+        loli_GL_var_GL_CONVOLUTION_BORDER_COLOR,
+        loli_GL_var_GL_COLOR_MATRIX,
+        loli_GL_var_GL_COLOR_MATRIX_STACK_DEPTH,
+        loli_GL_var_GL_MAX_COLOR_MATRIX_STACK_DEPTH,
+        loli_GL_var_GL_POST_COLOR_MATRIX_RED_SCALE,
+        loli_GL_var_GL_POST_COLOR_MATRIX_GREEN_SCALE,
+        loli_GL_var_GL_POST_COLOR_MATRIX_BLUE_SCALE,
+        loli_GL_var_GL_POST_COLOR_MATRIX_ALPHA_SCALE,
+        loli_GL_var_GL_POST_COLOR_MATRIX_RED_BIAS,
+        loli_GL_var_GL_POST_COLOR_MATRIX_GREEN_BIAS,
+        loli_GL_var_GL_POST_COLOR_MATRIX_BLUE_BIAS,
+        loli_GL_var_GL_POST_COLOR_MATRIX_ALPHA_BIAS,
+        loli_GL_var_GL_HISTOGRAM,
+        loli_GL_var_GL_PROXY_HISTOGRAM,
+        loli_GL_var_GL_HISTOGRAM_WIDTH,
+        loli_GL_var_GL_HISTOGRAM_FORMAT,
+        loli_GL_var_GL_HISTOGRAM_RED_SIZE,
+        loli_GL_var_GL_HISTOGRAM_GREEN_SIZE,
+        loli_GL_var_GL_HISTOGRAM_BLUE_SIZE,
+        loli_GL_var_GL_HISTOGRAM_ALPHA_SIZE,
+        loli_GL_var_GL_HISTOGRAM_LUMINANCE_SIZE,
+        loli_GL_var_GL_HISTOGRAM_SINK,
+        loli_GL_var_GL_MINMAX,
+        loli_GL_var_GL_MINMAX_FORMAT,
+        loli_GL_var_GL_MINMAX_SINK,
+        loli_GL_var_GL_TABLE_TOO_LARGE,
+        loli_GL_var_GL_BLEND_EQUATION,
+        loli_GL_var_GL_MIN,
+        loli_GL_var_GL_MAX,
+        loli_GL_var_GL_FUNC_ADD,
+        loli_GL_var_GL_FUNC_SUBTRACT,
+        loli_GL_var_GL_FUNC_REVERSE_SUBTRACT,
+        loli_GL_var_GL_BLEND_COLOR,
+        loli_GL_var_GL_TEXTURE0,
+        loli_GL_var_GL_TEXTURE1,
+        loli_GL_var_GL_TEXTURE2,
+        loli_GL_var_GL_TEXTURE3,
+        loli_GL_var_GL_TEXTURE4,
+        loli_GL_var_GL_TEXTURE5,
+        loli_GL_var_GL_TEXTURE6,
+        loli_GL_var_GL_TEXTURE7,
+        loli_GL_var_GL_TEXTURE8,
+        loli_GL_var_GL_TEXTURE9,
+        loli_GL_var_GL_TEXTURE10,
+        loli_GL_var_GL_TEXTURE11,
+        loli_GL_var_GL_TEXTURE12,
+        loli_GL_var_GL_TEXTURE13,
+        loli_GL_var_GL_TEXTURE14,
+        loli_GL_var_GL_TEXTURE15,
+        loli_GL_var_GL_TEXTURE16,
+        loli_GL_var_GL_TEXTURE17,
+        loli_GL_var_GL_TEXTURE18,
+        loli_GL_var_GL_TEXTURE19,
+        loli_GL_var_GL_TEXTURE20,
+        loli_GL_var_GL_TEXTURE21,
+        loli_GL_var_GL_TEXTURE22,
+        loli_GL_var_GL_TEXTURE23,
+        loli_GL_var_GL_TEXTURE24,
+        loli_GL_var_GL_TEXTURE25,
+        loli_GL_var_GL_TEXTURE26,
+        loli_GL_var_GL_TEXTURE27,
+        loli_GL_var_GL_TEXTURE28,
+        loli_GL_var_GL_TEXTURE29,
+        loli_GL_var_GL_TEXTURE30,
+        loli_GL_var_GL_TEXTURE31,
+        loli_GL_var_GL_ACTIVE_TEXTURE,
+        loli_GL_var_GL_CLIENT_ACTIVE_TEXTURE,
+        loli_GL_var_GL_MAX_TEXTURE_UNITS,
+        loli_GL_var_GL_NORMAL_MAP,
+        loli_GL_var_GL_REFLECTION_MAP,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP,
+        loli_GL_var_GL_TEXTURE_BINDING_CUBE_MAP,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP_POSITIVE_X,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP_NEGATIVE_X,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP_POSITIVE_Y,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP_NEGATIVE_Y,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP_POSITIVE_Z,
+        loli_GL_var_GL_TEXTURE_CUBE_MAP_NEGATIVE_Z,
+        loli_GL_var_GL_PROXY_TEXTURE_CUBE_MAP,
+        loli_GL_var_GL_MAX_CUBE_MAP_TEXTURE_SIZE,
+        loli_GL_var_GL_COMPRESSED_ALPHA,
+        loli_GL_var_GL_COMPRESSED_LUMINANCE,
+        loli_GL_var_GL_COMPRESSED_LUMINANCE_ALPHA,
+        loli_GL_var_GL_COMPRESSED_INTENSITY,
+        loli_GL_var_GL_COMPRESSED_RGB,
+        loli_GL_var_GL_COMPRESSED_RGBA,
+        loli_GL_var_GL_TEXTURE_COMPRESSION_HINT,
+        loli_GL_var_GL_TEXTURE_COMPRESSED_IMAGE_SIZE,
+        loli_GL_var_GL_TEXTURE_COMPRESSED,
+        loli_GL_var_GL_NUM_COMPRESSED_TEXTURE_FORMATS,
+        loli_GL_var_GL_COMPRESSED_TEXTURE_FORMATS,
+        loli_GL_var_GL_MULTISAMPLE,
+        loli_GL_var_GL_SAMPLE_ALPHA_TO_COVERAGE,
+        loli_GL_var_GL_SAMPLE_ALPHA_TO_ONE,
+        loli_GL_var_GL_SAMPLE_COVERAGE,
+        loli_GL_var_GL_SAMPLE_BUFFERS,
+        loli_GL_var_GL_SAMPLES,
+        loli_GL_var_GL_SAMPLE_COVERAGE_VALUE,
+        loli_GL_var_GL_SAMPLE_COVERAGE_INVERT,
+        loli_GL_var_GL_MULTISAMPLE_BIT,
+        loli_GL_var_GL_TRANSPOSE_MODELVIEW_MATRIX,
+        loli_GL_var_GL_TRANSPOSE_PROJECTION_MATRIX,
+        loli_GL_var_GL_TRANSPOSE_TEXTURE_MATRIX,
+        loli_GL_var_GL_TRANSPOSE_COLOR_MATRIX,
+        loli_GL_var_GL_COMBINE,
+        loli_GL_var_GL_COMBINE_RGB,
+        loli_GL_var_GL_COMBINE_ALPHA,
+        loli_GL_var_GL_SOURCE0_RGB,
+        loli_GL_var_GL_SOURCE1_RGB,
+        loli_GL_var_GL_SOURCE2_RGB,
+        loli_GL_var_GL_SOURCE0_ALPHA,
+        loli_GL_var_GL_SOURCE1_ALPHA,
+        loli_GL_var_GL_SOURCE2_ALPHA,
+        loli_GL_var_GL_OPERAND0_RGB,
+        loli_GL_var_GL_OPERAND1_RGB,
+        loli_GL_var_GL_OPERAND2_RGB,
+        loli_GL_var_GL_OPERAND0_ALPHA,
+        loli_GL_var_GL_OPERAND1_ALPHA,
+        loli_GL_var_GL_OPERAND2_ALPHA,
+        loli_GL_var_GL_RGB_SCALE,
+        loli_GL_var_GL_ADD_SIGNED,
+        loli_GL_var_GL_INTERPOLATE,
+        loli_GL_var_GL_SUBTRACT,
+        loli_GL_var_GL_CONSTANT,
+        loli_GL_var_GL_PRIMARY_COLOR,
+        loli_GL_var_GL_PREVIOUS,
+        loli_GL_var_GL_DOT3_RGB,
+        loli_GL_var_GL_DOT3_RGBA,
+        loli_GL_var_GL_CLAMP_TO_BORDER,
+        loli_GL_var_GL_TEXTURE0_ARB,
+        loli_GL_var_GL_TEXTURE1_ARB,
+        loli_GL_var_GL_TEXTURE2_ARB,
+        loli_GL_var_GL_TEXTURE3_ARB,
+        loli_GL_var_GL_TEXTURE4_ARB,
+        loli_GL_var_GL_TEXTURE5_ARB,
+        loli_GL_var_GL_TEXTURE6_ARB,
+        loli_GL_var_GL_TEXTURE7_ARB,
+        loli_GL_var_GL_TEXTURE8_ARB,
+        loli_GL_var_GL_TEXTURE9_ARB,
+        loli_GL_var_GL_TEXTURE10_ARB,
+        loli_GL_var_GL_TEXTURE11_ARB,
+        loli_GL_var_GL_TEXTURE12_ARB,
+        loli_GL_var_GL_TEXTURE13_ARB,
+        loli_GL_var_GL_TEXTURE14_ARB,
+        loli_GL_var_GL_TEXTURE15_ARB,
+        loli_GL_var_GL_TEXTURE16_ARB,
+        loli_GL_var_GL_TEXTURE17_ARB,
+        loli_GL_var_GL_TEXTURE18_ARB,
+        loli_GL_var_GL_TEXTURE19_ARB,
+        loli_GL_var_GL_TEXTURE20_ARB,
+        loli_GL_var_GL_TEXTURE21_ARB,
+        loli_GL_var_GL_TEXTURE22_ARB,
+        loli_GL_var_GL_TEXTURE23_ARB,
+        loli_GL_var_GL_TEXTURE24_ARB,
+        loli_GL_var_GL_TEXTURE25_ARB,
+        loli_GL_var_GL_TEXTURE26_ARB,
+        loli_GL_var_GL_TEXTURE27_ARB,
+        loli_GL_var_GL_TEXTURE28_ARB,
+        loli_GL_var_GL_TEXTURE29_ARB,
+        loli_GL_var_GL_TEXTURE30_ARB,
+        loli_GL_var_GL_TEXTURE31_ARB,
+        loli_GL_var_GL_ACTIVE_TEXTURE_ARB,
+        loli_GL_var_GL_CLIENT_ACTIVE_TEXTURE_ARB,
+        loli_GL_var_GL_MAX_TEXTURE_UNITS_ARB,
+        loli_GL_var_GL_DEPTH_STENCIL_MESA,
+        loli_GL_var_GL_UNSIGNED_INT_24_8_MESA,
+        loli_GL_var_GL_UNSIGNED_INT_8_24_REV_MESA,
+        loli_GL_var_GL_UNSIGNED_SHORT_15_1_MESA,
+        loli_GL_var_GL_UNSIGNED_SHORT_1_15_REV_MESA,
+        loli_GL_var_GL_ALPHA_BLEND_EQUATION_ATI,
 };
 
 const char * loli_GL_info_table[] = {
@@ -805,6 +2033,620 @@ const char * loli_GL_info_table[] = {
         ,"R\0GL_LOAD\0Integer"
         ,"R\0GL_MULT\0Integer"
         ,"R\0GL_RETURN\0Integer"
+        ,"R\0GL_ALPHA_TEST\0Integer"
+        ,"R\0GL_ALPHA_TEST_REF\0Integer"
+        ,"R\0GL_ALPHA_TEST_FUNC\0Integer"
+        ,"R\0GL_BLEND\0Integer"
+        ,"R\0GL_BLEND_SRC\0Integer"
+        ,"R\0GL_BLEND_DST\0Integer"
+        ,"R\0GL_ZERO\0Integer"
+        ,"R\0GL_ONE\0Integer"
+        ,"R\0GL_SRC_COLOR\0Integer"
+        ,"R\0GL_ONE_MINUS_SRC_COLOR\0Integer"
+        ,"R\0GL_SRC_ALPHA\0Integer"
+        ,"R\0GL_ONE_MINUS_SRC_ALPHA\0Integer"
+        ,"R\0GL_DST_ALPHA\0Integer"
+        ,"R\0GL_ONE_MINUS_DST_ALPHA\0Integer"
+        ,"R\0GL_DST_COLOR\0Integer"
+        ,"R\0GL_ONE_MINUS_DST_COLOR\0Integer"
+        ,"R\0GL_SRC_ALPHA_SATURATE\0Integer"
+        ,"R\0GL_FEEDBACK\0Integer"
+        ,"R\0GL_RENDER\0Integer"
+        ,"R\0GL_SELECT\0Integer"
+        ,"R\0GL_2D\0Integer"
+        ,"R\0GL_3D\0Integer"
+        ,"R\0GL_3D_COLOR\0Integer"
+        ,"R\0GL_3D_COLOR_TEXTURE\0Integer"
+        ,"R\0GL_4D_COLOR_TEXTURE\0Integer"
+        ,"R\0GL_POINT_TOKEN\0Integer"
+        ,"R\0GL_LINE_TOKEN\0Integer"
+        ,"R\0GL_LINE_RESET_TOKEN\0Integer"
+        ,"R\0GL_POLYGON_TOKEN\0Integer"
+        ,"R\0GL_BITMAP_TOKEN\0Integer"
+        ,"R\0GL_DRAW_PIXEL_TOKEN\0Integer"
+        ,"R\0GL_COPY_PIXEL_TOKEN\0Integer"
+        ,"R\0GL_PASS_THROUGH_TOKEN\0Integer"
+        ,"R\0GL_FEEDBACK_BUFFER_POINTER\0Integer"
+        ,"R\0GL_FEEDBACK_BUFFER_SIZE\0Integer"
+        ,"R\0GL_FEEDBACK_BUFFER_TYPE\0Integer"
+        ,"R\0GL_SELECTION_BUFFER_POINTER\0Integer"
+        ,"R\0GL_SELECTION_BUFFER_SIZE\0Integer"
+        ,"R\0GL_FOG\0Integer"
+        ,"R\0GL_FOG_MODE\0Integer"
+        ,"R\0GL_FOG_DENSITY\0Integer"
+        ,"R\0GL_FOG_COLOR\0Integer"
+        ,"R\0GL_FOG_INDEX\0Integer"
+        ,"R\0GL_FOG_START\0Integer"
+        ,"R\0GL_FOG_END\0Integer"
+        ,"R\0GL_LINEAR\0Integer"
+        ,"R\0GL_EXP\0Integer"
+        ,"R\0GL_EXP2\0Integer"
+        ,"R\0GL_LOGIC_OP\0Integer"
+        ,"R\0GL_INDEX_LOGIC_OP\0Integer"
+        ,"R\0GL_COLOR_LOGIC_OP\0Integer"
+        ,"R\0GL_LOGIC_OP_MODE\0Integer"
+        ,"R\0GL_CLEAR\0Integer"
+        ,"R\0GL_SET\0Integer"
+        ,"R\0GL_COPY\0Integer"
+        ,"R\0GL_COPY_INVERTED\0Integer"
+        ,"R\0GL_NOOP\0Integer"
+        ,"R\0GL_INVERT\0Integer"
+        ,"R\0GL_AND\0Integer"
+        ,"R\0GL_NAND\0Integer"
+        ,"R\0GL_OR\0Integer"
+        ,"R\0GL_NOR\0Integer"
+        ,"R\0GL_XOR\0Integer"
+        ,"R\0GL_EQUIV\0Integer"
+        ,"R\0GL_AND_REVERSE\0Integer"
+        ,"R\0GL_AND_INVERTED\0Integer"
+        ,"R\0GL_OR_REVERSE\0Integer"
+        ,"R\0GL_OR_INVERTED\0Integer"
+        ,"R\0GL_STENCIL_BITS\0Integer"
+        ,"R\0GL_STENCIL_TEST\0Integer"
+        ,"R\0GL_STENCIL_CLEAR_VALUE\0Integer"
+        ,"R\0GL_STENCIL_FUNC\0Integer"
+        ,"R\0GL_STENCIL_VALUE_MASK\0Integer"
+        ,"R\0GL_STENCIL_FAIL\0Integer"
+        ,"R\0GL_STENCIL_PASS_DEPTH_FAIL\0Integer"
+        ,"R\0GL_STENCIL_PASS_DEPTH_PASS\0Integer"
+        ,"R\0GL_STENCIL_REF\0Integer"
+        ,"R\0GL_STENCIL_WRITEMASK\0Integer"
+        ,"R\0GL_STENCIL_INDEX\0Integer"
+        ,"R\0GL_KEEP\0Integer"
+        ,"R\0GL_REPLACE\0Integer"
+        ,"R\0GL_INCR\0Integer"
+        ,"R\0GL_DECR\0Integer"
+        ,"R\0GL_NONE\0Integer"
+        ,"R\0GL_LEFT\0Integer"
+        ,"R\0GL_RIGHT\0Integer"
+        ,"R\0GL_FRONT_LEFT\0Integer"
+        ,"R\0GL_FRONT_RIGHT\0Integer"
+        ,"R\0GL_BACK_LEFT\0Integer"
+        ,"R\0GL_BACK_RIGHT\0Integer"
+        ,"R\0GL_AUX0\0Integer"
+        ,"R\0GL_AUX1\0Integer"
+        ,"R\0GL_AUX2\0Integer"
+        ,"R\0GL_AUX3\0Integer"
+        ,"R\0GL_COLOR_INDEX\0Integer"
+        ,"R\0GL_RED\0Integer"
+        ,"R\0GL_GREEN\0Integer"
+        ,"R\0GL_BLUE\0Integer"
+        ,"R\0GL_ALPHA\0Integer"
+        ,"R\0GL_LUMINANCE\0Integer"
+        ,"R\0GL_LUMINANCE_ALPHA\0Integer"
+        ,"R\0GL_ALPHA_BITS\0Integer"
+        ,"R\0GL_RED_BITS\0Integer"
+        ,"R\0GL_GREEN_BITS\0Integer"
+        ,"R\0GL_BLUE_BITS\0Integer"
+        ,"R\0GL_INDEX_BITS\0Integer"
+        ,"R\0GL_SUBPIXEL_BITS\0Integer"
+        ,"R\0GL_AUX_BUFFERS\0Integer"
+        ,"R\0GL_READ_BUFFER\0Integer"
+        ,"R\0GL_DRAW_BUFFER\0Integer"
+        ,"R\0GL_DOUBLEBUFFER\0Integer"
+        ,"R\0GL_STEREO\0Integer"
+        ,"R\0GL_BITMAP\0Integer"
+        ,"R\0GL_COLOR\0Integer"
+        ,"R\0GL_DEPTH\0Integer"
+        ,"R\0GL_STENCIL\0Integer"
+        ,"R\0GL_DITHER\0Integer"
+        ,"R\0GL_RGB\0Integer"
+        ,"R\0GL_RGBA\0Integer"
+        ,"R\0GL_MAX_LIST_NESTING\0Integer"
+        ,"R\0GL_MAX_EVAL_ORDER\0Integer"
+        ,"R\0GL_MAX_LIGHTS\0Integer"
+        ,"R\0GL_MAX_CLIP_PLANES\0Integer"
+        ,"R\0GL_MAX_TEXTURE_SIZE\0Integer"
+        ,"R\0GL_MAX_PIXEL_MAP_TABLE\0Integer"
+        ,"R\0GL_MAX_ATTRIB_STACK_DEPTH\0Integer"
+        ,"R\0GL_MAX_MODELVIEW_STACK_DEPTH\0Integer"
+        ,"R\0GL_MAX_NAME_STACK_DEPTH\0Integer"
+        ,"R\0GL_MAX_PROJECTION_STACK_DEPTH\0Integer"
+        ,"R\0GL_MAX_TEXTURE_STACK_DEPTH\0Integer"
+        ,"R\0GL_MAX_VIEWPORT_DIMS\0Integer"
+        ,"R\0GL_MAX_CLIENT_ATTRIB_STACK_DEPTH\0Integer"
+        ,"R\0GL_ATTRIB_STACK_DEPTH\0Integer"
+        ,"R\0GL_CLIENT_ATTRIB_STACK_DEPTH\0Integer"
+        ,"R\0GL_COLOR_CLEAR_VALUE\0Integer"
+        ,"R\0GL_COLOR_WRITEMASK\0Integer"
+        ,"R\0GL_CURRENT_INDEX\0Integer"
+        ,"R\0GL_CURRENT_COLOR\0Integer"
+        ,"R\0GL_CURRENT_NORMAL\0Integer"
+        ,"R\0GL_CURRENT_RASTER_COLOR\0Integer"
+        ,"R\0GL_CURRENT_RASTER_DISTANCE\0Integer"
+        ,"R\0GL_CURRENT_RASTER_INDEX\0Integer"
+        ,"R\0GL_CURRENT_RASTER_POSITION\0Integer"
+        ,"R\0GL_CURRENT_RASTER_TEXTURE_COORDS\0Integer"
+        ,"R\0GL_CURRENT_RASTER_POSITION_VALID\0Integer"
+        ,"R\0GL_CURRENT_TEXTURE_COORDS\0Integer"
+        ,"R\0GL_INDEX_CLEAR_VALUE\0Integer"
+        ,"R\0GL_INDEX_MODE\0Integer"
+        ,"R\0GL_INDEX_WRITEMASK\0Integer"
+        ,"R\0GL_MODELVIEW_MATRIX\0Integer"
+        ,"R\0GL_MODELVIEW_STACK_DEPTH\0Integer"
+        ,"R\0GL_NAME_STACK_DEPTH\0Integer"
+        ,"R\0GL_PROJECTION_MATRIX\0Integer"
+        ,"R\0GL_PROJECTION_STACK_DEPTH\0Integer"
+        ,"R\0GL_RENDER_MODE\0Integer"
+        ,"R\0GL_RGBA_MODE\0Integer"
+        ,"R\0GL_TEXTURE_MATRIX\0Integer"
+        ,"R\0GL_TEXTURE_STACK_DEPTH\0Integer"
+        ,"R\0GL_VIEWPORT\0Integer"
+        ,"R\0GL_AUTO_NORMAL\0Integer"
+        ,"R\0GL_MAP1_COLOR_4\0Integer"
+        ,"R\0GL_MAP1_INDEX\0Integer"
+        ,"R\0GL_MAP1_NORMAL\0Integer"
+        ,"R\0GL_MAP1_TEXTURE_COORD_1\0Integer"
+        ,"R\0GL_MAP1_TEXTURE_COORD_2\0Integer"
+        ,"R\0GL_MAP1_TEXTURE_COORD_3\0Integer"
+        ,"R\0GL_MAP1_TEXTURE_COORD_4\0Integer"
+        ,"R\0GL_MAP1_VERTEX_3\0Integer"
+        ,"R\0GL_MAP1_VERTEX_4\0Integer"
+        ,"R\0GL_MAP2_COLOR_4\0Integer"
+        ,"R\0GL_MAP2_INDEX\0Integer"
+        ,"R\0GL_MAP2_NORMAL\0Integer"
+        ,"R\0GL_MAP2_TEXTURE_COORD_1\0Integer"
+        ,"R\0GL_MAP2_TEXTURE_COORD_2\0Integer"
+        ,"R\0GL_MAP2_TEXTURE_COORD_3\0Integer"
+        ,"R\0GL_MAP2_TEXTURE_COORD_4\0Integer"
+        ,"R\0GL_MAP2_VERTEX_3\0Integer"
+        ,"R\0GL_MAP2_VERTEX_4\0Integer"
+        ,"R\0GL_MAP1_GRID_DOMAIN\0Integer"
+        ,"R\0GL_MAP1_GRID_SEGMENTS\0Integer"
+        ,"R\0GL_MAP2_GRID_DOMAIN\0Integer"
+        ,"R\0GL_MAP2_GRID_SEGMENTS\0Integer"
+        ,"R\0GL_COEFF\0Integer"
+        ,"R\0GL_ORDER\0Integer"
+        ,"R\0GL_DOMAIN\0Integer"
+        ,"R\0GL_PERSPECTIVE_CORRECTION_HINT\0Integer"
+        ,"R\0GL_POINT_SMOOTH_HINT\0Integer"
+        ,"R\0GL_LINE_SMOOTH_HINT\0Integer"
+        ,"R\0GL_POLYGON_SMOOTH_HINT\0Integer"
+        ,"R\0GL_DONT_CARE\0Integer"
+        ,"R\0GL_FASTEST\0Integer"
+        ,"R\0GL_NICEST\0Integer"
+        ,"R\0GL_SCISSOR_BOX\0Integer"
+        ,"R\0GL_SCISSOR_TEST\0Integer"
+        ,"R\0GL_MAP_COLOR\0Integer"
+        ,"R\0GL_MAP_STENCIL\0Integer"
+        ,"R\0GL_INDEX_SHIFT\0Integer"
+        ,"R\0GL_INDEX_OFFSET\0Integer"
+        ,"R\0GL_RED_SCALE\0Integer"
+        ,"R\0GL_RED_BIAS\0Integer"
+        ,"R\0GL_GREEN_SCALE\0Integer"
+        ,"R\0GL_GREEN_BIAS\0Integer"
+        ,"R\0GL_BLUE_SCALE\0Integer"
+        ,"R\0GL_BLUE_BIAS\0Integer"
+        ,"R\0GL_ALPHA_SCALE\0Integer"
+        ,"R\0GL_ALPHA_BIAS\0Integer"
+        ,"R\0GL_DEPTH_SCALE\0Integer"
+        ,"R\0GL_DEPTH_BIAS\0Integer"
+        ,"R\0GL_PIXEL_MAP_S_TO_S_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_I_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_R_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_G_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_B_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_A_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_R_TO_R_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_G_TO_G_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_B_TO_B_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_A_TO_A_SIZE\0Integer"
+        ,"R\0GL_PIXEL_MAP_S_TO_S\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_I\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_R\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_G\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_B\0Integer"
+        ,"R\0GL_PIXEL_MAP_I_TO_A\0Integer"
+        ,"R\0GL_PIXEL_MAP_R_TO_R\0Integer"
+        ,"R\0GL_PIXEL_MAP_G_TO_G\0Integer"
+        ,"R\0GL_PIXEL_MAP_B_TO_B\0Integer"
+        ,"R\0GL_PIXEL_MAP_A_TO_A\0Integer"
+        ,"R\0GL_PACK_ALIGNMENT\0Integer"
+        ,"R\0GL_PACK_LSB_FIRST\0Integer"
+        ,"R\0GL_PACK_ROW_LENGTH\0Integer"
+        ,"R\0GL_PACK_SKIP_PIXELS\0Integer"
+        ,"R\0GL_PACK_SKIP_ROWS\0Integer"
+        ,"R\0GL_PACK_SWAP_BYTES\0Integer"
+        ,"R\0GL_UNPACK_ALIGNMENT\0Integer"
+        ,"R\0GL_UNPACK_LSB_FIRST\0Integer"
+        ,"R\0GL_UNPACK_ROW_LENGTH\0Integer"
+        ,"R\0GL_UNPACK_SKIP_PIXELS\0Integer"
+        ,"R\0GL_UNPACK_SKIP_ROWS\0Integer"
+        ,"R\0GL_UNPACK_SWAP_BYTES\0Integer"
+        ,"R\0GL_ZOOM_X\0Integer"
+        ,"R\0GL_ZOOM_Y\0Integer"
+        ,"R\0GL_TEXTURE_ENV\0Integer"
+        ,"R\0GL_TEXTURE_ENV_MODE\0Integer"
+        ,"R\0GL_TEXTURE_1D\0Integer"
+        ,"R\0GL_TEXTURE_2D\0Integer"
+        ,"R\0GL_TEXTURE_WRAP_S\0Integer"
+        ,"R\0GL_TEXTURE_WRAP_T\0Integer"
+        ,"R\0GL_TEXTURE_MAG_FILTER\0Integer"
+        ,"R\0GL_TEXTURE_MIN_FILTER\0Integer"
+        ,"R\0GL_TEXTURE_ENV_COLOR\0Integer"
+        ,"R\0GL_TEXTURE_GEN_S\0Integer"
+        ,"R\0GL_TEXTURE_GEN_T\0Integer"
+        ,"R\0GL_TEXTURE_GEN_R\0Integer"
+        ,"R\0GL_TEXTURE_GEN_Q\0Integer"
+        ,"R\0GL_TEXTURE_GEN_MODE\0Integer"
+        ,"R\0GL_TEXTURE_BORDER_COLOR\0Integer"
+        ,"R\0GL_TEXTURE_WIDTH\0Integer"
+        ,"R\0GL_TEXTURE_HEIGHT\0Integer"
+        ,"R\0GL_TEXTURE_BORDER\0Integer"
+        ,"R\0GL_TEXTURE_COMPONENTS\0Integer"
+        ,"R\0GL_TEXTURE_RED_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_GREEN_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_BLUE_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_ALPHA_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_LUMINANCE_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_INTENSITY_SIZE\0Integer"
+        ,"R\0GL_NEAREST_MIPMAP_NEAREST\0Integer"
+        ,"R\0GL_NEAREST_MIPMAP_LINEAR\0Integer"
+        ,"R\0GL_LINEAR_MIPMAP_NEAREST\0Integer"
+        ,"R\0GL_LINEAR_MIPMAP_LINEAR\0Integer"
+        ,"R\0GL_OBJECT_LINEAR\0Integer"
+        ,"R\0GL_OBJECT_PLANE\0Integer"
+        ,"R\0GL_EYE_LINEAR\0Integer"
+        ,"R\0GL_EYE_PLANE\0Integer"
+        ,"R\0GL_SPHERE_MAP\0Integer"
+        ,"R\0GL_DECAL\0Integer"
+        ,"R\0GL_MODULATE\0Integer"
+        ,"R\0GL_NEAREST\0Integer"
+        ,"R\0GL_REPEAT\0Integer"
+        ,"R\0GL_CLAMP\0Integer"
+        ,"R\0GL_S\0Integer"
+        ,"R\0GL_T\0Integer"
+        ,"R\0GL_R\0Integer"
+        ,"R\0GL_Q\0Integer"
+        ,"R\0GL_VENDOR\0Integer"
+        ,"R\0GL_RENDERER\0Integer"
+        ,"R\0GL_VERSION\0Integer"
+        ,"R\0GL_EXTENSIONS\0Integer"
+        ,"R\0GL_NO_ERROR\0Integer"
+        ,"R\0GL_INVALID_ENUM\0Integer"
+        ,"R\0GL_INVALID_VALUE\0Integer"
+        ,"R\0GL_INVALID_OPERATION\0Integer"
+        ,"R\0GL_STACK_OVERFLOW\0Integer"
+        ,"R\0GL_STACK_UNDERFLOW\0Integer"
+        ,"R\0GL_OUT_OF_MEMORY\0Integer"
+        ,"R\0GL_CURRENT_BIT\0Integer"
+        ,"R\0GL_POINT_BIT\0Integer"
+        ,"R\0GL_LINE_BIT\0Integer"
+        ,"R\0GL_POLYGON_BIT\0Integer"
+        ,"R\0GL_POLYGON_STIPPLE_BIT\0Integer"
+        ,"R\0GL_PIXEL_MODE_BIT\0Integer"
+        ,"R\0GL_LIGHTING_BIT\0Integer"
+        ,"R\0GL_FOG_BIT\0Integer"
+        ,"R\0GL_DEPTH_BUFFER_BIT\0Integer"
+        ,"R\0GL_ACCUM_BUFFER_BIT\0Integer"
+        ,"R\0GL_STENCIL_BUFFER_BIT\0Integer"
+        ,"R\0GL_VIEWPORT_BIT\0Integer"
+        ,"R\0GL_TRANSFORM_BIT\0Integer"
+        ,"R\0GL_ENABLE_BIT\0Integer"
+        ,"R\0GL_COLOR_BUFFER_BIT\0Integer"
+        ,"R\0GL_HINT_BIT\0Integer"
+        ,"R\0GL_EVAL_BIT\0Integer"
+        ,"R\0GL_LIST_BIT\0Integer"
+        ,"R\0GL_TEXTURE_BIT\0Integer"
+        ,"R\0GL_SCISSOR_BIT\0Integer"
+        ,"R\0GL_ALL_ATTRIB_BITS\0Integer"
+        ,"R\0GL_PROXY_TEXTURE_1D\0Integer"
+        ,"R\0GL_PROXY_TEXTURE_2D\0Integer"
+        ,"R\0GL_TEXTURE_PRIORITY\0Integer"
+        ,"R\0GL_TEXTURE_RESIDENT\0Integer"
+        ,"R\0GL_TEXTURE_BINDING_1D\0Integer"
+        ,"R\0GL_TEXTURE_BINDING_2D\0Integer"
+        ,"R\0GL_TEXTURE_INTERNAL_FORMAT\0Integer"
+        ,"R\0GL_ALPHA4\0Integer"
+        ,"R\0GL_ALPHA8\0Integer"
+        ,"R\0GL_ALPHA12\0Integer"
+        ,"R\0GL_ALPHA16\0Integer"
+        ,"R\0GL_LUMINANCE4\0Integer"
+        ,"R\0GL_LUMINANCE8\0Integer"
+        ,"R\0GL_LUMINANCE12\0Integer"
+        ,"R\0GL_LUMINANCE16\0Integer"
+        ,"R\0GL_LUMINANCE4_ALPHA4\0Integer"
+        ,"R\0GL_LUMINANCE6_ALPHA2\0Integer"
+        ,"R\0GL_LUMINANCE8_ALPHA8\0Integer"
+        ,"R\0GL_LUMINANCE12_ALPHA4\0Integer"
+        ,"R\0GL_LUMINANCE12_ALPHA12\0Integer"
+        ,"R\0GL_LUMINANCE16_ALPHA16\0Integer"
+        ,"R\0GL_INTENSITY\0Integer"
+        ,"R\0GL_INTENSITY4\0Integer"
+        ,"R\0GL_INTENSITY8\0Integer"
+        ,"R\0GL_INTENSITY12\0Integer"
+        ,"R\0GL_INTENSITY16\0Integer"
+        ,"R\0GL_R3_G3_B2\0Integer"
+        ,"R\0GL_RGB4\0Integer"
+        ,"R\0GL_RGB5\0Integer"
+        ,"R\0GL_RGB8\0Integer"
+        ,"R\0GL_RGB10\0Integer"
+        ,"R\0GL_RGB12\0Integer"
+        ,"R\0GL_RGB16\0Integer"
+        ,"R\0GL_RGBA2\0Integer"
+        ,"R\0GL_RGBA4\0Integer"
+        ,"R\0GL_RGB5_A1\0Integer"
+        ,"R\0GL_RGBA8\0Integer"
+        ,"R\0GL_RGB10_A2\0Integer"
+        ,"R\0GL_RGBA12\0Integer"
+        ,"R\0GL_RGBA16\0Integer"
+        ,"R\0GL_CLIENT_PIXEL_STORE_BIT\0Integer"
+        ,"R\0GL_CLIENT_VERTEX_ARRAY_BIT\0Integer"
+        ,"R\0GL_ALL_CLIENT_ATTRIB_BITS\0Integer"
+        ,"R\0GL_CLIENT_ALL_ATTRIB_BITS\0Integer"
+        ,"R\0GL_RESCALE_NORMAL\0Integer"
+        ,"R\0GL_CLAMP_TO_EDGE\0Integer"
+        ,"R\0GL_MAX_ELEMENTS_VERTICES\0Integer"
+        ,"R\0GL_MAX_ELEMENTS_INDICES\0Integer"
+        ,"R\0GL_BGR\0Integer"
+        ,"R\0GL_BGRA\0Integer"
+        ,"R\0GL_UNSIGNED_BYTE_3_3_2\0Integer"
+        ,"R\0GL_UNSIGNED_BYTE_2_3_3_REV\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_5_6_5\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_5_6_5_REV\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_4_4_4_4\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_4_4_4_4_REV\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_5_5_5_1\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_1_5_5_5_REV\0Integer"
+        ,"R\0GL_UNSIGNED_INT_8_8_8_8\0Integer"
+        ,"R\0GL_UNSIGNED_INT_8_8_8_8_REV\0Integer"
+        ,"R\0GL_UNSIGNED_INT_10_10_10_2\0Integer"
+        ,"R\0GL_UNSIGNED_INT_2_10_10_10_REV\0Integer"
+        ,"R\0GL_LIGHT_MODEL_COLOR_CONTROL\0Integer"
+        ,"R\0GL_SINGLE_COLOR\0Integer"
+        ,"R\0GL_SEPARATE_SPECULAR_COLOR\0Integer"
+        ,"R\0GL_TEXTURE_MIN_LOD\0Integer"
+        ,"R\0GL_TEXTURE_MAX_LOD\0Integer"
+        ,"R\0GL_TEXTURE_BASE_LEVEL\0Integer"
+        ,"R\0GL_TEXTURE_MAX_LEVEL\0Integer"
+        ,"R\0GL_SMOOTH_POINT_SIZE_RANGE\0Integer"
+        ,"R\0GL_SMOOTH_POINT_SIZE_GRANULARITY\0Integer"
+        ,"R\0GL_SMOOTH_LINE_WIDTH_RANGE\0Integer"
+        ,"R\0GL_SMOOTH_LINE_WIDTH_GRANULARITY\0Integer"
+        ,"R\0GL_ALIASED_POINT_SIZE_RANGE\0Integer"
+        ,"R\0GL_ALIASED_LINE_WIDTH_RANGE\0Integer"
+        ,"R\0GL_PACK_SKIP_IMAGES\0Integer"
+        ,"R\0GL_PACK_IMAGE_HEIGHT\0Integer"
+        ,"R\0GL_UNPACK_SKIP_IMAGES\0Integer"
+        ,"R\0GL_UNPACK_IMAGE_HEIGHT\0Integer"
+        ,"R\0GL_TEXTURE_3D\0Integer"
+        ,"R\0GL_PROXY_TEXTURE_3D\0Integer"
+        ,"R\0GL_TEXTURE_DEPTH\0Integer"
+        ,"R\0GL_TEXTURE_WRAP_R\0Integer"
+        ,"R\0GL_MAX_3D_TEXTURE_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_BINDING_3D\0Integer"
+        ,"R\0GL_CONSTANT_COLOR\0Integer"
+        ,"R\0GL_ONE_MINUS_CONSTANT_COLOR\0Integer"
+        ,"R\0GL_CONSTANT_ALPHA\0Integer"
+        ,"R\0GL_ONE_MINUS_CONSTANT_ALPHA\0Integer"
+        ,"R\0GL_COLOR_TABLE\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_COLOR_TABLE\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_COLOR_TABLE\0Integer"
+        ,"R\0GL_PROXY_COLOR_TABLE\0Integer"
+        ,"R\0GL_PROXY_POST_CONVOLUTION_COLOR_TABLE\0Integer"
+        ,"R\0GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE\0Integer"
+        ,"R\0GL_COLOR_TABLE_SCALE\0Integer"
+        ,"R\0GL_COLOR_TABLE_BIAS\0Integer"
+        ,"R\0GL_COLOR_TABLE_FORMAT\0Integer"
+        ,"R\0GL_COLOR_TABLE_WIDTH\0Integer"
+        ,"R\0GL_COLOR_TABLE_RED_SIZE\0Integer"
+        ,"R\0GL_COLOR_TABLE_GREEN_SIZE\0Integer"
+        ,"R\0GL_COLOR_TABLE_BLUE_SIZE\0Integer"
+        ,"R\0GL_COLOR_TABLE_ALPHA_SIZE\0Integer"
+        ,"R\0GL_COLOR_TABLE_LUMINANCE_SIZE\0Integer"
+        ,"R\0GL_COLOR_TABLE_INTENSITY_SIZE\0Integer"
+        ,"R\0GL_CONVOLUTION_1D\0Integer"
+        ,"R\0GL_CONVOLUTION_2D\0Integer"
+        ,"R\0GL_SEPARABLE_2D\0Integer"
+        ,"R\0GL_CONVOLUTION_BORDER_MODE\0Integer"
+        ,"R\0GL_CONVOLUTION_FILTER_SCALE\0Integer"
+        ,"R\0GL_CONVOLUTION_FILTER_BIAS\0Integer"
+        ,"R\0GL_REDUCE\0Integer"
+        ,"R\0GL_CONVOLUTION_FORMAT\0Integer"
+        ,"R\0GL_CONVOLUTION_WIDTH\0Integer"
+        ,"R\0GL_CONVOLUTION_HEIGHT\0Integer"
+        ,"R\0GL_MAX_CONVOLUTION_WIDTH\0Integer"
+        ,"R\0GL_MAX_CONVOLUTION_HEIGHT\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_RED_SCALE\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_GREEN_SCALE\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_BLUE_SCALE\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_ALPHA_SCALE\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_RED_BIAS\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_GREEN_BIAS\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_BLUE_BIAS\0Integer"
+        ,"R\0GL_POST_CONVOLUTION_ALPHA_BIAS\0Integer"
+        ,"R\0GL_CONSTANT_BORDER\0Integer"
+        ,"R\0GL_REPLICATE_BORDER\0Integer"
+        ,"R\0GL_CONVOLUTION_BORDER_COLOR\0Integer"
+        ,"R\0GL_COLOR_MATRIX\0Integer"
+        ,"R\0GL_COLOR_MATRIX_STACK_DEPTH\0Integer"
+        ,"R\0GL_MAX_COLOR_MATRIX_STACK_DEPTH\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_RED_SCALE\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_GREEN_SCALE\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_BLUE_SCALE\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_ALPHA_SCALE\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_RED_BIAS\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_GREEN_BIAS\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_BLUE_BIAS\0Integer"
+        ,"R\0GL_POST_COLOR_MATRIX_ALPHA_BIAS\0Integer"
+        ,"R\0GL_HISTOGRAM\0Integer"
+        ,"R\0GL_PROXY_HISTOGRAM\0Integer"
+        ,"R\0GL_HISTOGRAM_WIDTH\0Integer"
+        ,"R\0GL_HISTOGRAM_FORMAT\0Integer"
+        ,"R\0GL_HISTOGRAM_RED_SIZE\0Integer"
+        ,"R\0GL_HISTOGRAM_GREEN_SIZE\0Integer"
+        ,"R\0GL_HISTOGRAM_BLUE_SIZE\0Integer"
+        ,"R\0GL_HISTOGRAM_ALPHA_SIZE\0Integer"
+        ,"R\0GL_HISTOGRAM_LUMINANCE_SIZE\0Integer"
+        ,"R\0GL_HISTOGRAM_SINK\0Integer"
+        ,"R\0GL_MINMAX\0Integer"
+        ,"R\0GL_MINMAX_FORMAT\0Integer"
+        ,"R\0GL_MINMAX_SINK\0Integer"
+        ,"R\0GL_TABLE_TOO_LARGE\0Integer"
+        ,"R\0GL_BLEND_EQUATION\0Integer"
+        ,"R\0GL_MIN\0Integer"
+        ,"R\0GL_MAX\0Integer"
+        ,"R\0GL_FUNC_ADD\0Integer"
+        ,"R\0GL_FUNC_SUBTRACT\0Integer"
+        ,"R\0GL_FUNC_REVERSE_SUBTRACT\0Integer"
+        ,"R\0GL_BLEND_COLOR\0Integer"
+        ,"R\0GL_TEXTURE0\0Integer"
+        ,"R\0GL_TEXTURE1\0Integer"
+        ,"R\0GL_TEXTURE2\0Integer"
+        ,"R\0GL_TEXTURE3\0Integer"
+        ,"R\0GL_TEXTURE4\0Integer"
+        ,"R\0GL_TEXTURE5\0Integer"
+        ,"R\0GL_TEXTURE6\0Integer"
+        ,"R\0GL_TEXTURE7\0Integer"
+        ,"R\0GL_TEXTURE8\0Integer"
+        ,"R\0GL_TEXTURE9\0Integer"
+        ,"R\0GL_TEXTURE10\0Integer"
+        ,"R\0GL_TEXTURE11\0Integer"
+        ,"R\0GL_TEXTURE12\0Integer"
+        ,"R\0GL_TEXTURE13\0Integer"
+        ,"R\0GL_TEXTURE14\0Integer"
+        ,"R\0GL_TEXTURE15\0Integer"
+        ,"R\0GL_TEXTURE16\0Integer"
+        ,"R\0GL_TEXTURE17\0Integer"
+        ,"R\0GL_TEXTURE18\0Integer"
+        ,"R\0GL_TEXTURE19\0Integer"
+        ,"R\0GL_TEXTURE20\0Integer"
+        ,"R\0GL_TEXTURE21\0Integer"
+        ,"R\0GL_TEXTURE22\0Integer"
+        ,"R\0GL_TEXTURE23\0Integer"
+        ,"R\0GL_TEXTURE24\0Integer"
+        ,"R\0GL_TEXTURE25\0Integer"
+        ,"R\0GL_TEXTURE26\0Integer"
+        ,"R\0GL_TEXTURE27\0Integer"
+        ,"R\0GL_TEXTURE28\0Integer"
+        ,"R\0GL_TEXTURE29\0Integer"
+        ,"R\0GL_TEXTURE30\0Integer"
+        ,"R\0GL_TEXTURE31\0Integer"
+        ,"R\0GL_ACTIVE_TEXTURE\0Integer"
+        ,"R\0GL_CLIENT_ACTIVE_TEXTURE\0Integer"
+        ,"R\0GL_MAX_TEXTURE_UNITS\0Integer"
+        ,"R\0GL_NORMAL_MAP\0Integer"
+        ,"R\0GL_REFLECTION_MAP\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP\0Integer"
+        ,"R\0GL_TEXTURE_BINDING_CUBE_MAP\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP_POSITIVE_X\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP_NEGATIVE_X\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP_POSITIVE_Y\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP_NEGATIVE_Y\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP_POSITIVE_Z\0Integer"
+        ,"R\0GL_TEXTURE_CUBE_MAP_NEGATIVE_Z\0Integer"
+        ,"R\0GL_PROXY_TEXTURE_CUBE_MAP\0Integer"
+        ,"R\0GL_MAX_CUBE_MAP_TEXTURE_SIZE\0Integer"
+        ,"R\0GL_COMPRESSED_ALPHA\0Integer"
+        ,"R\0GL_COMPRESSED_LUMINANCE\0Integer"
+        ,"R\0GL_COMPRESSED_LUMINANCE_ALPHA\0Integer"
+        ,"R\0GL_COMPRESSED_INTENSITY\0Integer"
+        ,"R\0GL_COMPRESSED_RGB\0Integer"
+        ,"R\0GL_COMPRESSED_RGBA\0Integer"
+        ,"R\0GL_TEXTURE_COMPRESSION_HINT\0Integer"
+        ,"R\0GL_TEXTURE_COMPRESSED_IMAGE_SIZE\0Integer"
+        ,"R\0GL_TEXTURE_COMPRESSED\0Integer"
+        ,"R\0GL_NUM_COMPRESSED_TEXTURE_FORMATS\0Integer"
+        ,"R\0GL_COMPRESSED_TEXTURE_FORMATS\0Integer"
+        ,"R\0GL_MULTISAMPLE\0Integer"
+        ,"R\0GL_SAMPLE_ALPHA_TO_COVERAGE\0Integer"
+        ,"R\0GL_SAMPLE_ALPHA_TO_ONE\0Integer"
+        ,"R\0GL_SAMPLE_COVERAGE\0Integer"
+        ,"R\0GL_SAMPLE_BUFFERS\0Integer"
+        ,"R\0GL_SAMPLES\0Integer"
+        ,"R\0GL_SAMPLE_COVERAGE_VALUE\0Integer"
+        ,"R\0GL_SAMPLE_COVERAGE_INVERT\0Integer"
+        ,"R\0GL_MULTISAMPLE_BIT\0Integer"
+        ,"R\0GL_TRANSPOSE_MODELVIEW_MATRIX\0Integer"
+        ,"R\0GL_TRANSPOSE_PROJECTION_MATRIX\0Integer"
+        ,"R\0GL_TRANSPOSE_TEXTURE_MATRIX\0Integer"
+        ,"R\0GL_TRANSPOSE_COLOR_MATRIX\0Integer"
+        ,"R\0GL_COMBINE\0Integer"
+        ,"R\0GL_COMBINE_RGB\0Integer"
+        ,"R\0GL_COMBINE_ALPHA\0Integer"
+        ,"R\0GL_SOURCE0_RGB\0Integer"
+        ,"R\0GL_SOURCE1_RGB\0Integer"
+        ,"R\0GL_SOURCE2_RGB\0Integer"
+        ,"R\0GL_SOURCE0_ALPHA\0Integer"
+        ,"R\0GL_SOURCE1_ALPHA\0Integer"
+        ,"R\0GL_SOURCE2_ALPHA\0Integer"
+        ,"R\0GL_OPERAND0_RGB\0Integer"
+        ,"R\0GL_OPERAND1_RGB\0Integer"
+        ,"R\0GL_OPERAND2_RGB\0Integer"
+        ,"R\0GL_OPERAND0_ALPHA\0Integer"
+        ,"R\0GL_OPERAND1_ALPHA\0Integer"
+        ,"R\0GL_OPERAND2_ALPHA\0Integer"
+        ,"R\0GL_RGB_SCALE\0Integer"
+        ,"R\0GL_ADD_SIGNED\0Integer"
+        ,"R\0GL_INTERPOLATE\0Integer"
+        ,"R\0GL_SUBTRACT\0Integer"
+        ,"R\0GL_CONSTANT\0Integer"
+        ,"R\0GL_PRIMARY_COLOR\0Integer"
+        ,"R\0GL_PREVIOUS\0Integer"
+        ,"R\0GL_DOT3_RGB\0Integer"
+        ,"R\0GL_DOT3_RGBA\0Integer"
+        ,"R\0GL_CLAMP_TO_BORDER\0Integer"
+        ,"R\0GL_TEXTURE0_ARB\0Integer"
+        ,"R\0GL_TEXTURE1_ARB\0Integer"
+        ,"R\0GL_TEXTURE2_ARB\0Integer"
+        ,"R\0GL_TEXTURE3_ARB\0Integer"
+        ,"R\0GL_TEXTURE4_ARB\0Integer"
+        ,"R\0GL_TEXTURE5_ARB\0Integer"
+        ,"R\0GL_TEXTURE6_ARB\0Integer"
+        ,"R\0GL_TEXTURE7_ARB\0Integer"
+        ,"R\0GL_TEXTURE8_ARB\0Integer"
+        ,"R\0GL_TEXTURE9_ARB\0Integer"
+        ,"R\0GL_TEXTURE10_ARB\0Integer"
+        ,"R\0GL_TEXTURE11_ARB\0Integer"
+        ,"R\0GL_TEXTURE12_ARB\0Integer"
+        ,"R\0GL_TEXTURE13_ARB\0Integer"
+        ,"R\0GL_TEXTURE14_ARB\0Integer"
+        ,"R\0GL_TEXTURE15_ARB\0Integer"
+        ,"R\0GL_TEXTURE16_ARB\0Integer"
+        ,"R\0GL_TEXTURE17_ARB\0Integer"
+        ,"R\0GL_TEXTURE18_ARB\0Integer"
+        ,"R\0GL_TEXTURE19_ARB\0Integer"
+        ,"R\0GL_TEXTURE20_ARB\0Integer"
+        ,"R\0GL_TEXTURE21_ARB\0Integer"
+        ,"R\0GL_TEXTURE22_ARB\0Integer"
+        ,"R\0GL_TEXTURE23_ARB\0Integer"
+        ,"R\0GL_TEXTURE24_ARB\0Integer"
+        ,"R\0GL_TEXTURE25_ARB\0Integer"
+        ,"R\0GL_TEXTURE26_ARB\0Integer"
+        ,"R\0GL_TEXTURE27_ARB\0Integer"
+        ,"R\0GL_TEXTURE28_ARB\0Integer"
+        ,"R\0GL_TEXTURE29_ARB\0Integer"
+        ,"R\0GL_TEXTURE30_ARB\0Integer"
+        ,"R\0GL_TEXTURE31_ARB\0Integer"
+        ,"R\0GL_ACTIVE_TEXTURE_ARB\0Integer"
+        ,"R\0GL_CLIENT_ACTIVE_TEXTURE_ARB\0Integer"
+        ,"R\0GL_MAX_TEXTURE_UNITS_ARB\0Integer"
+        ,"R\0GL_DEPTH_STENCIL_MESA\0Integer"
+        ,"R\0GL_UNSIGNED_INT_24_8_MESA\0Integer"
+        ,"R\0GL_UNSIGNED_INT_8_24_REV_MESA\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_15_1_MESA\0Integer"
+        ,"R\0GL_UNSIGNED_SHORT_1_15_REV_MESA\0Integer"
+        ,"R\0GL_ALPHA_BLEND_EQUATION_ATI\0Integer"
 
         ,"Z"
 };
