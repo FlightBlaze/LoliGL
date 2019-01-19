@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 project(LoliGL C)
 
-set(CMAKE_C_STANDARD 99)
-
 if(NOT WIN32)
     file(GLOB_RECURSE BIN bin/*.so)
 else()
