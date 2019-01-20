@@ -9,6 +9,8 @@
     #include <GL/glut.h>
 #endif
 
+#include <GL/gl.h>
+
 #ifndef LOLIGL_VERSION
     #define LOLIGL_VERSION "undefined"
 #endif

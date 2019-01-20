@@ -439,6 +439,125 @@ void loli_GL__glutMainLoop(loli_state * state) {
     glutMainLoop();
 }
 
+void loli_GL__glClearIndex(loli_state * state) {
+    float i = loli_arg_integer(state, 0);
+
+    glClearIndex(i);
+}
+
+void loli_GL__glClearColor(loli_state * state) {
+    float red   = loli_arg_integer(state, 0);
+    float green = loli_arg_integer(state, 1);
+    float blue  = loli_arg_integer(state, 2);
+    float alpha = loli_arg_integer(state, 3);
+
+    glClearColor(red, green, blue, alpha);
+}
+
+void loli_GL__glClear(loli_state * state) {
+    unsigned int mask = (unsigned int) loli_arg_integer(state, 0);
+
+    glClear(mask);
+}
+
+void loli_GL__glIndexMask(loli_state * state) {
+    unsigned int mask = (unsigned int) loli_arg_integer(state, 0);
+
+    glIndexMask(mask);
+}
+
+void loli_GL__glColorMask(loli_state * state) {
+    unsigned char red   = (unsigned char) loli_arg_string_raw(state, 0);
+    unsigned char green = (unsigned char) loli_arg_string_raw(state, 1);
+    unsigned char blue  = (unsigned char) loli_arg_string_raw(state, 2);
+    unsigned char alpha = (unsigned char) loli_arg_string_raw(state, 3);
+
+    glColorMask(red, green, blue, alpha);
+}
+
+void loli_GL__glAlphaFunc(loli_state * state) {
+    unsigned char func  = (unsigned char) loli_arg_string_raw(state, 0);
+    float ref         = loli_arg_integer(state, 1);
+
+    glAlphaFunc(func, ref);
+}
+
+void loli_GL__glBlendFunc(loli_state * state) {
+    unsigned char sfactor  = (unsigned char) loli_arg_string_raw(state, 0);
+    unsigned char dfactor  = (unsigned char)loli_arg_integer(state, 1);
+
+    glBlendFunc(sfactor, dfactor);
+}
+
+void loli_GL__glLogicOp(loli_state * state) {
+    unsigned int opcode  = (unsigned int) loli_arg_integer(state, 0);
+
+    glLogicOp(opcode);
+}
+
+void loli_GL__glCullFace(loli_state * state) {
+    unsigned int mode  = (unsigned int) loli_arg_integer(state, 0);
+
+    glCullFace(mode);
+}
+
+void loli_GL__glFrontFace(loli_state * state) {
+    unsigned int mode  = (unsigned int) loli_arg_integer(state, 0);
+
+    glCullFace(mode);
+}
+
+void loli_GL__glPointSize(loli_state * state) {
+    float size = loli_arg_integer(state, 0);
+
+    glPointSize(size);
+}
+
+void loli_GL__glLineWidth(loli_state * state) {
+    float width = loli_arg_integer(state, 0);
+
+    glLineWidth(width);
+}
+
+void loli_GL__glLineStipple(loli_state * state) {
+    int factor = (int) loli_arg_integer(state, 0);
+    unsigned short pattern = (unsigned short) loli_arg_integer(state, 1);
+
+    glLineStipple(factor, pattern);
+}
+
+void loli_GL__glPolygonMode(loli_state * state) {
+    unsigned int face = (unsigned int) loli_arg_integer(state, 0);
+    unsigned int mode = (unsigned int) loli_arg_integer(state, 1);
+
+    glPolygonMode(face, mode);
+}
+
+void loli_GL__glPolygonOffset(loli_state * state) {
+    float factor = loli_arg_integer(state, 0);
+    float units = loli_arg_integer(state, 1);
+
+    glPolygonOffset(factor, units);
+}
+
+void loli_GL__glPolygonStipple(loli_state * state) {
+    unsigned char mask = (unsigned char) loli_arg_integer(state, 0);
+
+    glPolygonStipple(&mask);
+}
+
+void loli_GL__glGetPolygonStipple(loli_state * state) {
+    unsigned char mask = (unsigned char) loli_arg_integer(state, 0);
+
+    glGetPolygonStipple(&mask);
+}
+
+void loli_GL__glEdgeFlag(loli_state * state) {
+    unsigned char mask = (unsigned char) loli_arg_integer(state, 0);
+
+    glEdgeFlag(mask);
+}
+
 void loli_GL__glEnd(loli_state * state) {
     glEnd();
 }
