@@ -100,6 +100,21 @@ void loli_GL__glPolygonOffset                  (loli_state *);
 void loli_GL__glPolygonStipple                 (loli_state *);
 void loli_GL__glGetPolygonStipple              (loli_state *);
 void loli_GL__glEdgeFlag                       (loli_state *);
+void loli_GL__glEdgeFlagv                      (loli_state *);
+void loli_GL__glScissor                        (loli_state *);
+void loli_GL__glClipPlane                      (loli_state *);
+void loli_GL__glGetClipPlane                   (loli_state *);
+void loli_GL__glDrawBuffer                     (loli_state *);
+void loli_GL__glReadBuffer                     (loli_state *);
+void loli_GL__glEnable                         (loli_state *);
+void loli_GL__glDisable                        (loli_state *);
+void loli_GL__glIsEnabled                      (loli_state *);
+void loli_GL__glEnableClientState              (loli_state *);
+void loli_GL__glDisableClientState             (loli_state *);
+void loli_GL__glGetBooleanv                    (loli_state *);
+void loli_GL__glGetDoublev                     (loli_state *);
+void loli_GL__glGetFloatv                      (loli_state *);
+void loli_GL__glGetIntegerv                    (loli_state *);
 void loli_GL__glEnd                            (loli_state *);
 void loli_GL__glFlush                          (loli_state *);
 
@@ -1133,6 +1148,21 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL__glPolygonStipple,
         loli_GL__glGetPolygonStipple,
         loli_GL__glEdgeFlag,
+        loli_GL__glEdgeFlagv,
+        loli_GL__glScissor,
+        loli_GL__glClipPlane,
+        loli_GL__glGetClipPlane,
+        loli_GL__glDrawBuffer,
+        loli_GL__glReadBuffer,
+        loli_GL__glEnable,
+        loli_GL__glDisable,
+        loli_GL__glIsEnabled,
+        loli_GL__glEnableClientState,
+        loli_GL__glDisableClientState,
+        loli_GL__glGetBooleanv,
+        loli_GL__glGetDoublev,
+        loli_GL__glGetFloatv,
+        loli_GL__glGetIntegerv,
         loli_GL__glEnd,
         loli_GL__glFlush,
 
@@ -2149,7 +2179,7 @@ const char * loli_GL_info_table[] = {
         ,"F\0example"
 
         ,"F\0glClearIndex\0(Integer)"
-        ,"F\0glClearColor\0(Integer, Integer, Integer, Integer)"
+        ,"F\0glClearColor\0(Double, Double, Double, Double)"
         ,"F\0glClear\0(Integer)"
         ,"F\0glIndexMask\0(Integer)"
         ,"F\0glColorMask\0(Integer, Integer, Integer, Integer)"
@@ -2163,9 +2193,24 @@ const char * loli_GL_info_table[] = {
         ,"F\0glLineStipple\0(Integer, Integer)"
         ,"F\0glPolygonMode\0(Integer, Integer)"
         ,"F\0glPolygonOffset\0(Integer, Integer)"
-        ,"F\0glPolygonStipple\0(Integer)"
-        ,"F\0glGetPolygonStipple\0(Integer)"
+        ,"F\0glPolygonStipple\0(Integer): Integer"
+        ,"F\0glGetPolygonStipple\0(Integer): Integer"
         ,"F\0glEdgeFlag\0(Integer)"
+        ,"F\0glEdgeFlagv\0(Integer): Integer"
+        ,"F\0glScissor\0(Integer, Integer, Integer, Integer)"
+        ,"F\0glClipPlane\0(Integer, Double): Double"
+        ,"F\0glGetClipPlane\0(Integer, Double): Double"
+        ,"F\0glDrawBuffer\0(Integer)"
+        ,"F\0glReadBuffer\0(Integer)"
+        ,"F\0glEnable\0(Integer)"
+        ,"F\0glDisable\0(Integer)"
+        ,"F\0glIsEnabled\0(Integer): Integer"
+        ,"F\0glEnableClientState\0(Integer)"
+        ,"F\0glDisableClientState\0(Integer)"
+        ,"F\0glGetBooleanv\0(Integer, Integer): Integer"
+        ,"F\0glGetDoublev\0(Integer, Double): Double"
+        ,"F\0glGetFloatv\0(Integer, Integer): Integer"
+        ,"F\0glGetIntegerv\0(Integer, Integer): Integer"
 
         ,"F\0glEnd"
         ,"F\0glFlush"
