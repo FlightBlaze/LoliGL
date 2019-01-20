@@ -467,24 +467,24 @@ void loli_GL__glIndexMask(loli_state * state) {
 }
 
 void loli_GL__glColorMask(loli_state * state) {
-    unsigned char red   = (unsigned char) loli_arg_string_raw(state, 0);
-    unsigned char green = (unsigned char) loli_arg_string_raw(state, 1);
-    unsigned char blue  = (unsigned char) loli_arg_string_raw(state, 2);
-    unsigned char alpha = (unsigned char) loli_arg_string_raw(state, 3);
+    unsigned char red   = (unsigned char) loli_arg_integer(state, 0);
+    unsigned char green = (unsigned char) loli_arg_integer(state, 1);
+    unsigned char blue  = (unsigned char) loli_arg_integer(state, 2);
+    unsigned char alpha = (unsigned char) loli_arg_integer(state, 3);
 
     glColorMask(red, green, blue, alpha);
 }
 
 void loli_GL__glAlphaFunc(loli_state * state) {
-    unsigned char func  = (unsigned char) loli_arg_string_raw(state, 0);
-    float ref         = loli_arg_integer(state, 1);
+    unsigned char func  = (unsigned char) loli_arg_integer(state, 0);
+    float ref           = loli_arg_integer(state, 1);
 
     glAlphaFunc(func, ref);
 }
 
 void loli_GL__glBlendFunc(loli_state * state) {
-    unsigned char sfactor  = (unsigned char) loli_arg_string_raw(state, 0);
-    unsigned char dfactor  = (unsigned char)loli_arg_integer(state, 1);
+    unsigned char sfactor  = (unsigned char) loli_arg_integer(state, 0);
+    unsigned char dfactor  = (unsigned char) loli_arg_integer(state, 1);
 
     glBlendFunc(sfactor, dfactor);
 }
@@ -504,7 +504,7 @@ void loli_GL__glCullFace(loli_state * state) {
 void loli_GL__glFrontFace(loli_state * state) {
     unsigned int mode  = (unsigned int) loli_arg_integer(state, 0);
 
-    glCullFace(mode);
+    glFrontFace(mode);
 }
 
 void loli_GL__glPointSize(loli_state * state) {
@@ -535,7 +535,7 @@ void loli_GL__glPolygonMode(loli_state * state) {
 
 void loli_GL__glPolygonOffset(loli_state * state) {
     float factor = loli_arg_integer(state, 0);
-    float units = loli_arg_integer(state, 1);
+    float units  = loli_arg_integer(state, 1);
 
     glPolygonOffset(factor, units);
 }

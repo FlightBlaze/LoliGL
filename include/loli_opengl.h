@@ -82,6 +82,24 @@ void loli_GL__glutEntryFunc                    (loli_state *);
 void loli_GL__example                          (loli_state *);
 
 // OpenGL
+void loli_GL__glClearIndex                     (loli_state *);
+void loli_GL__glClearColor                     (loli_state *);
+void loli_GL__glClear                          (loli_state *);
+void loli_GL__glIndexMask                      (loli_state *);
+void loli_GL__glColorMask                      (loli_state *);
+void loli_GL__glAlphaFunc                      (loli_state *);
+void loli_GL__glBlendFunc                      (loli_state *);
+void loli_GL__glLogicOp                        (loli_state *);
+void loli_GL__glCullFace                       (loli_state *);
+void loli_GL__glFrontFace                      (loli_state *);
+void loli_GL__glPointSize                      (loli_state *);
+void loli_GL__glLineWidth                      (loli_state *);
+void loli_GL__glLineStipple                    (loli_state *);
+void loli_GL__glPolygonMode                    (loli_state *);
+void loli_GL__glPolygonOffset                  (loli_state *);
+void loli_GL__glPolygonStipple                 (loli_state *);
+void loli_GL__glGetPolygonStipple              (loli_state *);
+void loli_GL__glEdgeFlag                       (loli_state *);
 void loli_GL__glEnd                            (loli_state *);
 void loli_GL__glFlush                          (loli_state *);
 
@@ -1097,6 +1115,24 @@ loli_call_entry_func loli_GL_call_table[] = {
         // TODO: delete it
         loli_GL__example,
 
+        loli_GL__glClearIndex,
+        loli_GL__glClearColor,
+        loli_GL__glClear,
+        loli_GL__glIndexMask,
+        loli_GL__glColorMask,
+        loli_GL__glAlphaFunc,
+        loli_GL__glBlendFunc,
+        loli_GL__glLogicOp,
+        loli_GL__glCullFace,
+        loli_GL__glFrontFace,
+        loli_GL__glPointSize,
+        loli_GL__glLineWidth,
+        loli_GL__glLineStipple,
+        loli_GL__glPolygonMode,
+        loli_GL__glPolygonOffset,
+        loli_GL__glPolygonStipple,
+        loli_GL__glGetPolygonStipple,
+        loli_GL__glEdgeFlag,
         loli_GL__glEnd,
         loli_GL__glFlush,
 
@@ -2111,6 +2147,25 @@ const char * loli_GL_info_table[] = {
 
         // TODO: delete it
         ,"F\0example"
+
+        ,"F\0glClearIndex\0(Integer)"
+        ,"F\0glClearColor\0(Integer, Integer, Integer, Integer)"
+        ,"F\0glClear\0(Integer)"
+        ,"F\0glIndexMask\0(Integer)"
+        ,"F\0glColorMask\0(Integer, Integer, Integer, Integer)"
+        ,"F\0glAlphaFunc\0(Integer, Integer)"
+        ,"F\0glBlendFunc\0(Integer, Integer)"
+        ,"F\0glLogicOp\0(Integer)"
+        ,"F\0glCullFace\0(Integer)"
+        ,"F\0glFrontFace\0(Integer)"
+        ,"F\0glPointSize\0(Integer)"
+        ,"F\0glLineWidth\0(Integer)"
+        ,"F\0glLineStipple\0(Integer, Integer)"
+        ,"F\0glPolygonMode\0(Integer, Integer)"
+        ,"F\0glPolygonOffset\0(Integer, Integer)"
+        ,"F\0glPolygonStipple\0(Integer)"
+        ,"F\0glGetPolygonStipple\0(Integer)"
+        ,"F\0glEdgeFlag\0(Integer)"
 
         ,"F\0glEnd"
         ,"F\0glFlush"
