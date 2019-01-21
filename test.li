@@ -32,7 +32,9 @@ fn glutKeyboardFunc(key: Byte, arg1: Integer, arg2: Integer) {
 }
 
 fn glutDisplayFunc {
+    GL.glEnable(GL.GL_STENCIL_TEST)
     GL.example() # TODO: delete
+    GL.glFlush()
 }
 
 fn glutMouseFunc(button: Integer, state: Integer, x: Integer, y: Integer) {

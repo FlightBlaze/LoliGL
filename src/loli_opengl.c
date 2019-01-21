@@ -685,19 +685,71 @@ void loli_GL__glGetIntegerv(loli_state * state) {
     loli_return_top(state);
 }
 
-void loli_GL__glEnd(loli_state * state) {
-    glEnd();
+void loli_GL__glPushAttrib(loli_state * state) {
+    unsigned int mode = (unsigned int) loli_arg_integer(state, 0);
+
+    glPushAttrib(mode);
 }
 
+void loli_GL__glPopAttrib(loli_state * state) {
+    glPopAttrib();
+}
+
+void loli_GL__glPushClientAttrib(loli_state * state) {
+    unsigned int mode = (unsigned int) loli_arg_integer(state, 0);
+
+    glPushClientAttrib(mode);
+}
+
+void loli_GL__glPopClientAttrib(loli_state * state) {
+    glPopClientAttrib();
+}
+
+void loli_GL__glRenderMode(loli_state * state) {
+    unsigned int mode = (unsigned int) loli_arg_integer(state, 0);
+
+    loli_push_integer(state, glRenderMode(mode));
+    loli_return_top(state);
+}
+
+void loli_GL__glGetError(loli_state * state) {
+    loli_push_integer(state, glGetError());
+    loli_return_top(state);
+}
+
+void loli_GL__glGetString(loli_state * state) {
+    unsigned int name = (unsigned int) loli_arg_integer(state, 0);
+
+    loli_push_string(state, (char *) glGetString(name));
+    loli_return_top(state);
+}
+
+void loli_GL__glFinish(loli_state * state) {
+    glFinish();
+}
 
 void loli_GL__glFlush(loli_state * state) {
     glFlush();
 }
 
+void loli_GL__glHint(loli_state * state) {
+    unsigned int target = (unsigned int) loli_arg_integer(state, 0);
+    unsigned int mode   = (unsigned int) loli_arg_integer(state, 1);
+
+    glHint(target, mode);
+}
+
+void loli_GL__glEnd(loli_state * state) {
+    glEnd();
+}
+
+
+
+
 
 // TODO: delete it
 void loli_GL__example(loli_state * state) {
-    glEnable(GL_STENCIL_TEST);
+    //glEnable(GL_STENCIL_TEST);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     glOrtho(-5.0, 5.0, -5.0, 5.0, -5.0, 5.0);
@@ -738,6 +790,6 @@ void loli_GL__example(loli_state * state) {
     glVertex3i(-3, -3, 0);
     glVertex3i(3, -3, 0);
     glEnd();
-    glFlush();
+    //glFlush();
 }
 

@@ -115,8 +115,17 @@ void loli_GL__glGetBooleanv                    (loli_state *);
 void loli_GL__glGetDoublev                     (loli_state *);
 void loli_GL__glGetFloatv                      (loli_state *);
 void loli_GL__glGetIntegerv                    (loli_state *);
-void loli_GL__glEnd                            (loli_state *);
+void loli_GL__glPushAttrib                     (loli_state *);
+void loli_GL__glPopAttrib                      (loli_state *);
+void loli_GL__glPushClientAttrib               (loli_state *);
+void loli_GL__glPopClientAttrib                (loli_state *);
+void loli_GL__glRenderMode                     (loli_state *);
+void loli_GL__glGetError                       (loli_state *);
+void loli_GL__glGetString                      (loli_state *);
+void loli_GL__glFinish                         (loli_state *);
 void loli_GL__glFlush                          (loli_state *);
+void loli_GL__glHint                           (loli_state *);
+void loli_GL__glEnd                            (loli_state *);
 
 void loli_GL_var_GLUT_RGB                      (loli_state *);
 void loli_GL_var_GLUT_RGBA                     (loli_state *);
@@ -1163,8 +1172,17 @@ loli_call_entry_func loli_GL_call_table[] = {
         loli_GL__glGetDoublev,
         loli_GL__glGetFloatv,
         loli_GL__glGetIntegerv,
-        loli_GL__glEnd,
+        loli_GL__glPushAttrib,
+        loli_GL__glPopAttrib,
+        loli_GL__glPushClientAttrib,
+        loli_GL__glPopClientAttrib,
+        loli_GL__glRenderMode,
+        loli_GL__glGetError,
+        loli_GL__glGetString,
+        loli_GL__glFinish,
         loli_GL__glFlush,
+        loli_GL__glHint,
+        loli_GL__glEnd,
 
         loli_GL_var_GLUT_RGB,
         loli_GL_var_GLUT_RGBA,
@@ -2211,9 +2229,18 @@ const char * loli_GL_info_table[] = {
         ,"F\0glGetDoublev\0(Integer, Double): Double"
         ,"F\0glGetFloatv\0(Integer, Integer): Integer"
         ,"F\0glGetIntegerv\0(Integer, Integer): Integer"
+        ,"F\0glPushAttrib\0(Integer)"
+        ,"F\0glPopAttrib"
+        ,"F\0glPushClientAttrib\0(Integer)"
+        ,"F\0glPopClientAttrib"
+        ,"F\0glRenderMode\0(Integer): Integer"
+        ,"F\0glGetError\0Integer"
+        ,"F\0glGetString\0(Integer): String"
+        ,"F\0glFinish"
+        ,"F\0glFlush"
+        ,"F\0glHint(Integer, Integer)"
 
         ,"F\0glEnd"
-        ,"F\0glFlush"
 
 
         ,"R\0GLUT_RGB\0Integer"
