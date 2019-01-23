@@ -1,8 +1,8 @@
-# LoliGL
+# ![LoliGL](http://newtoo.ru/user-content/LoliGL.png)
 
-> OpenGL & GLUT port for [Loli programming language](https://github.com/loli-foundation/loli)
+# OpenGL in [Loli programming language](https://github.com/loli-foundation/loli)
 
-### Building
+## Building
 
 Copy ``libloli.so`` (``libloli.dll`` on windows) to ``bin`` directory and execute commands: 
 
@@ -14,12 +14,15 @@ cd build && make            # compile LoliGL
 
 Then in the build folder you can find ``GL.so`` (``GL.dll`` on windows) file.
 
-### Using
+## Using in Loli
 
-Copy ``GL.so`` (``GL.dll`` on windows) to ``pkg`` directory on you`r loli sources.
-Then import ``GL`` module from library.
+Copy ``GL.so`` (``GL.dll`` on windows) to ``pkg`` directory with your loli sources.  
+Then import module in code:  
+```ts
+import GL
+```
 
-#### Example: Creating window
+### Example: Creating window
 
 ```rust
 import sys
